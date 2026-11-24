@@ -115,6 +115,7 @@ export async function waitActive({ apiKey, name, signal }) {
     if (f.state === 'ACTIVE') return;
     if (f.state === 'FAILED') throw new JobError('gemini_failed', 502, 'Gemini no pudo procesar el video');
     if (Date.now() > deadline) throw new JobError('gemini_failed', 502, 'video no ACTIVE en 90 s');
+    signal?.throwIfAborted();
     await new Promise((r) => setTimeout(r, 500));
   }
 }
@@ -166,7 +167,7 @@ export async function deleteFile({ apiKey, name }) {
   try {
     await fetch(`${BASE}/v1beta/${name}?key=${encodeURIComponent(apiKey)}`, {
       method: 'DELETE',
-      signal: AbortSignal.timeout(30_000),
+      signal: AbortSignal.timeout(10_000),
     });
   } catch {
     // ignorado a propósito

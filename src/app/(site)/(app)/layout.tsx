@@ -9,6 +9,7 @@ import { ClerkRescue } from "@/components/offline/ClerkRescue";
 import { OfflineBoot } from "@/components/offline/OfflineBoot";
 import { RememberUser } from "@/components/offline/RememberUser";
 import { SessionProvider } from "@/lib/auth/session";
+import { AccountScope } from "@/components/sync/AccountScope";
 import { SyncBoot } from "@/components/sync/SyncBoot";
 
 async function Gate({ children }: { children: ReactNode }) {
@@ -34,7 +35,9 @@ async function Gate({ children }: { children: ReactNode }) {
   return (
     <>
       <SessionProvider>
-        <AppShell admin={isAdminEmail(result.email)}>{children}</AppShell>
+        <AccountScope userId={result.userId}>
+          <AppShell admin={isAdminEmail(result.email)}>{children}</AppShell>
+        </AccountScope>
       </SessionProvider>
       <SyncBoot />
       <RememberUser />

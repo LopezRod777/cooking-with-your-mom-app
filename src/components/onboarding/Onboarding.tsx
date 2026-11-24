@@ -3,7 +3,7 @@
 import { useEffect, useRef, useState, type ReactNode } from "react";
 import { useRouter } from "next/navigation";
 import { useAppState } from "@/lib/useAppState";
-import { saveState } from "@/lib/store";
+import { getIdentity, saveState } from "@/lib/store";
 import { Profile, type AppState, type Location } from "@/lib/schemas";
 import { isComplete } from "@/lib/energy";
 import { AUTOPLAN_KEY } from "@/components/week/autoplan";
@@ -171,6 +171,7 @@ export function Onboarding() {
   const [locError, setLocError] = useState<string | null>(null);
   const [location, setLocation] = useState<Location | null>(null);
   const [finishing, setFinishing] = useState(false);
+  const committed = useRef<{ key: string; photo: { key: string; updatedAt: string } } | null>(null);
   const [locating, setLocating] = useState(false);
   const [locHint, setLocHint] = useState<string | null>(null);
 
@@ -200,10 +201,13 @@ export function Onboarding() {
   async function finish() {
     if (finishing) return;
     setFinishing(true);
+    const account = getIdentity();
     const profile = draftToProfile(draft, true);
     // A pet photo picked in step 7 is only staged on the server; commit it now so the Pets tab can show it.
     if (profile.petIntro && draft.petPhotoDraft !== null) {
-      try {
+      const photoKey = `${profile.petIntro.id}:${draft.petPhotoDraft}`;
+      if (committed.current?.key === photoKey) profile.petIntro = { ...profile.petIntro, photo: committed.current.photo };
+      else try {
         const res = await fetch("/api/pets/photo/commit", {
           method: "POST",
           headers: { "content-type": "application/json" },
@@ -211,11 +215,18 @@ export function Onboarding() {
         });
         if (res.ok) {
           const data = (await res.json()) as { key: string; updatedAt: string };
-          profile.petIntro = { ...profile.petIntro, photo: { key: data.key, updatedAt: data.updatedAt } };
+          const photo = { key: data.key, updatedAt: data.updatedAt };
+          profile.petIntro = { ...profile.petIntro, photo };
+          committed.current = { key: photoKey, photo }; // the draft is gone now: a second try must not ask again
         }
       } catch {
         // The card still saves without the photo; it can be added in Pets.
       }
+    }
+    // Nobody here yet, or someone else signed in meanwhile: these answers are not theirs. The same person can try again.
+    if (account === null || getIdentity() !== account) {
+      setFinishing(false);
+      return;
     }
     const next: AppState = {
       ...state,
@@ -357,7 +368,7 @@ export function Onboarding() {
         )}
       </div>
     ) : (
-      <Button size="xl" fullWidth disabled={finishing} onClick={() => void finish()}>
+      <Button size="xl" fullWidth disabled={finishing || !hydrated} onClick={() => void finish()}>
         Plan my week
       </Button>
     );
@@ -399,6 +410,7 @@ export function Onboarding() {
             variant="ghost"
             size="md"
             className="justify-self-center border-[#fff6ea]/50! bg-transparent! text-[#fff6ea]!"
+            disabled={!hydrated}
             onClick={skipOnboarding}
           >
             I&apos;ve done this before

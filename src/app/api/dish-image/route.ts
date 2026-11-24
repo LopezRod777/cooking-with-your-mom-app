@@ -44,8 +44,8 @@ export async function POST(req: Request) {
     return Response.json({ error: "Invalid request" }, { status: 400 });
   }
   const body = parsed.data;
-  // Per-recipe photos are unbounded, so they spend the daily slot, and only on a cache miss. Drink and bowl photos
-  // come from a fixed catalog shared by everyone, so their cost is bounded without a per-person cap.
+  // Only a cache miss spends the daily slot. Drink and bowl photos too: the catalog is fixed, but a photo that fails to
+  // save would be made again on every ask.
   const reserve = isAdminEmail(u.email) ? undefined : () => reserveAiQuota(u.userId, "dish-image");
   if ("recipe" in body) {
     try {
@@ -60,9 +60,10 @@ export async function POST(req: Request) {
   if ("styleId" in body) {
     if (!drinkStyleIds.has(body.styleId)) return Response.json({ error: "Invalid request" }, { status: 400 });
     try {
-      const { url, cached } = await withSlot(() => generateDrinkImage(body.styleId));
+      const { url, cached } = await withSlot(() => generateDrinkImage(body.styleId, reserve));
       return Response.json({ url, cached });
     } catch (err) {
+      if (err instanceof AiQuotaError) return quotaExceededResponse();
       console.error("[dish-image] failed pairing-drink:", body.styleId, err instanceof Error ? err.message : err);
       return Response.json({ error: "Drink photo is not available right now." }, { status: 502 });
     }
@@ -70,9 +71,10 @@ export async function POST(req: Request) {
   const bowl = bowlById(body.bowlId);
   if (!bowl) return Response.json({ error: "Invalid request" }, { status: 400 });
   try {
-    const { url, cached } = await withSlot(() => generatePetBowlImage(bowl.id, bowl.imagePrompt));
+    const { url, cached } = await withSlot(() => generatePetBowlImage(bowl.id, bowl.imagePrompt, reserve));
     return Response.json({ url, cached });
   } catch (err) {
+    if (err instanceof AiQuotaError) return quotaExceededResponse();
     console.error("[dish-image] failed pet-bowl:", bowl.id, err instanceof Error ? err.message : err);
     return Response.json({ error: "Bowl photo is not available right now." }, { status: 502 });
   }

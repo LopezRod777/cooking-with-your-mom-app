@@ -1,18 +1,19 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import { createServer } from '../server.mjs';
-import { JobLock } from '../lib/lock.mjs';
+import { JobQueue } from '../lib/lock.mjs';
 
 const SECRET = 'test-secret-123';
 const TIKTOK = 'https://www.tiktok.com/@doosifit/video/7183118805290339627';
 
-async function start(runJob) {
+async function start(runJob, { queue = {}, ...opts } = {}) {
   const logs = [];
   const server = createServer({
     config: { secret: SECRET },
     runJob,
-    lock: new JobLock(),
+    lock: new JobQueue(queue),
     log: (line) => logs.push(line),
+    ...opts,
   });
   await new Promise((r) => server.listen(0, '127.0.0.1', r));
   const base = `http://127.0.0.1:${server.address().port}`;
@@ -67,36 +68,200 @@ test('URL de host no permitido responde 400 unsupported_host sin correr el pipel
   }
 });
 
-test('segunda llamada concurrente responde 429 busy; la primera termina bien', async () => {
-  let release;
-  let started;
-  const startedP = new Promise((r) => { started = r; });
-  const s = await start(async ({ url }) => {
-    started();
-    await new Promise((r) => { release = r; });
-    return { id: 'abc', url };
+// Trabajos que se quedan abiertos hasta que la prueba los suelta, en orden de arranque.
+function held() {
+  const jobs = [];
+  const seen = [];
+  const runJob = ({ url, signal }) => new Promise((resolve, reject) => {
+    seen.push(url);
+    jobs.push({ url, signal, done: () => resolve({ id: url.split('/').pop() }), fail: reject });
   });
+  return { runJob, jobs, seen };
+}
+const video = (n) => `https://www.tiktok.com/@a/video/${n}`;
+const until = async (ok, ms = 3000) => {
+  const end = Date.now() + ms;
+  while (!ok()) {
+    if (Date.now() > end) throw new Error('no llegó a tiempo');
+    await new Promise((r) => setTimeout(r, 5));
+  }
+};
+const health = async (s) => (await fetch(`${s.base}/health`)).json();
+
+test('dos a la vez, el tercero espera y entra cuando se suelta un lugar', async () => {
+  const h = held();
+  const s = await start(h.runJob);
   try {
-    const first = post(s.base, { url: TIKTOK });
-    await startedP;
-    const second = await post(s.base, { url: TIKTOK });
-    assert.equal(second.status, 429);
-    assert.deepEqual(await second.json(), { ok: false, reason: 'busy' });
-
-    const health = await (await fetch(`${s.base}/health`)).json();
-    assert.equal(health.busy, true);
-
-    release();
-    const r1 = await first;
-    assert.equal(r1.status, 200);
-    const j1 = await r1.json();
-    assert.equal(j1.ok, true);
-    assert.equal(j1.id, 'abc');
-
-    const after = await (await fetch(`${s.base}/health`)).json();
-    assert.equal(after.busy, false);
+    const a = post(s.base, { url: video(1) });
+    await until(() => h.jobs.length === 1);
+    const b = post(s.base, { url: video(2) });
+    await until(() => h.jobs.length === 2);
+    const c = post(s.base, { url: video(3) });
+    let st;
+    do st = await health(s); while (st.waiting !== 1);
+    assert.deepEqual([st.busy, st.running, st.waiting], [true, 2, 1]);
+    assert.equal(h.jobs.length, 2);
+    h.jobs[0].done();
+    assert.equal((await (await a).json()).id, '1');
+    await until(() => h.jobs.length === 3);
+    h.jobs[1].done();
+    h.jobs[2].done();
+    assert.equal((await b).status, 200);
+    assert.equal((await (await c).json()).id, '3');
+    const after = await health(s);
+    assert.deepEqual([after.busy, after.running, after.waiting], [false, 0, 0]);
   } finally {
-    if (release) release();
+    await s.stop();
+  }
+});
+
+test('fila llena o espera vencida responde 429 busy sin correr', async () => {
+  const h = held();
+  const s = await start(h.runJob, { queue: { slots: 1, maxWaiting: 1, waitMs: 150 } });
+  try {
+    const a = post(s.base, { url: video(1) });
+    await until(() => h.jobs.length === 1);
+    const b = post(s.base, { url: video(2) });
+    while ((await health(s)).waiting !== 1);
+    const full = await post(s.base, { url: video(3) });
+    assert.equal(full.status, 429);
+    assert.deepEqual(await full.json(), { ok: false, reason: 'busy' });
+    const late = await b;
+    assert.equal(late.status, 429);
+    assert.deepEqual(await late.json(), { ok: false, reason: 'busy' });
+    assert.deepEqual(h.seen, [video(1)]);
+    h.jobs[0].done();
+    assert.equal((await a).status, 200);
+  } finally {
+    await s.stop();
+  }
+});
+
+test('la fila respeta el orden de llegada', async () => {
+  const h = held();
+  const s = await start(h.runJob, { queue: { slots: 1 } });
+  try {
+    const all = [];
+    for (const n of [1, 2, 3, 4]) {
+      all.push(post(s.base, { url: video(n) }));
+      if (n === 1) await until(() => h.jobs.length === 1);
+      else while ((await health(s)).waiting !== n - 1);
+    }
+    for (let i = 0; i < 4; i++) {
+      await until(() => h.jobs.length === i + 1);
+      h.jobs[i].done();
+    }
+    await Promise.all(all);
+    assert.deepEqual(h.seen, [1, 2, 3, 4].map(video));
+  } finally {
+    await s.stop();
+  }
+});
+
+test('quien se va de la fila no corre ni ocupa lugar', async () => {
+  const h = held();
+  const s = await start(h.runJob, { queue: { slots: 1 } });
+  try {
+    const a = post(s.base, { url: video(1) });
+    await until(() => h.jobs.length === 1);
+    const ctl = new AbortController();
+    const gone = fetch(`${s.base}/extract`, { method: 'POST', headers: { Authorization: `Bearer ${SECRET}` }, body: JSON.stringify({ url: video(2) }), signal: ctl.signal }).catch(() => 'left');
+    while ((await health(s)).waiting !== 1);
+    ctl.abort();
+    assert.equal(await gone, 'left');
+    while ((await health(s)).waiting !== 0);
+    h.jobs[0].done();
+    assert.equal((await a).status, 200);
+    assert.deepEqual(h.seen, [video(1)]);
+    assert.equal((await health(s)).running, 0);
+  } finally {
+    await s.stop();
+  }
+});
+
+test('quien se va a media corrida aborta el trabajo; el lugar se suelta hasta que el trabajo termina', async () => {
+  const h = held();
+  const s = await start(h.runJob, { queue: { slots: 1 } });
+  try {
+    const ctl = new AbortController();
+    const gone = fetch(`${s.base}/extract`, { method: 'POST', headers: { Authorization: `Bearer ${SECRET}` }, body: JSON.stringify({ url: video(1) }), signal: ctl.signal }).catch(() => 'left');
+    await until(() => h.jobs.length === 1);
+    const b = post(s.base, { url: video(2) });
+    while ((await health(s)).waiting !== 1);
+    ctl.abort();
+    await gone;
+    await until(() => h.jobs[0].signal.aborted);
+    await new Promise((r) => setTimeout(r, 50));
+    assert.equal(h.jobs.length, 1, 'la limpieza del primero sigue: nadie más entra');
+    h.jobs[0].fail(new Error('abortado'));
+    await until(() => h.jobs.length === 2);
+    h.jobs[1].done();
+    assert.equal((await b).status, 200);
+  } finally {
+    await s.stop();
+  }
+});
+
+test('vencido el plazo responde 504 ya, y el lugar espera a que termine la limpieza', async () => {
+  const h = held();
+  const s = await start(h.runJob, { queue: { slots: 1 }, totalMs: 60 });
+  try {
+    const a = await post(s.base, { url: video(1) });
+    assert.equal(a.status, 504);
+    assert.equal((await a.json()).reason, 'timeout');
+    assert.equal((await health(s)).running, 1);
+    h.jobs[0].done();
+    while ((await health(s)).running !== 0);
+  } finally {
+    await s.stop();
+  }
+});
+
+test('un trabajo que ignora el aborto dispara el reinicio', async () => {
+  const h = held();
+  let stuck = 0;
+  const s = await start(h.runJob, { totalMs: 30, stuckMs: 60, onStuck: () => { stuck++; } });
+  try {
+    assert.equal((await post(s.base, { url: video(1) })).status, 504);
+    await until(() => stuck === 1);
+    h.jobs[0].done();
+    const ok = post(s.base, { url: video(2) });
+    await until(() => h.jobs.length === 2);
+    h.jobs[1].done();
+    assert.equal((await ok).status, 200);
+    await new Promise((r) => setTimeout(r, 120));
+    assert.equal(stuck, 1, 'uno que termina bien no reinicia nada');
+  } finally {
+    await s.stop();
+  }
+});
+
+test('soltar dos veces el mismo lugar no abre otro', async () => {
+  const q = new JobQueue({ slots: 1 });
+  const release = await q.acquire();
+  release();
+  release();
+  assert.equal(q.running, 0);
+  await q.acquire();
+  assert.equal(q.busy, true);
+});
+
+test('nunca más de dos a la vez con 20 peticiones, con fallas mezcladas', async () => {
+  let now = 0;
+  let max = 0;
+  const s = await start(async ({ url }) => {
+    max = Math.max(max, ++now);
+    await new Promise((r) => setTimeout(r, 5));
+    now--;
+    if (Number(url.split('/').pop()) % 3 === 0) throw new Error('falla');
+    return { id: 'x' };
+  }, { queue: { maxWaiting: 30 } });
+  try {
+    const rs = await Promise.all(Array.from({ length: 20 }, (_, i) => post(s.base, { url: video(i + 1) })));
+    assert.equal(max, 2);
+    assert.deepEqual(rs.map((r) => r.status).sort(), [...Array(14).fill(200), ...Array(6).fill(500)]);
+    assert.equal((await health(s)).running, 0);
+  } finally {
     await s.stop();
   }
 });

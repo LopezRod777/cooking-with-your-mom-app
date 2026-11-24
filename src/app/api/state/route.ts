@@ -1,5 +1,6 @@
 import { z } from "zod";
 import { getSql } from "../../../lib/db";
+import { otherAccount } from "../../../lib/auth/account";
 import { requireUser } from "../../../lib/auth/requireUser";
 import { AppStateWire } from "../../../lib/schemas";
 
@@ -41,16 +42,10 @@ async function currentRow(userId: string) {
   return { revision: row.revision, state: row.state, updatedAt: iso(row.updated_at) };
 }
 
-// A tab still holding one account while the cookie is already another's (signed in from another tab).
-function otherAccount(req: Request | undefined, userId: string): Response | null {
-  const claimed = req?.headers.get("x-cwym-user");
-  return claimed && claimed !== userId ? Response.json({ error: "other_account" }, { status: 403 }) : null;
-}
-
 export async function GET(req?: Request) {
   const u = await requireUser();
   if (u instanceof Response) return u;
-  const wrong = otherAccount(req, u.userId);
+  const wrong = req ? otherAccount(req.headers, u.userId) : null;
   if (wrong) return wrong;
   return Response.json(await currentRow(u.userId));
 }
@@ -58,7 +53,7 @@ export async function GET(req?: Request) {
 export async function PUT(req: Request) {
   const u = await requireUser();
   if (u instanceof Response) return u;
-  const wrong = otherAccount(req, u.userId);
+  const wrong = otherAccount(req.headers, u.userId);
   if (wrong) return wrong;
   // A tab from before this header cannot say whose data it holds. It reloads once, keeping its edits, and then it can.
   if (!req.headers.get("x-cwym-user")) return Response.json({ error: "outdated_client" }, { status: 400 });

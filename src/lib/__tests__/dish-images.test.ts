@@ -9,6 +9,7 @@ import {
   pairingDrinkImageKey,
   petBowlImageKey,
 } from "../images/dish";
+import { AiQuotaError } from "../ai/dailyQuota";
 import { drinkImagePrompt } from "../pairings/imagePrompt";
 import { publicImageFor } from "../images/pick";
 import { makeRecipe } from "./fixtures";
@@ -166,6 +167,30 @@ describe("generatePetBowlImage", () => {
     expect(gemini).toHaveBeenCalledTimes(1);
     expect(a.url).toBe(b.url);
     expect(a.url).toBe(`https://blob.test/${petBowlImageKey("dog_chicken_rice", prompt)}`);
+  });
+
+  it("one person out of slots does not refuse the other waiting for the same photo", async () => {
+    const png = await sharp({ create: { width: 4, height: 4, channels: 3, background: "#ffffff" } }).png().toBuffer();
+    const gemini = vi.fn(async () => new Response(JSON.stringify({ candidates: [{ content: { parts: [{ inlineData: { data: png.toString("base64") } }] } }] }), { status: 200, headers: { "content-type": "application/json" } }));
+    vi.stubGlobal("fetch", gemini);
+    vi.stubEnv("GEMINI_API_KEY", "test-key");
+    const prompt = "Overhead photograph of turkey and oats in a white bowl.";
+    const out = vi.fn(async () => false);
+    const has = vi.fn(async () => true);
+    const [a, b] = await Promise.allSettled([generatePetBowlImage("dog_turkey", prompt, out), generatePetBowlImage("dog_turkey", prompt, has)]);
+    expect(a).toMatchObject({ status: "rejected", reason: expect.any(AiQuotaError) });
+    expect(b).toMatchObject({ status: "fulfilled" });
+    expect(has).toHaveBeenCalledTimes(1);
+    expect(gemini).toHaveBeenCalledTimes(1);
+  });
+
+  it("nor the admin, who has no limit", async () => {
+    const png = await sharp({ create: { width: 4, height: 4, channels: 3, background: "#ffffff" } }).png().toBuffer();
+    vi.stubGlobal("fetch", vi.fn(async () => new Response(JSON.stringify({ candidates: [{ content: { parts: [{ inlineData: { data: png.toString("base64") } }] } }] }), { status: 200, headers: { "content-type": "application/json" } })));
+    vi.stubEnv("GEMINI_API_KEY", "test-key");
+    const prompt = "Overhead photograph of beef and peas in a white bowl.";
+    const [a, b] = await Promise.allSettled([generatePetBowlImage("dog_beef", prompt, async () => false), generatePetBowlImage("dog_beef", prompt)]);
+    expect([a.status, b.status]).toEqual(["rejected", "fulfilled"]);
   });
 });
 

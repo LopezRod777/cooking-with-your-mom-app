@@ -4,6 +4,8 @@ import Link from "next/link";
 import { useEffect, useId, useRef, useState, type FormEvent } from "react";
 import { createPortal } from "react-dom";
 import { DISTANCE_STEPS, type Location, type Places, type SavedLocation } from "@/lib/schemas";
+import { getIdentity, getSnapshot } from "@/lib/store";
+import { useAppState } from "@/lib/useAppState";
 import { Button } from "./ui/Button";
 import { Field, inputClass } from "./ui/Field";
 import {
@@ -39,6 +41,7 @@ export function LocationPill({
   const [error, setError] = useState<string | null>(null);
   const [notice, setNotice] = useState<string | null>(null);
   const [busy, setBusy] = useState(false);
+  const [, , hydrated] = useAppState();
   const [confirmingId, setConfirmingId] = useState<string | null>(null);
   const dialogId = useId();
   const firstFieldRef = useRef<HTMLInputElement>(null);
@@ -69,6 +72,7 @@ export function LocationPill({
     }
     firstFieldRef.current?.focus();
     const onKey = (e: KeyboardEvent) => {
+      if (document.documentElement.hasAttribute("data-account-away")) return; // hidden by AccountScope: the keys are for its note
       if (e.key === "Escape") {
         setOpen(false);
         return;
@@ -148,6 +152,7 @@ export function LocationPill({
       setError(LOCATION_ERROR);
       return;
     }
+    const owner = getIdentity();
     setBusy(true);
     setError(null);
     setNotice(null);
@@ -155,6 +160,7 @@ export function LocationPill({
       parsed.zip ? { zip: parsed.zip } : { city: parsed.city ?? "", state: parsed.state ?? "" },
     );
     setBusy(false);
+    if (owner === null || getIdentity() !== owner || !getSnapshot().hydrated) return; // it would not be saved: what was typed stays
     if (outcome.status === "busy") {
       setError(BUSY_COPY);
       return;
@@ -342,7 +348,7 @@ export function LocationPill({
                 <p className="text-[15px] leading-snug text-muted">
                   A ZIP or city you add is looked up once on OpenStreetMap (Nominatim) and then remembered. If that lookup fails, a ZIP falls back to a built-in table. The saved location (ZIP or city and its coordinates) is stored in your account.
                 </p>
-                <Button type="submit" size="md" fullWidth disabled={busy}>
+                <Button type="submit" size="md" fullWidth disabled={busy || !hydrated}>
                   {busy ? "Saving…" : "Save"}
                 </Button>
               </form>

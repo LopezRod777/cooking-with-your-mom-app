@@ -139,13 +139,14 @@ export function swapMealRecipe(
   return { ...plan, days, recipes };
 }
 
-export async function postJson(url: string, body: unknown): Promise<unknown> {
+export async function postJson(url: string, body: unknown, signal?: AbortSignal): Promise<unknown> {
   let res: Response;
   try {
     res = await fetch(url, {
       method: "POST",
       headers: { "content-type": "application/json" },
       body: JSON.stringify(body),
+      signal,
     });
   } catch {
     throw new Error("Check your connection and try again.");
@@ -156,7 +157,7 @@ export async function postJson(url: string, body: unknown): Promise<unknown> {
       data && typeof data === "object" && "error" in data && typeof data.error === "string"
         ? data.error
         : "Something went wrong.";
-    throw new Error(message);
+    throw new Error(message === "other_account" ? "Someone else signed in on this device. Reload the page." : message);
   }
   return data;
 }

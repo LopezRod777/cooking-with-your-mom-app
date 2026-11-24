@@ -1,3 +1,4 @@
+import { documentAccount } from "./auth/account";
 import { AppState, DEFAULT_STATE, STATE_SCHEMA_TAG, type Pet, type Places, type SavedLocation } from "./schemas";
 
 // Per-account app state with a local cache and server sync (see docs/PLAN-CUENTAS.md).
@@ -529,21 +530,22 @@ function accountHeader(): Record<string, string> {
 }
 
 // The cookie is another account's: this tab lets go of what it shows. Unsent edits stay in this account's cache.
-async function denied(res: Response): Promise<{ ok: false; kind: "denied"; message: string }> {
-  const who = userId;
+async function denied(res: Response, who: string | null, gen: number): Promise<{ ok: false; kind: "denied"; message: string }> {
   const body = res.status === 403 ? ((await res.json().catch(() => null)) as { error?: unknown } | null) : null;
-  if (body?.error === "other_account" && who !== null && who === userId) resetIdentity(null);
+  if (body?.error === "other_account" && who !== null && gen === generation) resetIdentity(null);
   return { ok: false, kind: "denied", message: `HTTP ${res.status}` };
 }
 
 async function serverGet(): Promise<GetResult> {
+  const who = userId;
+  const gen = generation;
   let res: Response;
   try {
     res = await doFetch(STATE_URL, { method: "GET", headers: { accept: "application/json", ...accountHeader() }, cache: "no-store" });
   } catch (err) {
     return { ok: false, kind: "offline", message: err instanceof Error ? err.message : "offline" };
   }
-  if (res.status === 401 || res.status === 403) return denied(res);
+  if (res.status === 401 || res.status === 403) return denied(res, who, gen);
   if (!res.ok) return { ok: false, kind: "error", message: `HTTP ${res.status}` };
   const body = (await res.json().catch(() => null)) as { revision?: unknown; state?: unknown } | null;
   if (!body || typeof body.revision !== "number") return { ok: false, kind: "error", message: "bad response" };
@@ -559,6 +561,8 @@ async function serverGet(): Promise<GetResult> {
 }
 
 async function serverPut(baseRevision: number, state: AppState): Promise<PutResult> {
+  const who = userId;
+  const gen = generation;
   let res: Response;
   try {
     res = await doFetch(STATE_URL, {
@@ -569,7 +573,7 @@ async function serverPut(baseRevision: number, state: AppState): Promise<PutResu
   } catch (err) {
     return { ok: false, kind: "offline", message: err instanceof Error ? err.message : "offline" };
   }
-  if (res.status === 401 || res.status === 403) return denied(res);
+  if (res.status === 401 || res.status === 403) return denied(res, who, gen);
   const body = (await res.json().catch(() => null)) as { revision?: unknown; state?: unknown } | null;
   if (res.status === 400 && body && (body as { error?: unknown }).error === "outdated_client") {
     return { ok: false, kind: "outdated" };
@@ -1087,7 +1091,8 @@ function bindWindowListeners() {
       if (s && s.getItem(cacheKey(userId)) === null) letGo();
       else if (hydrated) adoptDisk();
     } else if (e.key === LAST_USER_KEY && e.newValue !== null && e.newValue !== userId) {
-      resetIdentity(null); // someone else signed in from another tab
+      // Someone else signed in from another tab.
+      if (!notThisDocument(e.newValue)) resetIdentity(null);
     }
   });
   if (typeof document !== "undefined") document.addEventListener("visibilitychange", onWake);
@@ -1095,8 +1100,26 @@ function bindWindowListeners() {
 
 // ---- public API ------------------------------------------------------------
 
+// Somebody else than the account this document was made for. Their data is never read here: AccountScope hides the
+// screens and loads the page again.
+let foreign: string | null = null;
+
+export function getForeign(): string | null {
+  return foreign;
+}
+
+function notThisDocument(id: string | null): boolean {
+  const pinned = documentAccount();
+  foreign = id !== null && pinned !== null && id !== pinned ? id : null;
+  if (foreign === null) return false;
+  if (userId !== null) resetIdentity(null);
+  else publish();
+  return true;
+}
+
 // Called by SyncBoot with Clerk's userId (null while signed out). Switching identity drops everything in memory.
 export function setIdentity(id: string | null) {
+  if (notThisDocument(id)) return;
   if (id === userId && !offlineOnly) return;
   const unsaved = id !== null && id === userId && dirty && lastSaveError !== null ? { revision, state: current, dirty, legacy, sent: lastSent, edits, disk: lastDisk, saveError: lastSaveError } : null;
   resetIdentity(id);
@@ -1106,6 +1129,7 @@ export function setIdentity(id: string | null) {
 // The no-signal screens: this device's copy of the account, with no server calls until setIdentity takes over.
 // False when there is no readable copy to open.
 export function setOfflineIdentity(id: string): boolean {
+  if (notThisDocument(id)) return false;
   resetIdentity(id);
   offlineOnly = true;
   const cached = readCache(id);
@@ -1233,8 +1257,17 @@ function rebase(from: AppState, to: AppState, onto: AppState): AppState | null {
   return merge(from, to, onto, true) as AppState | null;
 }
 
+// What every screen writes through: bound to the account it was showing. A plan, a photo or an import that arrives after
+// someone else signed in belongs to the first account, so it is dropped, never written into the second one.
+const refused = new WeakSet<AppState>();
+export function setAppStateAs(owner: string | null, update: AppState | ((prev: AppState) => AppState)): void {
+  if (owner !== null && owner === userId) return setAppState(update);
+  if (typeof update !== "function") refused.add(update);
+}
+
 // Kept for callers that persisted explicitly before navigating. setAppState already persists.
 export function saveState(state: AppState): boolean {
+  if (refused.has(state)) return false;
   // Already applied, maybe on top of another tab's edit: a second time would undo that edit.
   if (state !== current && state !== lastWhole) setAppState(state);
   return lastSaveError === null;
@@ -1365,6 +1398,7 @@ export function importState(json: string): AppState | Error {
 
 // Test-only: a clean module without re-importing.
 export function _resetStoreForTests() {
+  foreign = null;
   generation++;
   if (pushTimer) timers.clearTimeout(pushTimer);
   pushTimer = null;

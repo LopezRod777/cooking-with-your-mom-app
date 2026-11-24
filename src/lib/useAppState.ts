@@ -1,19 +1,23 @@
 "use client";
 
-import { useSyncExternalStore, type SetStateAction } from "react";
+import { useCallback, useSyncExternalStore, type SetStateAction } from "react";
 import {
   decideMigration,
+  getForeign,
+  getIdentity,
   getServerSnapshot,
   getSnapshot,
   resolveConflict,
   retrySync,
-  setAppState,
+  setAppStateAs,
   subscribe,
   type StoreSnapshot,
 } from "./store";
 import type { AppState } from "./schemas";
 
-// [state, setState, hydrated, saveError]. One shared copy for every component.
+const noAccount = () => null;
+
+// [state, setState, hydrated, saveError]. setState only ever writes to the account this render shows. One shared copy for every component.
 // hydrated = signed in, and the account's state has been read from the server (or the cache, offline).
 export function useAppState(): [
   AppState,
@@ -22,7 +26,19 @@ export function useAppState(): [
   string | null,
 ] {
   const snap = useSyncExternalStore(subscribe, getSnapshot, getServerSnapshot);
-  return [snap.state, setAppState, snap.hydrated, snap.saveError];
+  const owner = useAccount();
+  const set = useCallback((update: SetStateAction<AppState>) => setAppStateAs(owner, update), [owner]);
+  return [snap.state, set, snap.hydrated, snap.saveError];
+}
+
+// The account the store holds right now (null while it loads or after signing out).
+export function useAccount(): string | null {
+  return useSyncExternalStore(subscribe, getIdentity, noAccount);
+}
+
+// Someone who is not who this document was made for (see AccountScope).
+export function useForeign(): string | null {
+  return useSyncExternalStore(subscribe, getForeign, noAccount);
 }
 
 // Set when the stored data could not be read and was replaced by defaults (ISO timestamp of the backup).

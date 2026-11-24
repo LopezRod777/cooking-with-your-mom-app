@@ -268,14 +268,15 @@ export function myVersionMessage(
   ].join("\n");
 }
 
-export async function structureRecipe(input: StructureInput): Promise<Recipe> {
+// `signal` bounds the whole call, SDK retries included.
+export async function structureRecipe(input: StructureInput, signal?: AbortSignal): Promise<Recipe> {
   const res = await anthropic.messages.parse({
     model: MODEL,
     max_tokens: 12000,
     system: systemBlocks(IMPORT_RULES),
     messages: [{ role: "user", content: userMessage(input) }],
     output_config: { effort: "low", format: zodOutputFormat(LlmImported) },
-  });
+  }, { signal });
   if (!res.parsed_output) throw new Error("import_parse_failed");
   const { recipe, healthierIdeas } = res.parsed_output;
   return assembleImported(recipe, input, input.profile.allergies, healthierIdeas);

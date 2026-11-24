@@ -3,7 +3,7 @@
 import { useAuth } from "@clerk/nextjs";
 import { useEffect } from "react";
 import { appLoaded, reloadOnceInAWhile } from "@/lib/offline/reload";
-import { getIdentity, setOfflineIdentity } from "@/lib/store";
+import { getForeign, getIdentity, setOfflineIdentity } from "@/lib/store";
 
 const WAIT_MS = 8_000;
 
@@ -15,6 +15,7 @@ export function ClerkRescue({ userId }: { userId: string }) {
     if (isLoaded) return appLoaded();
     // Again and again: the signal may be back only later, and reloads are spaced out by reloadOnceInAWhile.
     const timer = window.setInterval(() => {
+      if (getForeign() !== null) return; // AccountScope is loading the page again
       if (getIdentity() === null) setOfflineIdentity(userId);
       if (navigator.onLine && !window.location.pathname.startsWith("/cook/")) reloadOnceInAWhile();
     }, WAIT_MS);

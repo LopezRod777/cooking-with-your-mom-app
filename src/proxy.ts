@@ -1,5 +1,6 @@
 import { clerkMiddleware, createRouteMatcher } from "@clerk/nextjs/server";
 import { NextResponse, type NextRequest } from "next/server";
+import { otherAccount } from "./lib/auth/account";
 
 const isPublic = createRouteMatcher([
   "/sign-in(.*)",
@@ -38,6 +39,8 @@ export default clerkMiddleware(
     const ref = refToSet(req);
     if (isPublic(req)) return ref ? withRef(NextResponse.next(), ref) : undefined;
     const { userId, redirectToSignIn } = await auth();
+    const wrong = userId && req.nextUrl.pathname.startsWith("/api/") ? otherAccount(req.headers, userId) : null;
+    if (wrong) return wrong;
     if (userId) return ref ? withRef(NextResponse.next(), ref) : undefined;
     if (req.nextUrl.pathname.startsWith("/api/")) {
       return NextResponse.json({ error: "unauthorized" }, { status: 401 });

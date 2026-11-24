@@ -1,4 +1,4 @@
-import { describe, expect, it } from "vitest";
+import { describe, expect, it, vi } from "vitest";
 import { lookupRecipe, hasQuantity, needsLookup, urlsMessage, pickUrls, isFetchableUrl, dishOf, provenance, LOOKUP_UA, type LookupInput } from "../import/lookup";
 import type { Page } from "../import/extract";
 
@@ -371,5 +371,28 @@ describe("lookup helpers", () => {
   it("13. dishOf reads the Title line when there is no title, and the title when set", () => {
     expect(dishOf({ platform: "tiktok", text: "Title: Marry Me Chicken\nCaption: yum" })).toBe("Marry Me Chicken");
     expect(dishOf({ platform: "tiktok", title: "Birria Tacos", text: "Title: Other" })).toBe("Birria Tacos");
+  });
+});
+
+describe("lookupRecipe when the person left", () => {
+  it("does not start the paid slow search", async () => {
+    const ctl = new AbortController();
+    const slow = vi.fn(async () => null);
+    const out = await lookupRecipe(
+      { platform: "tiktok", title: "Pasta", author: null, text: "pasta" } as unknown as Parameters<typeof lookupRecipe>[0],
+      { signal: ctl.signal, slow, findUrls: async () => { ctl.abort(); return []; } },
+    );
+    expect(out.reason).toBe("aborted");
+    expect(slow).not.toHaveBeenCalled();
+  });
+
+  it("does not open the pages the fast search found", async () => {
+    const ctl = new AbortController();
+    const getPage = vi.fn(async () => null);
+    await lookupRecipe(
+      { platform: "tiktok", title: "Pasta", author: null, text: "pasta" } as unknown as Parameters<typeof lookupRecipe>[0],
+      { signal: ctl.signal, slow: async () => null, getPage: getPage as never, findUrls: async () => { ctl.abort(); return ["https://a.example/r"]; } },
+    );
+    expect(getPage).not.toHaveBeenCalled();
   });
 });

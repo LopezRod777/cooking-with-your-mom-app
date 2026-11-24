@@ -91,29 +91,25 @@ describe("remoteExtract", () => {
     expect(r.likes).toBeUndefined();
   });
 
-  it("retries once after 8 s when the service is busy, then succeeds", async () => {
-    const sleep = vi.fn(async () => {});
+  it("a full line answers busy at once, without a second call", async () => {
     const f = fakeFetch(json(429, { ok: false, reason: "busy" }), json(200, OK_BODY));
-    const r = await remoteExtract(URL_IN, { env: ENV, fetch: f.fetch, sleep });
-    expect(sleep).toHaveBeenCalledWith(8000);
-    expect(f.calls).toHaveLength(2);
-    expect(r).toMatchObject({ ok: true });
+    const r = await remoteExtract(URL_IN, { env: ENV, fetch: f.fetch });
+    expect(r).toEqual({ ok: false, reason: "busy" });
+    expect(f.calls).toHaveLength(1);
   });
 
-  it("gives up with busy when the retry is busy too", async () => {
-    const sleep = vi.fn(async () => {});
-    const f = fakeFetch(json(429, { ok: false, reason: "busy" }));
-    const r = await remoteExtract(URL_IN, { env: ENV, fetch: f.fetch, sleep });
-    expect(f.calls).toHaveLength(2);
-    expect(r).toEqual({ ok: false, reason: "busy" });
+  it("hangs up when the person leaves", async () => {
+    const ctl = new AbortController();
+    const hang = vi.fn((_u: unknown, init?: RequestInit) => new Promise<Response>((_, reject) => init!.signal!.addEventListener("abort", () => reject(init!.signal!.reason))));
+    const p = remoteExtract(URL_IN, { env: ENV, fetch: hang as unknown as typeof fetch, signal: ctl.signal });
+    ctl.abort();
+    expect(await p).toEqual({ ok: false, reason: "timeout" });
   });
 
   it("returns the service reason for a failure body, without retrying", async () => {
-    const sleep = vi.fn(async () => {});
     const f = fakeFetch(json(502, { ok: false, reason: "ytdlp_failed" }));
-    const r = await remoteExtract(URL_IN, { env: ENV, fetch: f.fetch, sleep });
+    const r = await remoteExtract(URL_IN, { env: ENV, fetch: f.fetch });
     expect(r).toEqual({ ok: false, reason: "ytdlp_failed" });
-    expect(sleep).not.toHaveBeenCalled();
     expect(f.calls).toHaveLength(1);
   });
 

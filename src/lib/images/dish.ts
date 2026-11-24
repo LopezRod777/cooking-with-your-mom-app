@@ -147,18 +147,24 @@ export function petBowlImageKey(bowlId: string, imagePrompt: string): string {
 // In-flight generations by blob key (pet bowls and pairing drinks). Concurrent misses for one photo wait on one Gemini call.
 const inFlight = new Map<string, Promise<DishImage>>();
 
-function generateOnce(key: string, prompt: string, label: string): Promise<DishImage> {
+function generateOnce(key: string, prompt: string, label: string, reserve?: () => Promise<boolean>): Promise<DishImage> {
   const pending = inFlight.get(key);
-  if (pending) return pending;
-  const run = generateCachedImage(key, prompt, label).finally(() => {
+  if (pending) {
+    // The other person ran out of their own slots: that says nothing about this one's.
+    return pending.catch((err) => {
+      if (err instanceof AiQuotaError) return generateOnce(key, prompt, label, reserve);
+      throw err;
+    });
+  }
+  const run = generateCachedImage(key, prompt, label, undefined, undefined, reserve).finally(() => {
     inFlight.delete(key);
   });
   inFlight.set(key, run);
   return run;
 }
 
-export function generatePetBowlImage(bowlId: string, imagePrompt: string): Promise<DishImage> {
-  return generateOnce(petBowlImageKey(bowlId, imagePrompt), petBowlPrompt(imagePrompt), `pet-bowl:${bowlId}`);
+export function generatePetBowlImage(bowlId: string, imagePrompt: string, reserve?: () => Promise<boolean>): Promise<DishImage> {
+  return generateOnce(petBowlImageKey(bowlId, imagePrompt), petBowlPrompt(imagePrompt), `pet-bowl:${bowlId}`, reserve);
 }
 
 // Pairing drinks: one photo per drink style, shared by everyone. Same store, model and settings as the bowls.
@@ -168,9 +174,9 @@ export function pairingDrinkImageKey(styleId: string, prompt: string): string {
 }
 
 // Throws (rejects) on a styleId that is not in the pairing vocabulary.
-export async function generateDrinkImage(styleId: string): Promise<DishImage> {
+export async function generateDrinkImage(styleId: string, reserve?: () => Promise<boolean>): Promise<DishImage> {
   const prompt = drinkImagePrompt(styleId);
-  return generateOnce(pairingDrinkImageKey(styleId, prompt), prompt, `pairing-drink:${styleId}`);
+  return generateOnce(pairingDrinkImageKey(styleId, prompt), prompt, `pairing-drink:${styleId}`, reserve);
 }
 
 // `signal` aborts the Gemini call (a caller's time budget); a cached photo still comes back after the abort.

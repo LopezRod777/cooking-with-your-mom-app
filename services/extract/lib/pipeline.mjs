@@ -37,6 +37,7 @@ export async function runJob({ config, url, platform, signal }) {
       return { meta, mp4, thumb, durationS: probe.durationS ?? meta.durationS };
     });
     const { meta, mp4, thumb } = got;
+    signal?.throwIfAborted();
 
     // The Blob copy (for playback) and the Gemini analysis do not depend on each other: run them together.
     const blobJob = timed(async () => {
@@ -46,6 +47,7 @@ export async function runJob({ config, url, platform, signal }) {
           pathname: `sources/${platform}/${meta.id}.mp4`,
           file: mp4,
           contentType: 'video/mp4',
+          signal,
         }),
       );
       const image = thumb
@@ -55,6 +57,7 @@ export async function runJob({ config, url, platform, signal }) {
               pathname: `sources/${platform}/${meta.id}.jpg`,
               file: thumb,
               contentType: 'image/jpeg',
+              signal,
             }),
           )
         : null;

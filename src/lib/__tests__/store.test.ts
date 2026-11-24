@@ -1,6 +1,9 @@
+import { documentAccount } from "../auth/account";
 import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
 import { AppState as AppStateSchema, DEFAULT_STATE, Profile, STATE_SCHEMA_TAG, type AppState, type Pet } from "../schemas";
 import * as store from "../store";
+
+vi.mock("../auth/account", async (orig) => ({ ...(await orig<typeof import("../auth/account")>()), documentAccount: vi.fn(() => null) }));
 
 class MemoryStorage {
   private data = new Map<string, string>();
@@ -974,5 +977,97 @@ describe("store: migrate backfills firstPlannedAt", () => {
     const parsed = AppStateSchema.parse(store.migrate(raw));
     expect(parsed.firstPlannedAt).toBe("2026-11-01T12:00:00.000Z");
     expect(parsed.schema).toBe(11);
+  });
+});
+
+describe("an answer that arrives after another account signed in", () => {
+  const arrived = { ...onboarded, favorites: ["A-private"] };
+
+  it("is dropped, whether it is an update, a whole state or the save after it", async () => {
+    await signIn("user_A", [{ status: 200, json: { revision: 1, state: serverState } }]);
+    const b = await signIn("user_B", [{ status: 200, json: { revision: 1, state: onboarded } }]);
+    store.setAppStateAs("user_A", (prev) => ({ ...prev, favorites: ["A-private"] }));
+    store.setAppStateAs("user_A", arrived);
+    expect(store.saveState(arrived)).toBe(false);
+    await store.flush();
+    expect(store.getSnapshot().state.favorites).toEqual([]);
+    expect(store.getSnapshot().sync.dirty).toBe(false);
+    expect(b.calls.filter((c) => c.method === "PUT")).toEqual([]);
+    expect(storage.keys().map((k) => storage.getItem(k)).filter((v) => v?.includes("A-private"))).toEqual([]);
+  });
+
+  it("is dropped while nobody is signed in", async () => {
+    await signIn("user_A", [{ status: 200, json: { revision: 1, state: onboarded } }]);
+    store.setIdentity(null);
+    store.setAppStateAs("user_A", arrived);
+    expect(store.getSnapshot().state.favorites).toEqual([]);
+    store.setAppStateAs(null, arrived);
+    expect(store.saveState(arrived)).toBe(false);
+    expect(store.getSnapshot().state.favorites).toEqual([]);
+  });
+
+  it("still lands when the same person is there", async () => {
+    await signIn("user_A", [{ status: 200, json: { revision: 1, state: onboarded } }]);
+    store.setIdentity(null);
+    await signIn("user_A", [{ status: 200, json: { revision: 1, state: onboarded } }]);
+    store.setAppStateAs("user_A", (prev) => ({ ...prev, favorites: ["mine"] }));
+    expect(store.getSnapshot().state.favorites).toEqual(["mine"]);
+  });
+});
+
+describe("a refusal meant for the previous account", () => {
+  it("does not sign the new one out", async () => {
+    let answer!: (r: Response) => void;
+    store.configureStore({ fetch: () => new Promise<Response>((r) => { answer = r; }), timers });
+    store.setIdentity("user_A");
+    await settle();
+    const late = answer;
+    await signIn("user_B", [{ status: 200, json: { revision: 1, state: onboarded } }]);
+    late(Response.json({ error: "other_account" }, { status: 403 }));
+    await settle();
+    await settle();
+    expect(store.getIdentity()).toBe("user_B");
+    expect(store.getSnapshot().hydrated).toBe(true);
+  });
+
+  it("nor the same person who came back meanwhile", async () => {
+    let answer!: (r: Response) => void;
+    store.configureStore({ fetch: () => new Promise<Response>((r) => { answer = r; }), timers });
+    store.setIdentity("user_A");
+    await settle();
+    const late = answer;
+    store.setIdentity(null);
+    await signIn("user_A", [{ status: 200, json: { revision: 1, state: onboarded } }]);
+    late(Response.json({ error: "other_account" }, { status: 403 }));
+    await settle();
+    await settle();
+    expect(store.getIdentity()).toBe("user_A");
+  });
+});
+
+describe("a document made for one account", () => {
+  afterEach(() => void vi.mocked(documentAccount).mockReturnValue(null));
+
+  it("never asks for anybody else's data, and says who is there", async () => {
+    await signIn("user_B", [{ status: 200, json: { revision: 1, state: onboarded } }]); // leaves B's copy on the device
+    expect(store.setOfflineIdentity("user_B")).toBe(true);
+    const a = await signIn("user_A", [{ status: 200, json: { revision: 1, state: onboarded } }]);
+    vi.mocked(documentAccount).mockReturnValue("user_A");
+    const calls = a.calls.length;
+    store.setIdentity("user_B");
+    await settle();
+    expect(store.getIdentity()).toBeNull();
+    expect(store.getForeign()).toBe("user_B");
+    expect(a.calls.length).toBe(calls);
+    expect(store.setOfflineIdentity("user_B")).toBe(false);
+    store.setIdentity("user_A");
+    expect(store.getForeign()).toBeNull();
+    expect(store.getIdentity()).toBe("user_A");
+  });
+
+  it("a person signed out is nobody else", () => {
+    vi.mocked(documentAccount).mockReturnValue("user_A");
+    store.setIdentity(null);
+    expect(store.getForeign()).toBeNull();
   });
 });

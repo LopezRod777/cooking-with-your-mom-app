@@ -1,8 +1,10 @@
 import { beforeEach, describe, expect, it, vi } from "vitest";
 import { requireUser } from "../auth/requireUser";
-import { generateDrinkImage } from "../images/dish";
+import { AiQuotaError, quotaExceededResponse, reserveAiQuota } from "../ai/dailyQuota";
+import { generateDrinkImage, generatePetBowlImage } from "../images/dish";
 import { drinkImageKey, drinkImagePrompt } from "../pairings/imagePrompt";
 import { VOCAB } from "../pairings/vocab";
+import bowls from "../../../data/pet-bowls.json";
 import { POST } from "../../app/api/dish-image/route";
 
 vi.mock("../auth/requireUser", () => ({ requireUser: vi.fn(), isAdminEmail: vi.fn(() => false) }));
@@ -14,6 +16,7 @@ vi.mock("../images/dish", () => ({
   generateDrinkImage: vi.fn(async (styleId: string) => ({ url: `https://blob.test/${styleId}.jpg`, cached: true, ms: 0 })),
 }));
 
+const BOWL_ID = bowls.dog[0].id;
 const ALL_IDS = [...VOCAB.wines.map((w) => w.id), ...VOCAB.others.map((o) => o.id), ...VOCAB.zeroProof.map((z) => z.id)];
 
 const post = (body: unknown) =>
@@ -94,6 +97,19 @@ describe("POST /api/dish-image with kind pairing-drink", () => {
 
   it("answers 400 for an empty styleId", async () => {
     expect((await post({ kind: "pairing-drink", styleId: "" })).status).toBe(400);
+  });
+
+  it("hands the daily cap to drink and bowl photos, and answers the quota response when it is spent", async () => {
+    vi.mocked(quotaExceededResponse).mockImplementation(() => Response.json({ error: "quota" }, { status: 429 }));
+    await post({ kind: "pairing-drink", styleId: "dry-riesling" });
+    const reserve = vi.mocked(generateDrinkImage).mock.calls[0][1];
+    await reserve!();
+    expect(reserveAiQuota).toHaveBeenCalledWith("user_A", "dish-image");
+    vi.mocked(generateDrinkImage).mockRejectedValueOnce(new AiQuotaError());
+    expect((await post({ kind: "pairing-drink", styleId: "dry-riesling" })).status).toBe(429);
+    vi.mocked(generatePetBowlImage).mockRejectedValueOnce(new AiQuotaError());
+    expect((await post({ kind: "pet-bowl", bowlId: BOWL_ID })).status).toBe(429);
+    expect(vi.mocked(generatePetBowlImage).mock.calls[0][2]).toBeTypeOf("function");
   });
 
   it("returns the auth Response and generates nothing when the user is not signed in", async () => {

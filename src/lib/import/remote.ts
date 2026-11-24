@@ -3,8 +3,8 @@
 import { z } from "zod";
 import { hasQuantity } from "./lookup";
 
-export const REMOTE_TIMEOUT_MS = 90_000;
-export const BUSY_RETRY_MS = 8_000;
+// The service lets a job wait 60 s in line and work for 90; a little over that so its own answer gets here.
+export const REMOTE_TIMEOUT_MS = 155_000;
 export const NO_RECIPE_MIN_CHARS = 40;
 
 // Loose on purpose: every field is optional or nullable, so a new or missing field never breaks an import.
@@ -61,7 +61,7 @@ export type RemoteExtract = RemoteOk | RemoteFail;
 type Deps = {
   env?: Record<string, string | undefined>;
   fetch?: typeof fetch;
-  sleep?: (ms: number) => Promise<void>;
+  signal?: AbortSignal;
 };
 
 const trimmed = (v: string | null | undefined): string | undefined => {
@@ -119,6 +119,7 @@ async function callOnce(
   secret: string,
   url: string,
   doFetch: typeof fetch,
+  signal: AbortSignal | undefined,
 ): Promise<RemoteExtract> {
   let res: Response;
   try {
@@ -126,7 +127,7 @@ async function callOnce(
       method: "POST",
       headers: { Authorization: `Bearer ${secret}`, "Content-Type": "application/json" },
       body: JSON.stringify({ url }),
-      signal: AbortSignal.timeout(REMOTE_TIMEOUT_MS),
+      signal: signal ? AbortSignal.any([signal, AbortSignal.timeout(REMOTE_TIMEOUT_MS)]) : AbortSignal.timeout(REMOTE_TIMEOUT_MS),
       cache: "no-store",
     });
   } catch (err) {
@@ -147,7 +148,8 @@ async function callOnce(
   return normalize(body, url);
 }
 
-// Calls POST {EXTRACT_URL}/extract. One retry after 8 s when the service answers busy (429).
+// Calls POST {EXTRACT_URL}/extract. `busy` means its line is full or the wait ran out: no retry here. `signal` (the person
+// left) hangs up, and the service drops the job.
 export async function remoteExtract(url: string, deps: Deps = {}): Promise<RemoteExtract | null> {
   const env = deps.env ?? process.env;
   const base = trimmed(env.EXTRACT_URL);
@@ -156,12 +158,7 @@ export async function remoteExtract(url: string, deps: Deps = {}): Promise<Remot
 
   const endpoint = `${base.replace(/\/+$/, "")}/extract`;
   const doFetch = deps.fetch ?? fetch;
-  const sleep = deps.sleep ?? ((ms: number) => new Promise<void>((r) => setTimeout(r, ms)));
-
-  const first = await callOnce(endpoint, secret, url, doFetch);
-  if (first.ok || first.reason !== "busy") return first;
-  await sleep(BUSY_RETRY_MS);
-  return callOnce(endpoint, secret, url, doFetch);
+  return callOnce(endpoint, secret, url, doFetch, deps.signal);
 }
 
 // The service answered, but the video holds no recipe: no ingredients, no steps, and only short

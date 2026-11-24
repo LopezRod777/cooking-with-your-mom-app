@@ -3,11 +3,14 @@ import crypto from 'node:crypto';
 import { chmodSync, readFileSync, rmSync } from 'node:fs';
 import { pathToFileURL } from 'node:url';
 import { validateUrl } from './lib/url.mjs';
-import { JobLock } from './lib/lock.mjs';
+import { JobQueue } from './lib/lock.mjs';
 import { JobError } from './lib/errors.mjs';
 import { runJob as defaultRunJob } from './lib/pipeline.mjs';
 
-export const TOTAL_TIMEOUT_MS = 150_000;
+// The app waits 155 s in all: 60 in line plus 90 working, so a job that got its turn last still has time to answer.
+export const TOTAL_TIMEOUT_MS = 90_000;
+// A slot is only given back when the job really ended. One that ignores its abort this long would hold the slot for good.
+export const STUCK_AFTER_ABORT_MS = 60_000;
 const MAX_BODY_BYTES = 64 * 1024;
 
 const VERSION = JSON.parse(readFileSync(new URL('./package.json', import.meta.url), 'utf8')).version;
@@ -51,8 +54,21 @@ async function readBody(req) {
   return Buffer.concat(chunks).toString('utf8');
 }
 
-// Crea el servidor. Las dependencias (runJob, lock) se inyectan para las pruebas.
-export function createServer({ config, runJob = defaultRunJob, lock = new JobLock(), log = console.log } = {}) {
+// Un trabajo que no termina ni abortado: systemd reinicia el servicio y mata a sus procesos hijos.
+function restart() {
+  process.exit(1);
+}
+
+// Crea el servidor. Las dependencias se inyectan para las pruebas.
+export function createServer({
+  config,
+  runJob = defaultRunJob,
+  lock = new JobQueue(),
+  log = console.log,
+  totalMs = TOTAL_TIMEOUT_MS,
+  stuckMs = STUCK_AFTER_ABORT_MS,
+  onStuck = restart,
+} = {}) {
   const logJob = (fields) => log(JSON.stringify({ ts: new Date().toISOString(), ...fields }));
 
   async function handleExtract(req, res) {
@@ -74,33 +90,55 @@ export function createServer({ config, runJob = defaultRunJob, lock = new JobLoc
     const v = validateUrl(body?.url);
     if (!v.ok) return send(res, 400, { ok: false, reason: v.reason });
 
-    if (!lock.tryAcquire()) return send(res, 429, { ok: false, reason: 'busy' });
-
+    // Cancelled when the job runs out of time or the caller hangs up (in line or while it works).
     const ctl = new AbortController();
-    let timer;
-    const deadline = new Promise((_, reject) => {
-      timer = setTimeout(() => {
-        const e = new JobError('timeout', 504, `supero ${TOTAL_TIMEOUT_MS / 1000} s`);
-        ctl.abort(e);
-        reject(e);
-      }, TOTAL_TIMEOUT_MS);
+    let stop;
+    const stopped = new Promise((_, reject) => {
+      stop = (err) => {
+        ctl.abort(err);
+        reject(err);
+      };
     });
-    deadline.catch(() => {});
+    stopped.catch(() => {});
+    const onClose = () => {
+      if (!res.writableEnded) stop(new JobError('aborted', 499));
+    };
+    res.on('close', onClose);
+    if (res.destroyed) onClose();
 
+    let timer;
+    let waitMs = 0;
     try {
-      const result = await Promise.race([
-        runJob({ config, url: v.url, platform: v.platform, signal: ctl.signal }),
-        deadline,
-      ]);
-      logJob({ route: '/extract', platform: v.platform, host: new URL(v.url).host, ok: true, id: result.id, totalMs: Date.now() - started, timings: result.timings });
+      const release = await lock.acquire(ctl.signal);
+      waitMs = Date.now() - started;
+      timer = setTimeout(() => stop(new JobError('timeout', 504, `supero ${totalMs / 1000} s`)), totalMs);
+      const job = (async () => runJob({ config, url: v.url, platform: v.platform, signal: ctl.signal }))();
+      let stuck;
+      const watch = () => {
+        stuck = setTimeout(() => {
+          logJob({ route: '/extract', ok: false, reason: 'stuck', totalMs: Date.now() - started });
+          onStuck();
+        }, stuckMs);
+      };
+      ctl.signal.addEventListener('abort', watch, { once: true });
+      const ended = () => {
+        ctl.signal.removeEventListener('abort', watch);
+        clearTimeout(stuck);
+        release();
+      };
+      job.then(ended, ended);
+      const result = await Promise.race([job, stopped]);
+      logJob({ route: '/extract', platform: v.platform, host: new URL(v.url).host, ok: true, id: result.id, totalMs: Date.now() - started, waitMs, timings: result.timings });
       return send(res, 200, { ok: true, ...result });
     } catch (err) {
       const jobErr = err instanceof JobError ? err : new JobError('internal', 500, String(err?.message ?? err).slice(0, 300));
-      logJob({ route: '/extract', platform: v.platform, host: new URL(v.url).host, ok: false, reason: jobErr.reason, detail: jobErr.detail.slice(0, 300), totalMs: Date.now() - started });
-      return send(res, jobErr.status, { ok: false, reason: jobErr.reason, detail: jobErr.detail.slice(0, 300) });
+      logJob({ route: '/extract', platform: v.platform, host: new URL(v.url).host, ok: false, reason: jobErr.reason, detail: jobErr.detail.slice(0, 300), totalMs: Date.now() - started, waitMs });
+      if (res.destroyed) return undefined;
+      // Busy carries no detail, as before.
+      return send(res, jobErr.status, jobErr.reason === 'busy' ? { ok: false, reason: 'busy' } : { ok: false, reason: jobErr.reason, detail: jobErr.detail.slice(0, 300) });
     } finally {
       clearTimeout(timer);
-      lock.release();
+      res.off('close', onClose);
     }
   }
 
@@ -108,7 +146,7 @@ export function createServer({ config, runJob = defaultRunJob, lock = new JobLoc
     try {
       const path = new URL(req.url || '/', 'http://x').pathname;
       if (req.method === 'GET' && path === '/health') {
-        return send(res, 200, { ok: true, version: VERSION, busy: lock.busy });
+        return send(res, 200, { ok: true, version: VERSION, busy: lock.busy, running: lock.running, waiting: lock.waiting });
       }
       if (req.method === 'POST' && path === '/extract') {
         return await handleExtract(req, res);

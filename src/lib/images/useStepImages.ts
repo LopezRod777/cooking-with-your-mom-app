@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useSyncExternalStore, type Dispatch, type SetStateAction } from "react";
+import { getIdentity } from "../store";
 import { isOfflineNow } from "../offline/useOffline";
 import type { AppState, Recipe } from "../schemas";
 
@@ -36,11 +37,12 @@ function bump() { version++; for (const l of listeners) l(); }
 export function useStepImages(recipe: Recipe | undefined, enabled: boolean, setState: Dispatch<SetStateAction<AppState>>): StepPhotoStatus {
   useSyncExternalStore(subscribe, getVersion, getVersion);
   const id = recipe?.id;
+  const key = `${getIdentity()}:${id}`; // a failure of one account says nothing about another's
   const next = recipe ? recipe.steps.findIndex((s) => !s.imageUrl) : -1;
   const text = recipe && next >= 0 ? recipe.steps[next].text : "";
   useEffect(() => {
-    if (!enabled || !id || next < 0 || failed.has(id) || inFlight.has(id) || isOfflineNow()) return;
-    inFlight.add(id);
+    if (!enabled || !id || next < 0 || failed.has(key) || inFlight.has(key) || isOfflineNow()) return;
+    inFlight.add(key);
     (async () => {
       try {
         const res = await fetch("/api/step-image", { method: "POST", headers: { "content-type": "application/json" }, body: JSON.stringify({ recipeId: id, step: next }) });
@@ -50,12 +52,12 @@ export function useStepImages(recipe: Recipe | undefined, enabled: boolean, setS
         // Always applied: the state is global, so a mount that left and came back sees the photo land.
         setState((prev) => withStepUrl(prev, id, next, text, url));
       } catch {
-        failed.add(id);
+        failed.add(key);
       } finally {
-        inFlight.delete(id);
+        inFlight.delete(key);
         bump();
       }
     })();
-  }, [enabled, id, next, text, setState]);
-  return id && (failed.has(id) || isOfflineNow()) ? "failed" : "pending";
+  }, [enabled, id, key, next, text, setState]);
+  return id && (failed.has(key) || isOfflineNow()) ? "failed" : "pending";
 }

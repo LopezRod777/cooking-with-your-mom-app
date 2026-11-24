@@ -108,3 +108,8 @@ h1, h2, h3, h4, h5, h6 {
 .font-hand {
   font-family: var(--font-hand);
 }
+
+/* AccountScope: while this tab does not know whose it is, nothing of anyone is on screen. */
+html[data-account-away] body > :not([data-account-note]) {
+  display: none !important;
+}

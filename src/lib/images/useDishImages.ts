@@ -3,13 +3,17 @@
 import { useEffect, type Dispatch, type SetStateAction } from "react";
 import { isOfflineNow } from "../offline/useOffline";
 import type { AppState, Recipe } from "../schemas";
+import { getIdentity } from "../store";
 
 // Module-level so every page shares one queue and one in-flight set.
 const CONCURRENCY = 3;
 const inFlight = new Set<string>();
 const failed = new Set<string>();
 
-type Job = { recipe: Recipe; setState: Dispatch<SetStateAction<AppState>> };
+// Keyed by account too: one person's queue never asks, fails or blocks for another.
+const keyOf = (owner: string | null, recipeId: string) => `${owner}:${recipeId}`;
+
+type Job = { owner: string | null; recipe: Recipe; setState: Dispatch<SetStateAction<AppState>> };
 const queue: Job[] = [];
 let running = 0;
 
@@ -36,8 +40,10 @@ function withImageUrl(prev: AppState, id: string, url: string): AppState {
   };
 }
 
-async function run({ recipe, setState }: Job): Promise<void> {
+async function run({ owner, recipe, setState }: Job): Promise<void> {
+  const key = keyOf(owner, recipe.id);
   try {
+    if (owner !== getIdentity()) return; // someone else took this tab: that recipe is not theirs to ask for
     const res = await fetch("/api/dish-image", {
       method: "POST",
       headers: { "content-type": "application/json" },
@@ -49,9 +55,9 @@ async function run({ recipe, setState }: Job): Promise<void> {
     setState((prev) => withImageUrl(prev, recipe.id, url));
   } catch {
     // Keep the category photo. Not retried until the next page load.
-    failed.add(recipe.id);
+    failed.add(key);
   } finally {
-    inFlight.delete(recipe.id);
+    inFlight.delete(key);
   }
 }
 
@@ -77,13 +83,14 @@ export function useDishImages(
 
   useEffect(() => {
     if (!hydrated || isOfflineNow()) return;
+    const owner = getIdentity();
     const todo = new Map<string, Recipe>();
     for (const r of [...Object.values(plan?.recipes ?? {}), ...Object.values(favorites)]) {
-      if (needsDishImage(r) && !inFlight.has(r.id) && !failed.has(r.id)) todo.set(r.id, r);
+      if (needsDishImage(r) && !inFlight.has(keyOf(owner, r.id)) && !failed.has(keyOf(owner, r.id))) todo.set(r.id, r);
     }
     for (const recipe of todo.values()) {
-      inFlight.add(recipe.id);
-      queue.push({ recipe, setState });
+      inFlight.add(keyOf(owner, recipe.id));
+      queue.push({ owner, recipe, setState });
     }
     pump();
   }, [plan, favorites, hydrated, setState]);

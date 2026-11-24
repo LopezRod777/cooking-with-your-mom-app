@@ -1,15 +1,19 @@
 import { spawn } from 'node:child_process';
 
-// Ejecuta un binario sin shell. Mata el proceso si vence el timeout o si se aborta la señal.
+// Ejecuta un binario sin shell, en su propio grupo: al vencer el timeout o abortarse la señal se mata el grupo entero
+// (yt-dlp lanza ffmpeg) y la promesa se rechaza hasta que el proceso cerró de verdad.
 // Resuelve { stdout, stderr } si sale con 0; si no, rechaza con err.code ('exit' | 'timeout' | 'aborted' | 'output_too_big').
 export function run(bin, args, { timeoutMs, signal, maxBytes = 64 * 1024 * 1024 } = {}) {
+  // Nothing is started for a job that was already cancelled.
+  if (signal?.aborted) return Promise.reject(Object.assign(new Error(`${bin} aborted`), { code: 'aborted' }));
   return new Promise((resolve, reject) => {
-    const child = spawn(bin, args, { stdio: ['ignore', 'pipe', 'pipe'] });
+    const child = spawn(bin, args, { stdio: ['ignore', 'pipe', 'pipe'], detached: true });
     const out = [];
     const err = [];
     let size = 0;
     let done = false;
     let timer = null;
+    let killed = null;
 
     const finish = (error, value) => {
       if (done) return;
@@ -20,15 +24,14 @@ export function run(bin, args, { timeoutMs, signal, maxBytes = 64 * 1024 * 1024 
       else resolve(value);
     };
     const kill = (code) => {
-      try { child.kill('SIGKILL'); } catch { /* ya terminó */ }
-      const e = new Error(`${bin} ${code}`);
-      e.code = code;
-      finish(e);
+      if (killed) return;
+      killed = new Error(`${bin} ${code}`);
+      killed.code = code;
+      try { process.kill(-child.pid, 'SIGKILL'); } catch { /* ya terminó */ }
     };
     const onAbort = () => kill('aborted');
 
     if (timeoutMs) timer = setTimeout(() => kill('timeout'), timeoutMs);
-    if (signal?.aborted) return kill('aborted');
     signal?.addEventListener('abort', onAbort, { once: true });
 
     child.stdout.on('data', (chunk) => {
@@ -37,8 +40,9 @@ export function run(bin, args, { timeoutMs, signal, maxBytes = 64 * 1024 * 1024 
       out.push(chunk);
     });
     child.stderr.on('data', (chunk) => err.push(chunk));
-    child.on('error', (e) => finish(e));
+    child.on('error', (e) => finish(killed ?? e));
     child.on('close', (code) => {
+      if (killed) return finish(killed);
       const stdout = Buffer.concat(out).toString('utf8');
       const stderr = Buffer.concat(err).toString('utf8');
       if (code === 0) return finish(null, { stdout, stderr });

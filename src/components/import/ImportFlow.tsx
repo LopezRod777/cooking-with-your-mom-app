@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { useRef, useState, type FormEvent } from "react";
+import { useEffect, useRef, useState, type FormEvent } from "react";
 import { z } from "zod";
 import { Button } from "@/components/ui/Button";
 import { ChoiceTile } from "@/components/ui/Choice";
@@ -40,6 +40,8 @@ const ImportResponse = z.union([
 ]);
 
 const NEEDS_TEXT_COPY = "That site won't let Mama in. Paste the caption or recipe text and she'll do the rest.";
+const BUSY_COPY = "Mama's hands are full right now. Try that link again in a minute, or paste the recipe.";
+const SLOW_AFTER_MS = 45_000;
 const NO_RECIPE_COPY = "I watched it, but there's no recipe in there. Paste it if you have it.";
 
 type Phase =
@@ -129,6 +131,26 @@ export function ImportFlow({ onSaved }: { onSaved?: (recipeId: string) => void }
   const [forIds, setForIds] = useState<string[] | null>(null);
   // Bumped on every read, retable and start-over: a version that arrives late for an older request is dropped.
   const run = useRef(0);
+  const asking = useRef<AbortController | null>(null);
+  // Leaving the screen hangs up, so the video line does not keep working for nobody.
+  useEffect(
+    () => () => {
+      run.current++;
+      asking.current?.abort();
+    },
+    [],
+  );
+
+  const [slow, setSlow] = useState(false);
+  const waiting = phase.kind === "waiting";
+  useEffect(() => {
+    if (!waiting) return;
+    const timer = setTimeout(() => setSlow(true), SLOW_AFTER_MS);
+    return () => {
+      clearTimeout(timer);
+      setSlow(false);
+    };
+  }, [waiting]);
 
   if (!hydrated) return null;
 
@@ -184,10 +206,14 @@ export function ImportFlow({ onSaved }: { onSaved?: (recipeId: string) => void }
   }
 
   async function read(body: { url?: string; text?: string }) {
-    run.current++;
+    const mineRun = ++run.current;
+    asking.current?.abort();
+    const ctl = new AbortController();
+    asking.current = ctl;
     setPhase({ kind: "waiting", step: "reading" });
     try {
-      const data = await postJson("/api/import", { ...body, profile: state.profile });
+      const data = await postJson("/api/import", { ...body, profile: state.profile }, ctl.signal);
+      if (run.current !== mineRun) return;
       const parsed = ImportResponse.safeParse(data);
       if (!parsed.success) throw new Error("Mama's recipe came back a little wrong.");
       if ("recipe" in parsed.data) {
@@ -211,8 +237,9 @@ export function ImportFlow({ onSaved }: { onSaved?: (recipeId: string) => void }
             }
           : undefined;
       setShowText(true);
-      setPhase({ kind: "needsText", message: noRecipe ? NO_RECIPE_COPY : undefined, video });
+      setPhase({ kind: "needsText", message: noRecipe ? NO_RECIPE_COPY : res.reason === "busy" ? BUSY_COPY : undefined, video });
     } catch (err) {
+      if (run.current !== mineRun) return;
       setShowText(true);
       setPhase({ kind: "needsText", message: err instanceof Error ? err.message : "Something went wrong." });
     }
@@ -272,6 +299,7 @@ export function ImportFlow({ onSaved }: { onSaved?: (recipeId: string) => void }
             {phase.step === "reading" ? "Mama is reading… give her a few seconds." : "Mama is fixing it for your table…"}
           </StickyNote>
           <ChoppingLoader label={phase.step === "reading" ? "Reading the recipe" : "Fixing it for your table"} />
+          {slow && <p className="text-[18px] text-muted">Still on it. It takes longer when other people are importing too.</p>}
         </div>
       ) : (
         <>
