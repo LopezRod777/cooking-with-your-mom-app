@@ -1,0 +1,2552 @@
+{
+  "wines": [
+    {
+      "id": "dry-riesling",
+      "name": "Dry Riesling",
+      "searchTerm": "riesling",
+      "color": "white",
+      "body": "light",
+      "sweetness": "dry",
+      "grapes": [
+        "riesling"
+      ],
+      "regions": [
+        "mosel",
+        "alsace",
+        "finger-lakes"
+      ],
+      "serveTempF": [
+        44,
+        50
+      ],
+      "blurb": "Crisp and high in acid, with citrus and stone-fruit notes; it cuts rich and spicy food well."
+    },
+    {
+      "id": "off-dry-riesling",
+      "name": "Off-Dry Riesling",
+      "searchTerm": "riesling",
+      "color": "white",
+      "body": "light",
+      "sweetness": "off-dry",
+      "grapes": [
+        "riesling"
+      ],
+      "regions": [
+        "mosel",
+        "finger-lakes"
+      ],
+      "serveTempF": [
+        44,
+        50
+      ],
+      "blurb": "A bright white with a touch of sweetness that balances heat and salt."
+    },
+    {
+      "id": "sauvignon-blanc",
+      "name": "Sauvignon Blanc",
+      "color": "white",
+      "body": "light",
+      "sweetness": "dry",
+      "grapes": [
+        "sauvignon-blanc"
+      ],
+      "regions": [
+        "loire",
+        "marlborough"
+      ],
+      "serveTempF": [
+        45,
+        50
+      ],
+      "blurb": "Fresh, herbal and sharp; a good match for green herbs, citrus and goat cheese."
+    },
+    {
+      "id": "unoaked-chardonnay",
+      "name": "Unoaked Chardonnay",
+      "searchTerm": "chardonnay",
+      "color": "white",
+      "body": "medium",
+      "sweetness": "dry",
+      "grapes": [
+        "chardonnay"
+      ],
+      "regions": [
+        "burgundy",
+        "willamette"
+      ],
+      "serveTempF": [
+        46,
+        52
+      ],
+      "blurb": "Medium-bodied and clean, with green apple and mineral notes; it suits lighter fish and poultry."
+    },
+    {
+      "id": "oaked-chardonnay",
+      "name": "Oaked Chardonnay",
+      "searchTerm": "chardonnay",
+      "color": "white",
+      "body": "full",
+      "sweetness": "dry",
+      "grapes": [
+        "chardonnay"
+      ],
+      "regions": [
+        "napa",
+        "burgundy"
+      ],
+      "serveTempF": [
+        50,
+        55
+      ],
+      "blurb": "Full and round, with buttery notes from oak; it fits rich sauces and creamy dishes."
+    },
+    {
+      "id": "pinot-grigio",
+      "name": "Pinot Grigio",
+      "color": "white",
+      "body": "light",
+      "sweetness": "dry",
+      "grapes": [
+        "pinot-gris"
+      ],
+      "regions": [
+        "veneto",
+        "friuli"
+      ],
+      "serveTempF": [
+        45,
+        50
+      ],
+      "blurb": "Light, crisp and simple, with pear and lemon notes for quick, bright dishes."
+    },
+    {
+      "id": "dry-chenin-blanc",
+      "name": "Dry Chenin Blanc",
+      "searchTerm": "chenin blanc",
+      "color": "white",
+      "body": "medium",
+      "sweetness": "dry",
+      "grapes": [
+        "chenin-blanc"
+      ],
+      "regions": [
+        "loire"
+      ],
+      "serveTempF": [
+        46,
+        52
+      ],
+      "blurb": "Medium-bodied, with bright acid and honeyed fruit; a flexible match for mild dishes."
+    },
+    {
+      "id": "gruner-veltliner",
+      "name": "Grüner Veltliner",
+      "color": "white",
+      "body": "light",
+      "sweetness": "dry",
+      "grapes": [
+        "gruner-veltliner"
+      ],
+      "regions": [
+        "wachau"
+      ],
+      "serveTempF": [
+        45,
+        52
+      ],
+      "blurb": "Peppery, crisp and fresh; it works with green vegetables and light, savory dishes."
+    },
+    {
+      "id": "albarino",
+      "name": "Albariño",
+      "color": "white",
+      "body": "light",
+      "sweetness": "dry",
+      "grapes": [
+        "albarino"
+      ],
+      "regions": [
+        "rias-baixas"
+      ],
+      "serveTempF": [
+        45,
+        50
+      ],
+      "blurb": "Saline, citrusy and bright; a natural fit for seafood and shellfish."
+    },
+    {
+      "id": "vermentino",
+      "name": "Vermentino",
+      "color": "white",
+      "body": "light",
+      "sweetness": "dry",
+      "grapes": [
+        "vermentino"
+      ],
+      "regions": [
+        "sardinia",
+        "provence"
+      ],
+      "serveTempF": [
+        45,
+        50
+      ],
+      "blurb": "Light and herbal with a saline edge; good with salads, herbs and grilled seafood."
+    },
+    {
+      "id": "verdejo",
+      "name": "Verdejo",
+      "color": "white",
+      "body": "light",
+      "sweetness": "dry",
+      "grapes": [
+        "verdejo"
+      ],
+      "regions": [
+        "rueda"
+      ],
+      "serveTempF": [
+        45,
+        50
+      ],
+      "blurb": "Fresh, with lime and green herb notes; it suits salads and lightly cooked fish."
+    },
+    {
+      "id": "muscadet",
+      "name": "Muscadet",
+      "color": "white",
+      "body": "light",
+      "sweetness": "dry",
+      "grapes": [
+        "melon-de-bourgogne"
+      ],
+      "regions": [
+        "loire"
+      ],
+      "serveTempF": [
+        44,
+        50
+      ],
+      "blurb": "Very dry, tight and lean; it pairs with raw shellfish and light, briny dishes."
+    },
+    {
+      "id": "viognier",
+      "name": "Viognier",
+      "color": "white",
+      "body": "full",
+      "sweetness": "dry",
+      "grapes": [
+        "viognier"
+      ],
+      "regions": [
+        "rhone"
+      ],
+      "serveTempF": [
+        48,
+        54
+      ],
+      "blurb": "Perfumed and full, with apricot and floral notes; it suits curries and rich, spiced dishes."
+    },
+    {
+      "id": "gewurztraminer",
+      "name": "Gewürztraminer",
+      "color": "white",
+      "body": "full",
+      "sweetness": "off-dry",
+      "grapes": [
+        "gewurztraminer"
+      ],
+      "regions": [
+        "alsace"
+      ],
+      "serveTempF": [
+        48,
+        54
+      ],
+      "blurb": "Aromatic and textured, with lychee and rose notes; it handles spice and mild sweetness."
+    },
+    {
+      "id": "torrontes",
+      "name": "Torrontés",
+      "color": "white",
+      "body": "light",
+      "sweetness": "dry",
+      "grapes": [
+        "torrontes"
+      ],
+      "regions": [
+        "mendoza"
+      ],
+      "serveTempF": [
+        45,
+        50
+      ],
+      "blurb": "Aromatic and floral with a dry finish; a fit for fresh, herbed and citrus-forward dishes."
+    },
+    {
+      "id": "soave",
+      "name": "Soave",
+      "color": "white",
+      "body": "light",
+      "sweetness": "dry",
+      "grapes": [
+        "garganega"
+      ],
+      "regions": [
+        "veneto"
+      ],
+      "serveTempF": [
+        45,
+        50
+      ],
+      "blurb": "Light and nutty, with citrus and almond notes; it suits delicate pasta and white meats."
+    },
+    {
+      "id": "provence-rose",
+      "name": "Provence Rosé",
+      "searchTerm": "rose wine",
+      "color": "rose",
+      "body": "light",
+      "sweetness": "dry",
+      "grapes": [
+        "grenache",
+        "mourvedre"
+      ],
+      "regions": [
+        "provence"
+      ],
+      "serveTempF": [
+        45,
+        52
+      ],
+      "blurb": "Pale, dry and fresh, with red-berry notes; it works across a wide range of light dishes."
+    },
+    {
+      "id": "orange-wine",
+      "name": "Orange Wine",
+      "color": "orange",
+      "body": "medium",
+      "sweetness": "dry",
+      "grapes": [
+        "pinot-gris"
+      ],
+      "regions": [
+        "friuli"
+      ],
+      "serveTempF": [
+        52,
+        58
+      ],
+      "blurb": "White grapes fermented with their skins, giving texture and savory notes; it suits hearty vegetables."
+    },
+    {
+      "id": "prosecco",
+      "name": "Prosecco",
+      "color": "sparkling",
+      "body": "light",
+      "sweetness": "dry",
+      "grapes": [
+        "glera"
+      ],
+      "regions": [
+        "veneto"
+      ],
+      "serveTempF": [
+        40,
+        48
+      ],
+      "blurb": "Light and fruity, with apple and pear notes; an easy match for fried and salty snacks."
+    },
+    {
+      "id": "cava",
+      "name": "Cava",
+      "color": "sparkling",
+      "body": "light",
+      "sweetness": "dry",
+      "grapes": [
+        "macabeo",
+        "xarel-lo",
+        "chardonnay"
+      ],
+      "regions": [
+        "penedes"
+      ],
+      "serveTempF": [
+        40,
+        48
+      ],
+      "blurb": "Dry Spanish sparkling wine with citrus and bready notes; it fits tapas and fried food."
+    },
+    {
+      "id": "blanc-de-blancs",
+      "name": "Blanc de Blancs",
+      "color": "sparkling",
+      "body": "medium",
+      "sweetness": "dry",
+      "grapes": [
+        "chardonnay"
+      ],
+      "regions": [
+        "champagne"
+      ],
+      "serveTempF": [
+        42,
+        48
+      ],
+      "blurb": "Made only from white grapes, with fine bubbles and toasty notes; good with creamy and salty food."
+    },
+    {
+      "id": "blanc-de-noirs",
+      "name": "Blanc de Noirs",
+      "searchTerm": "sparkling wine",
+      "color": "sparkling",
+      "body": "full",
+      "sweetness": "dry",
+      "grapes": [
+        "pinot-noir",
+        "pinot-meunier"
+      ],
+      "regions": [
+        "champagne"
+      ],
+      "serveTempF": [
+        42,
+        50
+      ],
+      "blurb": "Sparkling wine from red grapes, with more body and red-fruit notes; it suits roast and fried dishes."
+    },
+    {
+      "id": "demi-sec-sparkling",
+      "name": "Demi-Sec Sparkling",
+      "color": "sparkling",
+      "body": "light",
+      "sweetness": "sweet",
+      "grapes": [
+        "chardonnay",
+        "pinot-meunier"
+      ],
+      "regions": [
+        "champagne"
+      ],
+      "serveTempF": [
+        40,
+        46
+      ],
+      "blurb": "Sparkling and sweet; a match for fruit desserts and salty-sweet dishes."
+    },
+    {
+      "id": "moscato-dasti",
+      "name": "Moscato d'Asti",
+      "searchTerm": "moscato",
+      "color": "white",
+      "body": "light",
+      "sweetness": "sweet",
+      "grapes": [
+        "muscat"
+      ],
+      "regions": [
+        "piedmont"
+      ],
+      "serveTempF": [
+        40,
+        46
+      ],
+      "blurb": "Lightly fizzy and sweet, with peach and orange-blossom notes; it suits fruit and light pastry."
+    },
+    {
+      "id": "sauternes",
+      "name": "Sauternes",
+      "color": "white",
+      "body": "full",
+      "sweetness": "sweet",
+      "grapes": [
+        "semillon",
+        "sauvignon-blanc"
+      ],
+      "regions": [
+        "bordeaux"
+      ],
+      "serveTempF": [
+        45,
+        50
+      ],
+      "blurb": "Rich and sweet, with honey and apricot notes; it pairs with rich desserts and blue cheese."
+    },
+    {
+      "id": "late-harvest-riesling",
+      "name": "Late-Harvest Riesling",
+      "color": "white",
+      "body": "medium",
+      "sweetness": "sweet",
+      "grapes": [
+        "riesling"
+      ],
+      "regions": [
+        "mosel",
+        "rheingau"
+      ],
+      "serveTempF": [
+        44,
+        50
+      ],
+      "blurb": "Sweet and bright, with enough acid to balance the sugar; it suits fruit tarts and spiced desserts."
+    },
+    {
+      "id": "tokaji-aszu",
+      "name": "Tokaji Aszú",
+      "searchTerm": "tokaji",
+      "color": "white",
+      "body": "medium",
+      "sweetness": "sweet",
+      "grapes": [
+        "furmint"
+      ],
+      "regions": [
+        "tokaj"
+      ],
+      "serveTempF": [
+        44,
+        50
+      ],
+      "blurb": "Honeyed, sweet and tangy from botrytized grapes; it suits fruit desserts and rich cheese."
+    },
+    {
+      "id": "tawny-port",
+      "name": "Tawny Port",
+      "color": "red",
+      "body": "full",
+      "sweetness": "sweet",
+      "grapes": [
+        "touriga-nacional"
+      ],
+      "regions": [
+        "douro"
+      ],
+      "serveTempF": [
+        55,
+        60
+      ],
+      "blurb": "Fortified and sweet, with nutty and dried-fruit notes; it works with caramel desserts and hard cheese."
+    },
+    {
+      "id": "fino-sherry",
+      "name": "Fino Sherry",
+      "color": "white",
+      "body": "light",
+      "sweetness": "dry",
+      "grapes": [
+        "palomino"
+      ],
+      "regions": [
+        "jerez"
+      ],
+      "serveTempF": [
+        44,
+        50
+      ],
+      "blurb": "Dry, pale and saline, with almond notes; it suits olives, nuts and cured meats."
+    },
+    {
+      "id": "pedro-ximenez",
+      "name": "Pedro Ximénez Sherry",
+      "color": "red",
+      "body": "full",
+      "sweetness": "sweet",
+      "grapes": [
+        "pedro-ximenez"
+      ],
+      "regions": [
+        "jerez"
+      ],
+      "serveTempF": [
+        50,
+        55
+      ],
+      "blurb": "Dark, very sweet and raisiny; it pairs with dark chocolate and vanilla desserts."
+    },
+    {
+      "id": "gamay-beaujolais",
+      "name": "Gamay (Beaujolais)",
+      "searchTerm": "beaujolais",
+      "color": "red",
+      "body": "light",
+      "sweetness": "dry",
+      "grapes": [
+        "gamay"
+      ],
+      "regions": [
+        "beaujolais"
+      ],
+      "serveTempF": [
+        55,
+        60
+      ],
+      "blurb": "Juicy and light, with berry and floral notes; it suits chicken, salads and mild pork."
+    },
+    {
+      "id": "pinot-noir",
+      "name": "Pinot Noir",
+      "color": "red",
+      "body": "light",
+      "sweetness": "dry",
+      "grapes": [
+        "pinot-noir"
+      ],
+      "regions": [
+        "burgundy",
+        "willamette"
+      ],
+      "serveTempF": [
+        55,
+        60
+      ],
+      "blurb": "Light-bodied and silky, with red-fruit and earthy notes; it suits salmon, mushrooms and roast poultry."
+    },
+    {
+      "id": "dolcetto",
+      "name": "Dolcetto",
+      "color": "red",
+      "body": "light",
+      "sweetness": "dry",
+      "grapes": [
+        "dolcetto"
+      ],
+      "regions": [
+        "piedmont"
+      ],
+      "serveTempF": [
+        56,
+        62
+      ],
+      "blurb": "Soft and dry, with plum and almond notes; it suits cured meats and everyday pasta."
+    },
+    {
+      "id": "valpolicella",
+      "name": "Valpolicella",
+      "color": "red",
+      "body": "light",
+      "sweetness": "dry",
+      "grapes": [
+        "corvina"
+      ],
+      "regions": [
+        "veneto"
+      ],
+      "serveTempF": [
+        55,
+        60
+      ],
+      "blurb": "Light and cherry-toned with bright acid; it suits tomato sauces and cured meats."
+    },
+    {
+      "id": "chianti",
+      "name": "Chianti",
+      "color": "red",
+      "body": "medium",
+      "sweetness": "dry",
+      "grapes": [
+        "sangiovese"
+      ],
+      "regions": [
+        "tuscany"
+      ],
+      "serveTempF": [
+        56,
+        62
+      ],
+      "blurb": "Medium-bodied and tart, with cherry and herb notes; a classic match for tomato and grilled meat."
+    },
+    {
+      "id": "rioja",
+      "name": "Rioja",
+      "color": "red",
+      "body": "medium",
+      "sweetness": "dry",
+      "grapes": [
+        "tempranillo",
+        "grenache"
+      ],
+      "regions": [
+        "rioja"
+      ],
+      "serveTempF": [
+        58,
+        64
+      ],
+      "blurb": "Medium-bodied, with red fruit, vanilla and leather notes; it suits roast meat and grilled vegetables."
+    },
+    {
+      "id": "merlot",
+      "name": "Merlot",
+      "color": "red",
+      "body": "medium",
+      "sweetness": "dry",
+      "grapes": [
+        "merlot"
+      ],
+      "regions": [
+        "bordeaux",
+        "sonoma"
+      ],
+      "serveTempF": [
+        58,
+        64
+      ],
+      "blurb": "Soft and plummy with moderate tannin; it suits roast chicken and mushroom dishes."
+    },
+    {
+      "id": "grenache-blend",
+      "name": "Grenache Blend",
+      "searchTerm": "grenache",
+      "color": "red",
+      "body": "medium",
+      "sweetness": "dry",
+      "grapes": [
+        "grenache",
+        "syrah"
+      ],
+      "regions": [
+        "rhone"
+      ],
+      "serveTempF": [
+        58,
+        64
+      ],
+      "blurb": "Warm and fruity, with spice and herb notes; it fits roasted and herbed meats."
+    },
+    {
+      "id": "barbera",
+      "name": "Barbera",
+      "color": "red",
+      "body": "medium",
+      "sweetness": "dry",
+      "grapes": [
+        "barbera"
+      ],
+      "regions": [
+        "piedmont"
+      ],
+      "serveTempF": [
+        58,
+        62
+      ],
+      "blurb": "High-acid and plummy with low tannin; it suits tomato dishes and fatty pork."
+    },
+    {
+      "id": "zinfandel",
+      "name": "Zinfandel",
+      "color": "red",
+      "body": "full",
+      "sweetness": "dry",
+      "grapes": [
+        "zinfandel"
+      ],
+      "regions": [
+        "paso-robles",
+        "sonoma"
+      ],
+      "serveTempF": [
+        60,
+        65
+      ],
+      "blurb": "Ripe and jammy, with peppery spice notes; it suits barbecue and bold, smoky dishes."
+    },
+    {
+      "id": "cabernet-sauvignon",
+      "name": "Cabernet Sauvignon",
+      "color": "red",
+      "body": "full",
+      "sweetness": "dry",
+      "grapes": [
+        "cabernet-sauvignon"
+      ],
+      "regions": [
+        "napa",
+        "bordeaux"
+      ],
+      "serveTempF": [
+        60,
+        65
+      ],
+      "blurb": "Full and firm, with dark fruit and structured tannin; it suits grilled red meat and hard cheese."
+    },
+    {
+      "id": "bordeaux-blend",
+      "name": "Bordeaux-Style Blend",
+      "searchTerm": "bordeaux",
+      "color": "red",
+      "body": "full",
+      "sweetness": "dry",
+      "grapes": [
+        "merlot",
+        "cabernet-sauvignon",
+        "cabernet-franc"
+      ],
+      "regions": [
+        "bordeaux"
+      ],
+      "serveTempF": [
+        60,
+        65
+      ],
+      "blurb": "A structured blend with dark fruit and firm tannin; it suits roast beef and rich, savory dishes."
+    },
+    {
+      "id": "malbec",
+      "name": "Malbec",
+      "color": "red",
+      "body": "full",
+      "sweetness": "dry",
+      "grapes": [
+        "malbec"
+      ],
+      "regions": [
+        "mendoza"
+      ],
+      "serveTempF": [
+        60,
+        65
+      ],
+      "blurb": "Dark and plummy with soft tannin; it suits grilled beef, sausage and roasted peppers."
+    },
+    {
+      "id": "syrah",
+      "name": "Syrah",
+      "color": "red",
+      "body": "full",
+      "sweetness": "dry",
+      "grapes": [
+        "syrah"
+      ],
+      "regions": [
+        "rhone",
+        "barossa"
+      ],
+      "serveTempF": [
+        60,
+        65
+      ],
+      "blurb": "Dark and peppery with smoky notes; it suits grilled and smoked meats and bold spice."
+    },
+    {
+      "id": "barolo",
+      "name": "Barolo",
+      "color": "red",
+      "body": "full",
+      "sweetness": "dry",
+      "grapes": [
+        "nebbiolo"
+      ],
+      "regions": [
+        "piedmont"
+      ],
+      "serveTempF": [
+        60,
+        65
+      ],
+      "blurb": "Firm and high in tannin, with rose and tar notes; it suits braised beef and aged cheese."
+    },
+    {
+      "id": "brunello",
+      "name": "Brunello di Montalcino",
+      "color": "red",
+      "body": "full",
+      "sweetness": "dry",
+      "grapes": [
+        "sangiovese"
+      ],
+      "regions": [
+        "tuscany"
+      ],
+      "serveTempF": [
+        60,
+        65
+      ],
+      "blurb": "Full, firm Sangiovese with cherry and leather notes; it suits roast game and hearty stews."
+    },
+    {
+      "id": "carmenere",
+      "name": "Carménère",
+      "color": "red",
+      "body": "full",
+      "sweetness": "dry",
+      "grapes": [
+        "carmenere"
+      ],
+      "regions": [
+        "chile-central-valley"
+      ],
+      "serveTempF": [
+        60,
+        64
+      ],
+      "blurb": "Plush and herbal, with dark fruit and pepper notes; it suits roast lamb and grilled vegetables."
+    },
+    {
+      "id": "aglianico",
+      "name": "Aglianico",
+      "color": "red",
+      "body": "full",
+      "sweetness": "dry",
+      "grapes": [
+        "aglianico"
+      ],
+      "regions": [
+        "campania"
+      ],
+      "serveTempF": [
+        60,
+        65
+      ],
+      "blurb": "Deep and firm, with high acid and tannin; it suits rich braises and aged cheese."
+    },
+    {
+      "id": "lambrusco",
+      "name": "Lambrusco",
+      "color": "sparkling",
+      "body": "light",
+      "sweetness": "off-dry",
+      "grapes": [
+        "lambrusco"
+      ],
+      "regions": [
+        "emilia-romagna"
+      ],
+      "serveTempF": [
+        50,
+        57
+      ],
+      "blurb": "Frothy red sparkling wine with cherry and berry notes; a bright match for tomato, cured meat and fried dough."
+    },
+    {
+      "id": "sparkling-rose",
+      "name": "Sparkling Rosé",
+      "color": "sparkling",
+      "body": "light",
+      "sweetness": "dry",
+      "grapes": [
+        "pinot-noir",
+        "chardonnay"
+      ],
+      "regions": [
+        "champagne"
+      ],
+      "serveTempF": [
+        40,
+        48
+      ],
+      "blurb": "Pink, dry bubbles with red-berry and citrus notes; it suits salmon, shellfish and fried snacks."
+    },
+    {
+      "id": "nero-davola",
+      "name": "Nero d'Avola",
+      "color": "red",
+      "body": "medium",
+      "sweetness": "dry",
+      "grapes": [
+        "nero-davola"
+      ],
+      "regions": [
+        "sicily"
+      ],
+      "serveTempF": [
+        58,
+        64
+      ],
+      "blurb": "Ripe, dark-cherry red from Sicily with soft tannin; it suits tomato sauces and grilled sausage."
+    },
+    {
+      "id": "montepulciano-dabruzzo",
+      "name": "Montepulciano d'Abruzzo",
+      "color": "red",
+      "body": "medium",
+      "sweetness": "dry",
+      "grapes": [
+        "montepulciano"
+      ],
+      "regions": [
+        "abruzzo"
+      ],
+      "serveTempF": [
+        58,
+        64
+      ],
+      "blurb": "Plummy and round with soft tannin; it suits pizza, pasta with meat sauce and roast chicken."
+    }
+  ],
+  "grapes": [
+    {
+      "id": "riesling",
+      "name": "Riesling"
+    },
+    {
+      "id": "sauvignon-blanc",
+      "name": "Sauvignon Blanc"
+    },
+    {
+      "id": "chardonnay",
+      "name": "Chardonnay"
+    },
+    {
+      "id": "pinot-gris",
+      "name": "Pinot Gris (Pinot Grigio)"
+    },
+    {
+      "id": "chenin-blanc",
+      "name": "Chenin Blanc"
+    },
+    {
+      "id": "gruner-veltliner",
+      "name": "Grüner Veltliner"
+    },
+    {
+      "id": "albarino",
+      "name": "Albariño"
+    },
+    {
+      "id": "vermentino",
+      "name": "Vermentino"
+    },
+    {
+      "id": "verdejo",
+      "name": "Verdejo"
+    },
+    {
+      "id": "melon-de-bourgogne",
+      "name": "Melon de Bourgogne"
+    },
+    {
+      "id": "viognier",
+      "name": "Viognier"
+    },
+    {
+      "id": "gewurztraminer",
+      "name": "Gewürztraminer"
+    },
+    {
+      "id": "torrontes",
+      "name": "Torrontés"
+    },
+    {
+      "id": "garganega",
+      "name": "Garganega"
+    },
+    {
+      "id": "grenache",
+      "name": "Grenache"
+    },
+    {
+      "id": "mourvedre",
+      "name": "Mourvèdre"
+    },
+    {
+      "id": "glera",
+      "name": "Glera"
+    },
+    {
+      "id": "macabeo",
+      "name": "Macabeo"
+    },
+    {
+      "id": "xarel-lo",
+      "name": "Xarel-lo"
+    },
+    {
+      "id": "pinot-noir",
+      "name": "Pinot Noir"
+    },
+    {
+      "id": "pinot-meunier",
+      "name": "Pinot Meunier"
+    },
+    {
+      "id": "muscat",
+      "name": "Muscat"
+    },
+    {
+      "id": "semillon",
+      "name": "Sémillon"
+    },
+    {
+      "id": "furmint",
+      "name": "Furmint"
+    },
+    {
+      "id": "touriga-nacional",
+      "name": "Touriga Nacional"
+    },
+    {
+      "id": "palomino",
+      "name": "Palomino"
+    },
+    {
+      "id": "pedro-ximenez",
+      "name": "Pedro Ximénez"
+    },
+    {
+      "id": "gamay",
+      "name": "Gamay"
+    },
+    {
+      "id": "dolcetto",
+      "name": "Dolcetto"
+    },
+    {
+      "id": "corvina",
+      "name": "Corvina"
+    },
+    {
+      "id": "sangiovese",
+      "name": "Sangiovese"
+    },
+    {
+      "id": "tempranillo",
+      "name": "Tempranillo"
+    },
+    {
+      "id": "merlot",
+      "name": "Merlot"
+    },
+    {
+      "id": "syrah",
+      "name": "Syrah"
+    },
+    {
+      "id": "barbera",
+      "name": "Barbera"
+    },
+    {
+      "id": "zinfandel",
+      "name": "Zinfandel"
+    },
+    {
+      "id": "cabernet-sauvignon",
+      "name": "Cabernet Sauvignon"
+    },
+    {
+      "id": "cabernet-franc",
+      "name": "Cabernet Franc"
+    },
+    {
+      "id": "malbec",
+      "name": "Malbec"
+    },
+    {
+      "id": "nebbiolo",
+      "name": "Nebbiolo"
+    },
+    {
+      "id": "carmenere",
+      "name": "Carménère"
+    },
+    {
+      "id": "aglianico",
+      "name": "Aglianico"
+    },
+    {
+      "id": "lambrusco",
+      "name": "Lambrusco"
+    },
+    {
+      "id": "nero-davola",
+      "name": "Nero d'Avola"
+    },
+    {
+      "id": "montepulciano",
+      "name": "Montepulciano"
+    }
+  ],
+  "regions": [
+    {
+      "id": "mosel",
+      "name": "Mosel",
+      "country": "Germany"
+    },
+    {
+      "id": "rheingau",
+      "name": "Rheingau",
+      "country": "Germany"
+    },
+    {
+      "id": "alsace",
+      "name": "Alsace",
+      "country": "France"
+    },
+    {
+      "id": "finger-lakes",
+      "name": "Finger Lakes",
+      "country": "United States"
+    },
+    {
+      "id": "loire",
+      "name": "Loire Valley",
+      "country": "France"
+    },
+    {
+      "id": "marlborough",
+      "name": "Marlborough",
+      "country": "New Zealand"
+    },
+    {
+      "id": "burgundy",
+      "name": "Burgundy",
+      "country": "France"
+    },
+    {
+      "id": "willamette",
+      "name": "Willamette Valley",
+      "country": "United States"
+    },
+    {
+      "id": "napa",
+      "name": "Napa Valley",
+      "country": "United States"
+    },
+    {
+      "id": "sonoma",
+      "name": "Sonoma County",
+      "country": "United States"
+    },
+    {
+      "id": "paso-robles",
+      "name": "Paso Robles",
+      "country": "United States"
+    },
+    {
+      "id": "veneto",
+      "name": "Veneto",
+      "country": "Italy"
+    },
+    {
+      "id": "friuli",
+      "name": "Friuli-Venezia Giulia",
+      "country": "Italy"
+    },
+    {
+      "id": "piedmont",
+      "name": "Piedmont",
+      "country": "Italy"
+    },
+    {
+      "id": "tuscany",
+      "name": "Tuscany",
+      "country": "Italy"
+    },
+    {
+      "id": "campania",
+      "name": "Campania",
+      "country": "Italy"
+    },
+    {
+      "id": "sardinia",
+      "name": "Sardinia",
+      "country": "Italy"
+    },
+    {
+      "id": "wachau",
+      "name": "Wachau",
+      "country": "Austria"
+    },
+    {
+      "id": "rias-baixas",
+      "name": "Rías Baixas",
+      "country": "Spain"
+    },
+    {
+      "id": "rueda",
+      "name": "Rueda",
+      "country": "Spain"
+    },
+    {
+      "id": "rioja",
+      "name": "Rioja",
+      "country": "Spain"
+    },
+    {
+      "id": "jerez",
+      "name": "Jerez",
+      "country": "Spain"
+    },
+    {
+      "id": "penedes",
+      "name": "Penedès",
+      "country": "Spain"
+    },
+    {
+      "id": "rhone",
+      "name": "Rhône Valley",
+      "country": "France"
+    },
+    {
+      "id": "provence",
+      "name": "Provence",
+      "country": "France"
+    },
+    {
+      "id": "champagne",
+      "name": "Champagne",
+      "country": "France"
+    },
+    {
+      "id": "bordeaux",
+      "name": "Bordeaux",
+      "country": "France"
+    },
+    {
+      "id": "beaujolais",
+      "name": "Beaujolais",
+      "country": "France"
+    },
+    {
+      "id": "tokaj",
+      "name": "Tokaj",
+      "country": "Hungary"
+    },
+    {
+      "id": "douro",
+      "name": "Douro Valley",
+      "country": "Portugal"
+    },
+    {
+      "id": "mendoza",
+      "name": "Mendoza",
+      "country": "Argentina"
+    },
+    {
+      "id": "chile-central-valley",
+      "name": "Central Valley",
+      "country": "Chile"
+    },
+    {
+      "id": "barossa",
+      "name": "Barossa Valley",
+      "country": "Australia"
+    },
+    {
+      "id": "emilia-romagna",
+      "name": "Emilia-Romagna",
+      "country": "Italy"
+    },
+    {
+      "id": "sicily",
+      "name": "Sicily",
+      "country": "Italy"
+    },
+    {
+      "id": "abruzzo",
+      "name": "Abruzzo",
+      "country": "Italy"
+    }
+  ],
+  "others": [
+    {
+      "id": "pilsner",
+      "kind": "beer",
+      "name": "Pilsner",
+      "blurb": "Crisp, dry and lightly bitter lager; it cuts rich, fried and salty food."
+    },
+    {
+      "id": "helles-lager",
+      "kind": "beer",
+      "name": "Helles Lager",
+      "searchTerm": "lager",
+      "blurb": "Soft, malty pale lager with light bready notes; it fits grilled chicken and mild cheese."
+    },
+    {
+      "id": "hefeweizen",
+      "kind": "beer",
+      "name": "Hefeweizen",
+      "blurb": "Wheat beer with banana and clove notes; it suits citrusy salads and soft cheese."
+    },
+    {
+      "id": "witbier",
+      "kind": "beer",
+      "name": "Witbier",
+      "blurb": "Cloudy wheat ale with orange peel and coriander; it suits fresh herbs and seafood."
+    },
+    {
+      "id": "saison",
+      "kind": "beer",
+      "name": "Saison",
+      "blurb": "Dry, spicy farmhouse ale with bright acidity; it suits roast chicken and fresh vegetables."
+    },
+    {
+      "id": "pale-ale",
+      "kind": "beer",
+      "name": "Pale Ale",
+      "blurb": "Balanced, hoppy ale with citrus and resin notes; it fits burgers and tacos."
+    },
+    {
+      "id": "ipa",
+      "kind": "beer",
+      "name": "India Pale Ale",
+      "blurb": "Bold, hoppy ale with piney notes; it suits spicy and fatty foods."
+    },
+    {
+      "id": "amber-ale",
+      "kind": "beer",
+      "name": "Amber Ale",
+      "blurb": "Malty and toasted, with caramel notes and moderate hops; it fits roast pork and barbecue."
+    },
+    {
+      "id": "brown-ale",
+      "kind": "beer",
+      "name": "Brown Ale",
+      "blurb": "Nutty and roasted, with chocolate notes; it suits nuts, roast dishes and cocoa desserts."
+    },
+    {
+      "id": "porter",
+      "kind": "beer",
+      "name": "Porter",
+      "blurb": "Dark, roasted and smooth, with cocoa and coffee notes; it fits smoked meat and chocolate desserts."
+    },
+    {
+      "id": "stout",
+      "kind": "beer",
+      "name": "Stout",
+      "blurb": "Dry, roasted and creamy; it suits oysters, rich stews and dark chocolate."
+    },
+    {
+      "id": "dry-cider",
+      "kind": "cider",
+      "name": "Dry Cider",
+      "blurb": "Crisp, tart apple cider; it suits pork, sausage and sharp cheese."
+    },
+    {
+      "id": "sweet-cider",
+      "kind": "cider",
+      "name": "Sweet Cider",
+      "blurb": "Soft and apple-forward with a touch of sweetness; it suits spicy sausage and fruit desserts."
+    },
+    {
+      "id": "blanco-tequila",
+      "kind": "spirit",
+      "name": "Blanco Tequila",
+      "blurb": "Clear agave spirit with bright, peppery notes; it fits citrus, grilled fish and lime-forward dishes."
+    },
+    {
+      "id": "aged-rum",
+      "kind": "spirit",
+      "name": "Aged Rum",
+      "blurb": "Rum matured in wood, with vanilla and caramel notes; it suits sweet desserts and roast dishes."
+    },
+    {
+      "id": "bourbon",
+      "kind": "spirit",
+      "name": "Bourbon",
+      "blurb": "Corn-forward whiskey with vanilla, caramel and oak notes; it suits barbecue, glazed meat and pecan desserts."
+    },
+    {
+      "id": "margarita",
+      "kind": "cocktail",
+      "name": "Margarita",
+      "blurb": "A tart, lime-forward tequila drink; it cuts fried and salty food.",
+      "recipe": {
+        "ingredients": [
+          "2 oz blanco tequila",
+          "1 oz lime juice",
+          "1/2 oz orange liqueur",
+          "salt for the rim"
+        ],
+        "steps": [
+          "Shake the tequila, lime juice and orange liqueur with ice.",
+          "Strain into a salt-rimmed glass.",
+          "Serve over ice or up."
+        ]
+      }
+    },
+    {
+      "id": "gin-and-tonic",
+      "kind": "cocktail",
+      "name": "Gin and Tonic",
+      "blurb": "Dry gin with bitter tonic and lime; it suits seafood and light salads.",
+      "recipe": {
+        "ingredients": [
+          "2 oz gin",
+          "4 oz tonic water",
+          "lime wedge"
+        ],
+        "steps": [
+          "Fill a glass with ice.",
+          "Add the gin, then the tonic water.",
+          "Squeeze in the lime wedge and stir once."
+        ]
+      }
+    },
+    {
+      "id": "mojito",
+      "kind": "cocktail",
+      "name": "Mojito",
+      "blurb": "Mint, lime and rum topped with soda; it suits grilled fish and spicy tacos.",
+      "recipe": {
+        "ingredients": [
+          "2 oz white rum",
+          "1 oz lime juice",
+          "mint sprigs",
+          "soda water"
+        ],
+        "steps": [
+          "Gently press the mint with the lime juice in a glass.",
+          "Add the rum and ice.",
+          "Top with soda water and stir."
+        ]
+      }
+    },
+    {
+      "id": "old-fashioned",
+      "kind": "cocktail",
+      "name": "Old Fashioned",
+      "blurb": "Bourbon stirred with sugar and bitters; it suits roast meat and dark desserts.",
+      "recipe": {
+        "ingredients": [
+          "2 oz bourbon",
+          "1 sugar cube",
+          "2 dashes bitters",
+          "orange peel"
+        ],
+        "steps": [
+          "Stir the sugar, bitters and a splash of water in a glass.",
+          "Add the bourbon and ice, then stir well.",
+          "Express the orange peel over the glass and drop it in."
+        ]
+      }
+    },
+    {
+      "id": "whiskey-highball",
+      "kind": "cocktail",
+      "name": "Whiskey Highball",
+      "blurb": "Whiskey and soda, long and light; it suits grilled meat and salty snacks.",
+      "recipe": {
+        "ingredients": [
+          "2 oz whiskey",
+          "4 oz soda water",
+          "lemon twist"
+        ],
+        "steps": [
+          "Fill a tall glass with ice.",
+          "Pour in the whiskey.",
+          "Top with soda and add the lemon twist."
+        ]
+      }
+    },
+    {
+      "id": "moscow-mule",
+      "kind": "cocktail",
+      "name": "Moscow Mule",
+      "blurb": "Vodka, lime and ginger beer; it suits fried chicken and spicy Asian food.",
+      "recipe": {
+        "ingredients": [
+          "2 oz vodka",
+          "1/2 oz lime juice",
+          "ginger beer",
+          "lime wedge"
+        ],
+        "steps": [
+          "Fill a mug with ice.",
+          "Add the vodka and lime juice.",
+          "Top with ginger beer and garnish with the lime wedge."
+        ]
+      }
+    },
+    {
+      "id": "kolsch",
+      "kind": "beer",
+      "name": "Kölsch",
+      "blurb": "Crisp, light ale with soft fruit notes; it suits salads, fish and light cheese."
+    },
+    {
+      "id": "dunkel",
+      "kind": "beer",
+      "name": "Dunkel",
+      "blurb": "Dark lager with toasty, bready notes; it suits roast pork and sausages."
+    },
+    {
+      "id": "berliner-weisse",
+      "kind": "beer",
+      "name": "Berliner Weisse",
+      "blurb": "Tart, pale wheat beer with low alcohol; it suits fresh salads, soft goat cheese and fruit."
+    },
+    {
+      "id": "mexican-lager",
+      "kind": "beer",
+      "name": "Mexican-Style Lager",
+      "searchTerm": "mexican lager",
+      "blurb": "Light, crisp lager with corn notes and citrus lift; it suits tacos, grilled meat and spicy salsa."
+    },
+    {
+      "id": "bitter-aperitivo-spritz",
+      "kind": "cocktail",
+      "name": "Bitter Aperitivo Spritz",
+      "searchTerm": "aperitivo",
+      "blurb": "Bitter-sweet, low-strength aperitivo with soda; it cuts rich, fried and cured foods.",
+      "recipe": {
+        "ingredients": [
+          "1 1/2 oz bitter aperitivo",
+          "1 oz sweet vermouth",
+          "2 oz soda water",
+          "orange slice"
+        ],
+        "steps": [
+          "Fill a wine glass with ice.",
+          "Add the aperitivo and vermouth.",
+          "Top with soda water and garnish with the orange slice."
+        ]
+      }
+    },
+    {
+      "id": "reposado-tequila",
+      "kind": "spirit",
+      "name": "Reposado tequila",
+      "blurb": "Rested 2 to 12 months in oak; soft agave with light vanilla; sips neat or on the rocks with rich, smoky or citrusy food."
+    },
+    {
+      "id": "anejo-tequila",
+      "kind": "spirit",
+      "name": "Añejo tequila",
+      "blurb": "Aged 1 to 3 years; rounder and more caramel; neat, with grilled meat or chocolate."
+    },
+    {
+      "id": "mezcal",
+      "kind": "spirit",
+      "name": "Mezcal",
+      "blurb": "Smoky agave spirit; neat with a slice of orange; good with charred, fatty or spicy food."
+    },
+    {
+      "id": "junmai-sake",
+      "kind": "sake",
+      "name": "Junmai sake",
+      "blurb": "Pure rice sake, fuller and a little earthy; warm or chilled with savory, umami-rich food."
+    },
+    {
+      "id": "ginjo-sake",
+      "kind": "sake",
+      "name": "Ginjo or daiginjo sake",
+      "blurb": "More polished rice, light and aromatic; serve chilled with delicate fish, rice and lighter dishes."
+    },
+    {
+      "id": "nigori-sake",
+      "kind": "sake",
+      "name": "Nigori sake",
+      "blurb": "Cloudy, slightly sweet and creamy; chilled with spicy food or dessert."
+    },
+    {
+      "id": "vodka",
+      "kind": "spirit",
+      "name": "Vodka",
+      "searchTerm": "vodka",
+      "blurb": "Clean, neutral spirit; cold and in small pours, it resets the palate next to salty, smoked or pickled food."
+    },
+    {
+      "id": "gin",
+      "kind": "spirit",
+      "name": "Gin",
+      "searchTerm": "gin",
+      "blurb": "Juniper and citrus botanicals; crisp with seafood, cucumber, herbs and light salads."
+    },
+    {
+      "id": "white-rum",
+      "kind": "spirit",
+      "name": "White rum",
+      "searchTerm": "white rum",
+      "blurb": "Light, grassy cane spirit; fresh with lime, mint, seafood and tropical fruit."
+    },
+    {
+      "id": "spiced-rum",
+      "kind": "spirit",
+      "name": "Spiced rum",
+      "searchTerm": "spiced rum",
+      "blurb": "Rum with vanilla, cinnamon and clove; it suits grilled pineapple, pork and sweet desserts."
+    },
+    {
+      "id": "aguardiente",
+      "kind": "spirit",
+      "name": "Aguardiente (anise)",
+      "searchTerm": "aguardiente",
+      "blurb": "Colombian anise-flavored cane spirit, sipped cold in small shots; it goes with grilled meat, empanadas and salty snacks."
+    },
+    {
+      "id": "scotch-whisky",
+      "kind": "spirit",
+      "name": "Scotch whisky",
+      "searchTerm": "scotch whisky",
+      "blurb": "Malt whisky, from soft and honeyed to smoky and peaty; neat or with a drop of water next to smoked fish, lamb or aged cheese."
+    },
+    {
+      "id": "irish-whiskey",
+      "kind": "spirit",
+      "name": "Irish whiskey",
+      "searchTerm": "irish whiskey",
+      "blurb": "Smooth, lightly fruity triple-distilled whiskey; easy next to roast chicken, stews and apple desserts."
+    },
+    {
+      "id": "rye-whiskey",
+      "kind": "spirit",
+      "name": "Rye whiskey",
+      "searchTerm": "rye whiskey",
+      "blurb": "Spicier and drier than bourbon; it suits charred meat, pepper crusts and dark chocolate."
+    },
+    {
+      "id": "cognac-brandy",
+      "kind": "spirit",
+      "name": "Cognac or brandy",
+      "searchTerm": "brandy",
+      "blurb": "Grape spirit aged in oak, with dried fruit and vanilla; after dinner, with cheese, nuts or chocolate."
+    },
+    {
+      "id": "pisco",
+      "kind": "spirit",
+      "name": "Pisco",
+      "searchTerm": "pisco",
+      "blurb": "Unaged grape spirit from Peru and Chile, floral and clean; with ceviche, seafood and citrusy dishes."
+    },
+    {
+      "id": "coffee-liqueur",
+      "kind": "spirit",
+      "name": "Coffee liqueur",
+      "searchTerm": "coffee liqueur",
+      "blurb": "Sweet coffee liqueur; over ice or in dessert drinks, with chocolate, vanilla or caramel desserts."
+    },
+    {
+      "id": "orange-liqueur",
+      "kind": "spirit",
+      "name": "Orange liqueur",
+      "searchTerm": "orange liqueur",
+      "blurb": "Sweet orange-peel liqueur; a cocktail builder, and a sip with chocolate or citrus desserts."
+    },
+    {
+      "id": "irish-cream",
+      "kind": "spirit",
+      "name": "Irish cream liqueur",
+      "searchTerm": "irish cream liqueur",
+      "blurb": "Cream, whiskey and cocoa; over ice or in coffee, with brownies and cookies."
+    },
+    {
+      "id": "amaretto",
+      "kind": "spirit",
+      "name": "Amaretto",
+      "searchTerm": "amaretto",
+      "blurb": "Sweet almond-flavored liqueur; with biscotti, fruit tarts and coffee."
+    },
+    {
+      "id": "limoncello",
+      "kind": "spirit",
+      "name": "Limoncello",
+      "searchTerm": "limoncello",
+      "blurb": "Sweet lemon liqueur served ice-cold after a meal; with lemon desserts, fruit and light cakes."
+    }
+  ],
+  "cocktails": [
+    {
+      "id": "vodka-soda",
+      "name": "Vodka Soda",
+      "base": "vodka",
+      "mix": "Vodka and soda water over ice, with a lime wedge.",
+      "food": "Light seafood, ceviche, fresh salads.",
+      "glass": "highball",
+      "tone": "#eef4f6",
+      "recipe": {
+        "ingredients": [
+          "2 oz vodka",
+          "4 oz soda water",
+          "lime wedge"
+        ],
+        "steps": [
+          "Fill a highball with ice and add the vodka.",
+          "Top with soda water.",
+          "Squeeze the lime wedge in and drop it."
+        ]
+      }
+    },
+    {
+      "id": "moscow-mule",
+      "name": "Moscow Mule",
+      "base": "vodka",
+      "mix": "Vodka, lime juice and ginger beer, served over ice.",
+      "food": "Spicy Asian food, fried chicken, carnitas.",
+      "glass": "mug",
+      "tone": "#e9d9a8",
+      "recipe": {
+        "ingredients": [
+          "2 oz vodka",
+          "1/2 oz lime juice",
+          "4 oz ginger beer",
+          "lime wheel"
+        ],
+        "steps": [
+          "Fill a mug or highball with ice; add vodka and lime juice.",
+          "Top with ginger beer and stir once.",
+          "Garnish with the lime wheel."
+        ]
+      }
+    },
+    {
+      "id": "bloody-mary",
+      "name": "Bloody Mary",
+      "base": "vodka",
+      "mix": "Vodka, tomato juice, lemon juice, hot sauce, Worcestershire and pepper.",
+      "food": "Brunch, eggs, crispy potatoes, smoked fish.",
+      "glass": "highball",
+      "tone": "#c8402a",
+      "recipe": {
+        "ingredients": [
+          "2 oz vodka",
+          "4 oz tomato juice",
+          "1/2 oz lemon juice",
+          "3 dashes hot sauce",
+          "2 dashes Worcestershire, pinch of pepper"
+        ],
+        "steps": [
+          "Add everything to a shaker with ice and roll it (pour back and forth), do not shake.",
+          "Strain into an ice-filled glass.",
+          "Garnish with celery and a lemon wedge."
+        ]
+      }
+    },
+    {
+      "id": "cosmopolitan",
+      "name": "Cosmopolitan",
+      "base": "vodka",
+      "mix": "Vodka, cranberry juice, lime juice and orange liqueur, shaken.",
+      "food": "Oysters, sushi, lemony desserts.",
+      "glass": "coupe",
+      "tone": "#f0a1b0",
+      "recipe": {
+        "ingredients": [
+          "1 1/2 oz vodka",
+          "1 oz cranberry juice",
+          "1/2 oz lime juice",
+          "1/2 oz orange liqueur"
+        ],
+        "steps": [
+          "Shake everything with ice until the shaker frosts.",
+          "Strain into a chilled coupe.",
+          "Garnish with an orange twist."
+        ]
+      }
+    },
+    {
+      "id": "espresso-martini",
+      "name": "Espresso Martini",
+      "base": "vodka",
+      "mix": "Vodka, fresh espresso, coffee liqueur and simple syrup, shaken hard.",
+      "food": "Chocolate desserts, tiramisu, biscotti.",
+      "glass": "coupe",
+      "tone": "#4a2c1e",
+      "recipe": {
+        "ingredients": [
+          "2 oz vodka",
+          "1 oz fresh espresso",
+          "1/2 oz coffee liqueur",
+          "1/4 oz simple syrup"
+        ],
+        "steps": [
+          "Pull the espresso and let it cool a minute.",
+          "Shake everything hard with ice for 15 seconds.",
+          "Strain into a chilled coupe; the foam settles on top."
+        ]
+      }
+    },
+    {
+      "id": "gin-and-tonic",
+      "name": "Gin and Tonic",
+      "base": "gin",
+      "mix": "Gin and tonic water over ice, with a lime wedge.",
+      "food": "Olives, cured meats, cucumber sandwiches.",
+      "glass": "highball",
+      "tone": "#eef4f6",
+      "recipe": {
+        "ingredients": [
+          "2 oz gin",
+          "4 oz tonic water",
+          "lime wedge"
+        ],
+        "steps": [
+          "Fill the glass with ice and add the gin.",
+          "Pour the tonic down the side to keep the bubbles.",
+          "Squeeze and drop the lime."
+        ]
+      }
+    },
+    {
+      "id": "negroni",
+      "name": "Negroni",
+      "base": "gin",
+      "mix": "Gin, bitter red aperitif and sweet vermouth, stirred over ice; orange peel.",
+      "food": "Cured ham, aged cheese, roasted meats.",
+      "glass": "rocks",
+      "tone": "#c3412f",
+      "recipe": {
+        "ingredients": [
+          "1 oz gin",
+          "1 oz bitter red aperitif",
+          "1 oz sweet vermouth",
+          "orange peel"
+        ],
+        "steps": [
+          "Stir the three with ice for 20 seconds.",
+          "Strain over one big ice cube.",
+          "Twist the orange peel over the top and drop it in."
+        ]
+      }
+    },
+    {
+      "id": "tom-collins",
+      "name": "Tom Collins",
+      "base": "gin",
+      "mix": "Gin, lemon juice, simple syrup and soda water, over ice.",
+      "food": "Fried fish, crab cakes, summer salads.",
+      "glass": "highball",
+      "tone": "#f3efc8",
+      "recipe": {
+        "ingredients": [
+          "2 oz gin",
+          "1 oz lemon juice",
+          "1/2 oz simple syrup",
+          "3 oz soda water"
+        ],
+        "steps": [
+          "Shake gin, lemon and syrup with ice.",
+          "Strain into an ice-filled tall glass.",
+          "Top with soda and garnish with a lemon wheel."
+        ]
+      }
+    },
+    {
+      "id": "gimlet",
+      "name": "Gimlet",
+      "base": "gin",
+      "mix": "Gin and lime juice, shaken with simple syrup.",
+      "food": "Oysters, goat cheese, green herbs.",
+      "glass": "coupe",
+      "tone": "#e3efc3",
+      "recipe": {
+        "ingredients": [
+          "2 oz gin",
+          "3/4 oz lime juice",
+          "3/4 oz simple syrup"
+        ],
+        "steps": [
+          "Shake with ice.",
+          "Strain into a chilled coupe.",
+          "Garnish with a lime wheel."
+        ]
+      }
+    },
+    {
+      "id": "mojito",
+      "name": "Mojito",
+      "base": "rum",
+      "mix": "White rum, lime juice, mint, sugar and soda water, muddled over ice.",
+      "food": "Grilled pork, ceviche, plantain chips.",
+      "glass": "highball",
+      "tone": "#d9efd0",
+      "recipe": {
+        "ingredients": [
+          "2 oz white rum",
+          "1 oz lime juice",
+          "2 tsp sugar",
+          "8 mint leaves",
+          "soda water to top"
+        ],
+        "steps": [
+          "Muddle the mint gently with the sugar and lime juice in the glass.",
+          "Add rum, fill with ice and stir.",
+          "Top with soda and a mint sprig."
+        ]
+      }
+    },
+    {
+      "id": "daiquiri",
+      "name": "Daiquiri",
+      "base": "rum",
+      "mix": "White rum, lime juice and simple syrup, shaken and strained.",
+      "food": "Grilled shrimp, coconut desserts, tropical fruit.",
+      "glass": "coupe",
+      "tone": "#f4f2d8",
+      "recipe": {
+        "ingredients": [
+          "2 oz white rum",
+          "1 oz lime juice",
+          "3/4 oz simple syrup"
+        ],
+        "steps": [
+          "Shake hard with ice.",
+          "Strain into a chilled coupe.",
+          "Garnish with a lime wheel."
+        ]
+      }
+    },
+    {
+      "id": "cuba-libre",
+      "name": "Cuba Libre",
+      "base": "rum",
+      "mix": "White rum, lime juice and cola over ice.",
+      "food": "Burgers, fried chicken, barbecue.",
+      "glass": "highball",
+      "tone": "#5a2f1a",
+      "recipe": {
+        "ingredients": [
+          "2 oz white rum",
+          "1/2 oz lime juice",
+          "4 oz cola"
+        ],
+        "steps": [
+          "Fill with ice; add rum and lime juice.",
+          "Top with cola and stir once.",
+          "Drop a lime wedge in."
+        ]
+      }
+    },
+    {
+      "id": "margarita",
+      "name": "Margarita",
+      "base": "tequila",
+      "mix": "Tequila, lime juice and orange liqueur, shaken; salt rim optional.",
+      "food": "Tacos, grilled fish, anything with lime and chile.",
+      "glass": "rocks",
+      "tone": "#e4ecb8",
+      "recipe": {
+        "ingredients": [
+          "2 oz blanco tequila",
+          "1 oz lime juice",
+          "3/4 oz orange liqueur",
+          "salt for the rim"
+        ],
+        "steps": [
+          "Run a lime wedge around the rim and dip it in salt.",
+          "Shake tequila, lime and orange liqueur with ice.",
+          "Strain over fresh ice."
+        ]
+      }
+    },
+    {
+      "id": "paloma",
+      "name": "Paloma",
+      "base": "tequila",
+      "mix": "Tequila, grapefruit soda and lime juice, over ice with a salt rim.",
+      "food": "Fried snacks, shrimp tacos, spicy salsa.",
+      "glass": "highball",
+      "tone": "#f5c6c0",
+      "recipe": {
+        "ingredients": [
+          "2 oz tequila",
+          "1/2 oz lime juice",
+          "4 oz grapefruit soda",
+          "salt for the rim"
+        ],
+        "steps": [
+          "Salt the rim and fill the glass with ice.",
+          "Add tequila and lime juice.",
+          "Top with grapefruit soda and stir once."
+        ]
+      }
+    },
+    {
+      "id": "ranch-water",
+      "name": "Ranch Water",
+      "base": "tequila",
+      "mix": "Tequila, lime juice and sparkling mineral water over ice.",
+      "food": "Grilled meats, fajitas, ceviche.",
+      "glass": "highball",
+      "tone": "#eef4f6",
+      "recipe": {
+        "ingredients": [
+          "2 oz tequila",
+          "3/4 oz lime juice",
+          "sparkling mineral water to top"
+        ],
+        "steps": [
+          "Fill a tall glass with ice.",
+          "Add tequila and lime juice.",
+          "Top with sparkling water and a lime wedge."
+        ]
+      }
+    },
+    {
+      "id": "tequila-sunrise",
+      "name": "Tequila Sunrise",
+      "base": "tequila",
+      "mix": "Tequila, orange juice and grenadine, poured so it settles in layers.",
+      "food": "Breakfast burritos, pancakes, tropical fruit.",
+      "glass": "highball",
+      "tone": "#f4a03a",
+      "recipe": {
+        "ingredients": [
+          "2 oz tequila",
+          "4 oz orange juice",
+          "1/2 oz grenadine"
+        ],
+        "steps": [
+          "Fill with ice, add tequila and orange juice, stir.",
+          "Pour the grenadine slowly down the inside; it sinks.",
+          "Garnish with an orange slice and do not stir."
+        ]
+      }
+    },
+    {
+      "id": "mezcal-margarita",
+      "name": "Mezcal Margarita",
+      "base": "mezcal",
+      "mix": "Mezcal, lime juice and orange liqueur, shaken; chile salt optional.",
+      "food": "Grilled octopus, mole, charred vegetables.",
+      "glass": "rocks",
+      "tone": "#e4ecb8",
+      "recipe": {
+        "ingredients": [
+          "2 oz mezcal",
+          "1 oz lime juice",
+          "3/4 oz orange liqueur",
+          "chile salt for the rim"
+        ],
+        "steps": [
+          "Rim the glass with chile salt.",
+          "Shake mezcal, lime and orange liqueur with ice.",
+          "Strain over fresh ice."
+        ]
+      }
+    },
+    {
+      "id": "mezcal-paloma",
+      "name": "Mezcal Paloma",
+      "base": "mezcal",
+      "mix": "Mezcal, grapefruit soda and lime juice, over ice.",
+      "food": "Smoked meats, tamales, spicy seafood.",
+      "glass": "highball",
+      "tone": "#f5c6c0",
+      "recipe": {
+        "ingredients": [
+          "2 oz mezcal",
+          "1/2 oz lime juice",
+          "4 oz grapefruit soda"
+        ],
+        "steps": [
+          "Fill the glass with ice; add mezcal and lime.",
+          "Top with grapefruit soda.",
+          "Garnish with a grapefruit wedge."
+        ]
+      }
+    },
+    {
+      "id": "old-fashioned",
+      "name": "Old Fashioned",
+      "base": "whiskey",
+      "mix": "Bourbon or rye, sugar, bitters and orange peel, stirred over ice.",
+      "food": "Steak, smoked meats, dark chocolate.",
+      "glass": "rocks",
+      "tone": "#b8642a",
+      "recipe": {
+        "ingredients": [
+          "2 oz bourbon or rye",
+          "1 sugar cube or 1 tsp sugar",
+          "2 dashes aromatic bitters",
+          "orange peel"
+        ],
+        "steps": [
+          "Muddle the sugar with the bitters and a splash of water.",
+          "Add the whiskey and one big ice cube; stir 20 seconds.",
+          "Express the orange peel over the glass and drop it in."
+        ]
+      }
+    },
+    {
+      "id": "whiskey-sour",
+      "name": "Whiskey Sour",
+      "base": "whiskey",
+      "mix": "Whiskey, lemon juice and simple syrup, shaken; optional egg white.",
+      "food": "Pork belly, barbecue ribs, sharp cheddar.",
+      "glass": "rocks",
+      "tone": "#e8c76a",
+      "recipe": {
+        "ingredients": [
+          "2 oz whiskey",
+          "3/4 oz lemon juice",
+          "3/4 oz simple syrup",
+          "1 egg white (optional)"
+        ],
+        "steps": [
+          "With egg white, shake once without ice, then again with ice.",
+          "Strain over fresh ice.",
+          "Garnish with a cherry or a lemon wheel."
+        ]
+      }
+    },
+    {
+      "id": "manhattan",
+      "name": "Manhattan",
+      "base": "whiskey",
+      "mix": "Rye or bourbon, sweet vermouth and bitters, stirred and strained.",
+      "food": "Roast beef, meatballs, aged cheese.",
+      "glass": "coupe",
+      "tone": "#8c2f2a",
+      "recipe": {
+        "ingredients": [
+          "2 oz rye or bourbon",
+          "1 oz sweet vermouth",
+          "2 dashes aromatic bitters"
+        ],
+        "steps": [
+          "Stir with ice for 20 to 30 seconds.",
+          "Strain into a chilled coupe.",
+          "Garnish with a cherry."
+        ]
+      }
+    },
+    {
+      "id": "hot-toddy",
+      "name": "Hot Toddy",
+      "base": "whiskey",
+      "mix": "Whiskey, honey, lemon and hot water, with a clove or cinnamon stick.",
+      "food": "Soups, sweet baked goods, roast chicken.",
+      "glass": "mug",
+      "tone": "#d9a24a",
+      "recipe": {
+        "ingredients": [
+          "1 1/2 oz whiskey",
+          "1 tbsp honey",
+          "1/2 oz lemon juice",
+          "4 oz hot water",
+          "clove or cinnamon stick"
+        ],
+        "steps": [
+          "Dissolve the honey in the hot water in a mug.",
+          "Add whiskey and lemon juice; stir.",
+          "Add the clove or cinnamon stick."
+        ]
+      }
+    },
+    {
+      "id": "sidecar",
+      "name": "Sidecar",
+      "base": "brandy",
+      "mix": "Brandy, orange liqueur and lemon juice, shaken; sugar rim optional.",
+      "food": "Duck, pate, fruit tarts.",
+      "glass": "coupe",
+      "tone": "#e0a94a",
+      "recipe": {
+        "ingredients": [
+          "1 1/2 oz brandy",
+          "3/4 oz orange liqueur",
+          "3/4 oz lemon juice",
+          "sugar for the rim (optional)"
+        ],
+        "steps": [
+          "Sugar the rim if you like.",
+          "Shake with ice.",
+          "Strain into a chilled coupe."
+        ]
+      }
+    },
+    {
+      "id": "sake-spritz",
+      "name": "Sake Spritz",
+      "base": "sake",
+      "mix": "Sake, soda water and a splash of citrus, over ice.",
+      "food": "Sushi, edamame, tempura.",
+      "glass": "wine",
+      "tone": "#f1f3e6",
+      "recipe": {
+        "ingredients": [
+          "3 oz sake",
+          "2 oz soda water",
+          "splash of yuzu or lemon juice"
+        ],
+        "steps": [
+          "Fill a wine glass with ice.",
+          "Add sake and the citrus.",
+          "Top with soda and stir once."
+        ]
+      }
+    },
+    {
+      "id": "spritz",
+      "name": "Bitter Orange Aperitif Spritz",
+      "base": "sparkling-wine",
+      "mix": "Bitter orange aperitif, sparkling wine and soda water, over ice with an orange slice.",
+      "food": "Cured meats, olives, fried snacks.",
+      "glass": "wine",
+      "tone": "#f07c2a",
+      "recipe": {
+        "ingredients": [
+          "3 oz sparkling wine",
+          "2 oz bitter orange aperitif",
+          "1 oz soda water",
+          "orange slice"
+        ],
+        "steps": [
+          "Fill a wine glass with ice.",
+          "Pour the sparkling wine, then the aperitif, then the soda.",
+          "Add the orange slice."
+        ]
+      }
+    },
+    {
+      "id": "mimosa",
+      "name": "Mimosa",
+      "base": "sparkling-wine",
+      "mix": "Sparkling wine and orange juice, in equal parts.",
+      "food": "Brunch, pastries, fresh fruit.",
+      "glass": "flute",
+      "tone": "#f8c04a",
+      "recipe": {
+        "ingredients": [
+          "3 oz chilled sparkling wine",
+          "3 oz orange juice"
+        ],
+        "steps": [
+          "Pour the sparkling wine into a flute.",
+          "Top gently with orange juice.",
+          "No ice; serve right away."
+        ]
+      }
+    },
+    {
+      "id": "kalimotxo",
+      "name": "Kalimotxo",
+      "base": "red-wine",
+      "mix": "Red wine and cola, in equal parts, over ice.",
+      "food": "Chorizo, grilled sausages, fried potatoes.",
+      "glass": "highball",
+      "tone": "#4a1a2a",
+      "recipe": {
+        "ingredients": [
+          "4 oz red wine",
+          "4 oz cola",
+          "lemon wedge"
+        ],
+        "steps": [
+          "Fill a tall glass with ice.",
+          "Pour wine and cola in equal parts.",
+          "Squeeze the lemon wedge in."
+        ]
+      }
+    },
+    {
+      "id": "white-wine-spritzer",
+      "name": "White Wine Spritzer",
+      "base": "white-wine",
+      "mix": "White wine and soda water, in equal parts, over ice with a lemon twist.",
+      "food": "Light salads, grilled fish, goat cheese.",
+      "glass": "wine",
+      "tone": "#ece7b8",
+      "recipe": {
+        "ingredients": [
+          "4 oz white wine",
+          "2 oz soda water",
+          "lemon twist"
+        ],
+        "steps": [
+          "Fill a wine glass with ice.",
+          "Pour the wine and top with soda.",
+          "Twist the lemon peel over it."
+        ]
+      }
+    },
+    {
+      "id": "michelada",
+      "name": "Michelada",
+      "base": "beer",
+      "mix": "Lager, lime juice, hot sauce, Worcestershire and salt, over ice.",
+      "food": "Tacos, fried seafood, peanuts and fresh fruit.",
+      "glass": "pint",
+      "tone": "#d98a2a",
+      "recipe": {
+        "ingredients": [
+          "12 oz lager",
+          "1 oz lime juice",
+          "3 dashes hot sauce",
+          "2 dashes Worcestershire",
+          "salt for the rim"
+        ],
+        "steps": [
+          "Salt the rim and fill the glass with ice.",
+          "Add lime juice, hot sauce and Worcestershire.",
+          "Pour the beer slowly and stir once."
+        ]
+      }
+    }
+  ],
+  "zeroProof": [
+    {
+      "id": "dealcoholized-sparkling",
+      "name": "Dealcoholized Sparkling Wine",
+      "blurb": "Bubbly and dry with wine-like acidity; it suits the same foods as a dry sparkling wine."
+    },
+    {
+      "id": "sparkling-water-citrus",
+      "name": "Sparkling Water with Citrus",
+      "blurb": "Clean bubbles and bright acid from lemon or lime; it cuts fat and salt."
+    },
+    {
+      "id": "iced-black-tea",
+      "name": "Iced Black Tea",
+      "blurb": "Brisk and gently tannic; it works with grilled and rich foods, much as a light red does."
+    },
+    {
+      "id": "ginger-soda",
+      "name": "Ginger Soda",
+      "blurb": "Spicy and sweet with ginger heat; it suits spicy and fried foods."
+    },
+    {
+      "id": "hibiscus-iced-tea",
+      "name": "Hibiscus Iced Tea",
+      "blurb": "Tart and floral with red-berry notes; it suits grilled chicken and fruit desserts."
+    },
+    {
+      "id": "dealcoholized-red",
+      "name": "Dealcoholized Red Wine",
+      "blurb": "Red-fruit and gently tannic; it suits roast vegetables and mild red meat."
+    }
+  ],
+  "principles": [
+    {
+      "id": "acid-cuts-fat",
+      "text": "Acid in the wine cuts through fat and sweetness; a wine with less acid than the food tastes flat.",
+      "sourceIds": [
+        "winefolly-pairing",
+        "vt-zoecklein"
+      ],
+      "label": "Acid cuts fat"
+    },
+    {
+      "id": "match-weight",
+      "text": "Match the weight: a light dish suits a light wine, and a rich dish needs a wine with similar body.",
+      "sourceIds": [
+        "winewithseth-principles"
+      ],
+      "label": "Match the weight"
+    },
+    {
+      "id": "tannin-protein-fat",
+      "text": "Tannin softens when it meets protein and fat, which bind to it, so tannic reds suit rich, fatty food.",
+      "sourceIds": [
+        "vt-zoecklein",
+        "winefolly-pairing"
+      ],
+      "label": "Tannin likes protein"
+    },
+    {
+      "id": "sweet-needs-sweeter",
+      "text": "Sweet food makes a dry wine taste thin and sour, so pick a wine that is at least as sweet as the dish.",
+      "sourceIds": [
+        "vt-zoecklein",
+        "winefolly-pairing"
+      ],
+      "label": "Sweet needs sweeter"
+    },
+    {
+      "id": "salt-with-care",
+      "text": "Use salt with care: a very salty dish can make tannin and sharp acid in the wine taste harsher.",
+      "sourceIds": [
+        "vt-zoecklein",
+        "winefolly-pairing"
+      ],
+      "label": "Salt softens wine"
+    },
+    {
+      "id": "alcohol-cuts-fat",
+      "text": "Alcohol can cut through rich, fatty food or balance a sweet dish, so high-alcohol wines can help there.",
+      "sourceIds": [
+        "winefolly-pairing"
+      ],
+      "label": "Alcohol cuts richness"
+    },
+    {
+      "id": "contrast-bridge",
+      "text": "A contrast pairing uses acidity, tannin or sweetness in the wine to counter a dish and act as a bridge between flavors.",
+      "sourceIds": [
+        "winewithseth-principles"
+      ],
+      "label": "Contrast as a bridge"
+    },
+    {
+      "id": "regional-pairs",
+      "text": "Regional pairs grow together: a wine from the same place as the dish often fits it, because both evolved side by side.",
+      "sourceIds": [
+        "winewithseth-principles"
+      ],
+      "label": "Grown together"
+    }
+  ],
+  "avoidReasons": [
+    {
+      "id": "tannic-with-light",
+      "text": "A tannic red next to a light, lean dish tastes harsh."
+    },
+    {
+      "id": "dry-with-sweet",
+      "text": "A dry wine next to a sweet dish tastes thin and sour."
+    },
+    {
+      "id": "low-acid-with-rich",
+      "text": "A low-acid wine next to rich, fatty food tastes flat."
+    },
+    {
+      "id": "full-with-light",
+      "text": "A full-bodied wine overwhelms a light, delicate dish."
+    },
+    {
+      "id": "light-with-rich",
+      "text": "A light wine gets lost against a heavy, rich dish."
+    },
+    {
+      "id": "salty-with-tannin",
+      "text": "A very salty dish makes tannin and sharp acid taste harsher."
+    },
+    {
+      "id": "acid-with-acid",
+      "text": "Two very acidic things together can taste sharp and clash."
+    },
+    {
+      "id": "too-cold-full-red",
+      "text": "A full red served too cold hides its aromas and feels harsh."
+    },
+    {
+      "id": "too-warm-chilled-white",
+      "text": "A chilled white served too warm tastes flabby."
+    },
+    {
+      "id": "oak-with-delicate",
+      "text": "Heavy oak flavor can hide a delicate dish."
+    },
+    {
+      "id": "sweet-wine-with-sour",
+      "text": "A sweet wine next to a sour dish can taste flat and cloying."
+    },
+    {
+      "id": "soft-wine-with-sharp-sauce",
+      "text": "A soft, low-acid wine disappears next to a sharp sauce."
+    }
+  ],
+  "sources": [
+    {
+      "id": "winefolly-pairing",
+      "org": "Wine Folly",
+      "title": "6 Essential Basics to Food and Wine Pairing",
+      "url": "https://winefolly.com/wine-pairing/food-and-wine-pairing/",
+      "accessedAt": "2026-10-31"
+    },
+    {
+      "id": "vt-zoecklein",
+      "org": "Virginia Tech (Bruce Zoecklein)",
+      "title": "Matching Table Wines with Foods",
+      "url": "https://enology.fst.vt.edu/extonline/foodwine.html",
+      "accessedAt": "2026-10-31"
+    },
+    {
+      "id": "winewithseth-principles",
+      "org": "Wine with Seth",
+      "title": "Pairing principles: weight matching, contrast, regional",
+      "url": "https://www.winewithseth.com/winewiki/pairing-principles-weight-matching-contrast-regional/",
+      "accessedAt": "2026-10-31"
+    }
+  ],
+  "serve": {
+    "wine": "Chill whites, rosé and sparkling; reds a little cooler than the room.",
+    "beer": "Ice-cold, in a glass.",
+    "cider": "Chilled.",
+    "spirit": "Neat or on the rocks; a small pour.",
+    "sake": "Chilled or gently warm; the label says which.",
+    "cocktail": "Build it cold, serve right away.",
+    "other": "Serve the way the label suggests."
+  }
+}

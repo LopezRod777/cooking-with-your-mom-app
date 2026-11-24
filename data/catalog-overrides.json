@@ -1,0 +1,34 @@
+{
+  "chicken_breast": {
+    "fdcId": 171077,
+    "note": "Plain raw breast; replaces fuzzy match with added-solution variant"
+  },
+  "chicken_thigh": {
+    "fdcId": 173627
+  },
+  "beef_sirloin": {
+    "fdcId": 173053
+  },
+  "english_muffins": {
+    "fdcId": 174093
+  },
+  "kimchi": {
+    "fdcId": 170392
+  },
+  "red_onion": {
+    "fdcId": 170000,
+    "proxyOf": "Onions, raw"
+  },
+  "cherry_tomatoes": {
+    "fdcId": 170457,
+    "proxyOf": "Tomatoes, red, ripe, raw, year round average"
+  },
+  "mango_frozen": {
+    "fdcId": 169910,
+    "proxyOf": "Mangos, raw"
+  },
+  "pineapple_frozen": {
+    "fdcId": 169124,
+    "proxyOf": "Pineapple, raw, all varieties"
+  }
+}

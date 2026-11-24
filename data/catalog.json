@@ -1,0 +1,5599 @@
+[
+  {
+    "key": "acai_frozen",
+    "displayName": "Açaí packs (frozen, unsweetened)",
+    "aisle": "Frozen",
+    "package": {
+      "size": 14.1,
+      "unit": "oz"
+    },
+    "usda": {
+      "fdcId": 2038653,
+      "description": "PURE UNSWEETENED SUPERFRUIT PACKS, PURE ACAI BERRY (Sambazon, Inc.)",
+      "source": "branded"
+    },
+    "per100g": {
+      "kcal": 70,
+      "protein_g": 1,
+      "carbs_g": 4,
+      "fat_g": 5,
+      "fiber_g": 3
+    },
+    "portions": [
+      {
+        "label": "1 pack (100 g)",
+        "grams": 100
+      }
+    ],
+    "allergens": [],
+    "packageGrams": 400,
+    "packageNote": "4 packs of 100 g; label nutrients per 100 g from USDA FoodData Central Branded entry 2038653 (published 2021-10-28)."
+  },
+  {
+    "key": "almond_milk",
+    "displayName": "Almond milk (unsweetened)",
+    "aisle": "Dairy & Eggs",
+    "package": {
+      "size": 64,
+      "unit": "fl oz"
+    },
+    "usda": {
+      "fdcId": 174832,
+      "description": "Beverages, almond milk, unsweetened, shelf stable",
+      "source": "sr_legacy"
+    },
+    "per100g": {
+      "kcal": 15,
+      "protein_g": 0.4,
+      "carbs_g": 1.31,
+      "fat_g": 0.96,
+      "fiber_g": 0.2
+    },
+    "portions": [
+      {
+        "label": "1 cup",
+        "grams": 262
+      }
+    ],
+    "allergens": [
+      "tree_nut"
+    ],
+    "packageGrams": 1892.7
+  },
+  {
+    "key": "almonds",
+    "displayName": "Almonds",
+    "aisle": "Pantry",
+    "package": {
+      "size": 8,
+      "unit": "oz"
+    },
+    "usda": {
+      "fdcId": 170567,
+      "description": "Nuts, almonds",
+      "source": "sr_legacy"
+    },
+    "per100g": {
+      "kcal": 579,
+      "protein_g": 21.15,
+      "carbs_g": 21.55,
+      "fat_g": 49.93,
+      "fiber_g": 12.5
+    },
+    "portions": [
+      {
+        "label": "1 cup, whole",
+        "grams": 143
+      },
+      {
+        "label": "1 cup, sliced",
+        "grams": 92
+      },
+      {
+        "label": "1 cup, slivered",
+        "grams": 108
+      },
+      {
+        "label": "1 cup, ground",
+        "grams": 95
+      },
+      {
+        "label": "1 oz (23 whole kernels)",
+        "grams": 28.35
+      },
+      {
+        "label": "1 almond",
+        "grams": 1.2
+      }
+    ],
+    "allergens": [
+      "tree_nut"
+    ],
+    "packageGrams": 226.8
+  },
+  {
+    "key": "apple",
+    "displayName": "Apples",
+    "aisle": "Produce",
+    "package": {
+      "size": 1,
+      "unit": "lb"
+    },
+    "usda": {
+      "fdcId": 171688,
+      "description": "Apples, raw, with skin (Includes foods for USDA's Food Distribution Program)",
+      "source": "sr_legacy"
+    },
+    "per100g": {
+      "kcal": 52,
+      "protein_g": 0.26,
+      "carbs_g": 13.81,
+      "fat_g": 0.17,
+      "fiber_g": 2.4
+    },
+    "portions": [
+      {
+        "label": "1 cup, quartered or chopped",
+        "grams": 125
+      },
+      {
+        "label": "1 cup slices",
+        "grams": 109
+      },
+      {
+        "label": "1 large (3-1/4\" dia)",
+        "grams": 223
+      },
+      {
+        "label": "1 medium (3\" dia)",
+        "grams": 182
+      },
+      {
+        "label": "1 small (2-3/4\" dia)",
+        "grams": 149
+      },
+      {
+        "label": "1 extra small (2-1/2\" dia)",
+        "grams": 101
+      }
+    ],
+    "allergens": [],
+    "packageGrams": 453.6
+  },
+  {
+    "key": "asparagus",
+    "displayName": "Asparagus",
+    "aisle": "Produce",
+    "package": {
+      "size": 1,
+      "unit": "lb"
+    },
+    "usda": {
+      "fdcId": 168389,
+      "description": "Asparagus, raw",
+      "source": "sr_legacy"
+    },
+    "per100g": {
+      "kcal": 20,
+      "protein_g": 2.2,
+      "carbs_g": 3.88,
+      "fat_g": 0.12,
+      "fiber_g": 2.1
+    },
+    "portions": [
+      {
+        "label": "1 cup",
+        "grams": 134
+      },
+      {
+        "label": "1 spear, small (5\" long or less)",
+        "grams": 12
+      },
+      {
+        "label": "1 spear, medium (5-1/4\" to 7\" long)",
+        "grams": 16
+      },
+      {
+        "label": "1 spear, large (7-1/4\" to 8-1/2\")",
+        "grams": 20
+      },
+      {
+        "label": "1 spear, extra large (8-3/4\" to 10\" long)",
+        "grams": 24
+      },
+      {
+        "label": "1 spear tip (2\" long or less)",
+        "grams": 3.5
+      }
+    ],
+    "allergens": [],
+    "packageGrams": 453.6
+  },
+  {
+    "key": "avocado",
+    "displayName": "Avocado",
+    "aisle": "Produce",
+    "package": {
+      "size": 1,
+      "unit": "each"
+    },
+    "usda": {
+      "fdcId": 171705,
+      "description": "Avocados, raw, all commercial varieties",
+      "source": "sr_legacy"
+    },
+    "per100g": {
+      "kcal": 160,
+      "protein_g": 2,
+      "carbs_g": 8.53,
+      "fat_g": 14.66,
+      "fiber_g": 6.7
+    },
+    "portions": [
+      {
+        "label": "1 cup, cubes",
+        "grams": 150
+      },
+      {
+        "label": "1 cup, pureed",
+        "grams": 230
+      },
+      {
+        "label": "1 cup, sliced",
+        "grams": 146
+      },
+      {
+        "label": "1 avocado, NS as to Florida or California",
+        "grams": 201
+      },
+      {
+        "label": "1 NLEA Serving",
+        "grams": 50
+      }
+    ],
+    "allergens": [],
+    "packageGrams": 201,
+    "packageNote": "USDA portion: \"1 avocado, NS as to Florida or California\" = 201 g"
+  },
+  {
+    "key": "baby_carrots",
+    "displayName": "Baby carrots",
+    "aisle": "Produce",
+    "package": {
+      "size": 16,
+      "unit": "oz"
+    },
+    "usda": {
+      "fdcId": 168568,
+      "description": "Carrots, baby, raw",
+      "source": "sr_legacy"
+    },
+    "per100g": {
+      "kcal": 35,
+      "protein_g": 0.64,
+      "carbs_g": 8.24,
+      "fat_g": 0.13,
+      "fiber_g": 2.9
+    },
+    "portions": [
+      {
+        "label": "1 large",
+        "grams": 15
+      },
+      {
+        "label": "1 medium",
+        "grams": 10
+      },
+      {
+        "label": "1 NLEA serving",
+        "grams": 85
+      }
+    ],
+    "allergens": [],
+    "packageGrams": 453.6
+  },
+  {
+    "key": "baking_powder",
+    "displayName": "Baking powder",
+    "aisle": "Baking",
+    "package": {
+      "size": 8,
+      "unit": "oz"
+    },
+    "usda": {
+      "fdcId": 172803,
+      "description": "Leavening agents, baking powder, double-acting, sodium aluminum sulfate",
+      "source": "sr_legacy"
+    },
+    "per100g": {
+      "kcal": 53,
+      "protein_g": 0,
+      "carbs_g": 27.7,
+      "fat_g": 0,
+      "fiber_g": 0.2
+    },
+    "portions": [
+      {
+        "label": "1 tsp",
+        "grams": 4.6
+      },
+      {
+        "label": "0.5 tsp",
+        "grams": 2.3
+      }
+    ],
+    "allergens": [],
+    "packageGrams": 226.8
+  },
+  {
+    "key": "banana",
+    "displayName": "Bananas",
+    "aisle": "Produce",
+    "package": {
+      "size": 1,
+      "unit": "lb"
+    },
+    "usda": {
+      "fdcId": 173944,
+      "description": "Bananas, raw",
+      "source": "sr_legacy"
+    },
+    "per100g": {
+      "kcal": 89,
+      "protein_g": 1.09,
+      "carbs_g": 22.84,
+      "fat_g": 0.33,
+      "fiber_g": 2.6
+    },
+    "portions": [
+      {
+        "label": "1 cup, mashed",
+        "grams": 225
+      },
+      {
+        "label": "1 cup, sliced",
+        "grams": 150
+      },
+      {
+        "label": "1 extra small (less than 6\" long)",
+        "grams": 81
+      },
+      {
+        "label": "1 small (6\" to 6-7/8\" long)",
+        "grams": 101
+      },
+      {
+        "label": "1 medium (7\" to 7-7/8\" long)",
+        "grams": 118
+      },
+      {
+        "label": "1 large (8\" to 8-7/8\" long)",
+        "grams": 136
+      }
+    ],
+    "allergens": [],
+    "packageGrams": 453.6
+  },
+  {
+    "key": "basil",
+    "displayName": "Fresh basil",
+    "aisle": "Produce",
+    "package": {
+      "size": 0.75,
+      "unit": "oz"
+    },
+    "usda": {
+      "fdcId": 172232,
+      "description": "Basil, fresh",
+      "source": "sr_legacy"
+    },
+    "per100g": {
+      "kcal": 23,
+      "protein_g": 3.15,
+      "carbs_g": 2.65,
+      "fat_g": 0.64,
+      "fiber_g": 1.6
+    },
+    "portions": [
+      {
+        "label": "5 leaves",
+        "grams": 2.5
+      },
+      {
+        "label": "2 tbsp, chopped",
+        "grams": 5.3
+      },
+      {
+        "label": "0.25 cup leaves, whole",
+        "grams": 6
+      }
+    ],
+    "allergens": [],
+    "packageGrams": 21.3
+  },
+  {
+    "key": "bbq_sauce",
+    "displayName": "BBQ sauce",
+    "aisle": "Condiments",
+    "package": {
+      "size": 18,
+      "unit": "oz"
+    },
+    "usda": {
+      "fdcId": 174523,
+      "description": "Sauce, barbecue",
+      "source": "sr_legacy"
+    },
+    "per100g": {
+      "kcal": 172,
+      "protein_g": 0.82,
+      "carbs_g": 40.77,
+      "fat_g": 0.63,
+      "fiber_g": 0.9
+    },
+    "portions": [
+      {
+        "label": "1 tbsp",
+        "grams": 17
+      },
+      {
+        "label": "0.5 cup",
+        "grams": 143
+      },
+      {
+        "label": "1 cup",
+        "grams": 279
+      }
+    ],
+    "allergens": [
+      "nightshade"
+    ],
+    "packageGrams": 510.3
+  },
+  {
+    "key": "beef_sirloin",
+    "displayName": "Beef sirloin steak",
+    "aisle": "Meat & Seafood",
+    "package": {
+      "size": 1,
+      "unit": "lb"
+    },
+    "usda": {
+      "fdcId": 173053,
+      "description": "Beef, loin, top sirloin petite roast/filet, boneless, separable lean only, trimmed to 0\" fat, all grades, raw",
+      "source": "sr_legacy"
+    },
+    "per100g": {
+      "kcal": 128,
+      "protein_g": 23.04,
+      "carbs_g": 0,
+      "fat_g": 3.98,
+      "fiber_g": 0
+    },
+    "portions": [
+      {
+        "label": "4 oz",
+        "grams": 113
+      },
+      {
+        "label": "1 fillet",
+        "grams": 180
+      },
+      {
+        "label": "1 roast",
+        "grams": 970
+      }
+    ],
+    "allergens": [],
+    "packageGrams": 453.6
+  },
+  {
+    "key": "bell_pepper",
+    "displayName": "Bell pepper",
+    "aisle": "Produce",
+    "package": {
+      "size": 1,
+      "unit": "each"
+    },
+    "usda": {
+      "fdcId": 170108,
+      "description": "Peppers, sweet, red, raw",
+      "source": "sr_legacy"
+    },
+    "per100g": {
+      "kcal": 26,
+      "protein_g": 0.99,
+      "carbs_g": 6.03,
+      "fat_g": 0.3,
+      "fiber_g": 2.1
+    },
+    "portions": [
+      {
+        "label": "1 cup, chopped",
+        "grams": 149
+      },
+      {
+        "label": "1 cup, sliced",
+        "grams": 92
+      },
+      {
+        "label": "1 tablespoon",
+        "grams": 9.3
+      },
+      {
+        "label": "1 large (2-1/4 per pound, approx 3-3/4\" long, 3\" dia.)",
+        "grams": 164
+      },
+      {
+        "label": "1 medium (approx 2-3/4\" long, 2-1/2 dia.)",
+        "grams": 119
+      },
+      {
+        "label": "1 small",
+        "grams": 74
+      }
+    ],
+    "allergens": [
+      "nightshade"
+    ],
+    "packageGrams": 119,
+    "packageNote": "USDA portion: \"1 medium (approx 2-3/4\\\" long, 2-1/2 dia.)\" = 119 g"
+  },
+  {
+    "key": "berries_frozen",
+    "displayName": "Mixed berries (frozen)",
+    "aisle": "Frozen",
+    "package": {
+      "size": 12,
+      "unit": "oz"
+    },
+    "usda": {
+      "fdcId": 173950,
+      "description": "Blueberries, frozen, unsweetened (Includes foods for USDA's Food Distribution Program)",
+      "source": "sr_legacy"
+    },
+    "per100g": {
+      "kcal": 51,
+      "protein_g": 0.42,
+      "carbs_g": 12.17,
+      "fat_g": 0.64,
+      "fiber_g": 2.7
+    },
+    "portions": [
+      {
+        "label": "1 cup, unthawed",
+        "grams": 155
+      },
+      {
+        "label": "1 package (20 oz)",
+        "grams": 567
+      }
+    ],
+    "allergens": [],
+    "packageGrams": 340.2
+  },
+  {
+    "key": "black_beans",
+    "displayName": "Black beans (canned)",
+    "aisle": "Canned & Jarred",
+    "package": {
+      "size": 15,
+      "unit": "oz"
+    },
+    "usda": {
+      "fdcId": 175238,
+      "description": "Beans, black, mature seeds, canned, low sodium",
+      "source": "sr_legacy"
+    },
+    "per100g": {
+      "kcal": 91,
+      "protein_g": 6.03,
+      "carbs_g": 16.55,
+      "fat_g": 0.29,
+      "fiber_g": 6.9
+    },
+    "portions": [
+      {
+        "label": "1 cup",
+        "grams": 240
+      }
+    ],
+    "allergens": [
+      "legume"
+    ],
+    "packageGrams": 425.2
+  },
+  {
+    "key": "black_pepper",
+    "displayName": "Black pepper",
+    "aisle": "Spices",
+    "package": {
+      "size": 2,
+      "unit": "oz"
+    },
+    "usda": {
+      "fdcId": 170931,
+      "description": "Spices, pepper, black",
+      "source": "sr_legacy"
+    },
+    "per100g": {
+      "kcal": 251,
+      "protein_g": 10.39,
+      "carbs_g": 63.95,
+      "fat_g": 3.26,
+      "fiber_g": 25.3
+    },
+    "portions": [
+      {
+        "label": "1 tsp, ground",
+        "grams": 2.3
+      },
+      {
+        "label": "1 tbsp, ground",
+        "grams": 6.9
+      },
+      {
+        "label": "1 tsp, whole",
+        "grams": 2.9
+      },
+      {
+        "label": "1 dash",
+        "grams": 0.1
+      }
+    ],
+    "allergens": [],
+    "packageGrams": 56.7
+  },
+  {
+    "key": "blueberries",
+    "displayName": "Blueberries",
+    "aisle": "Produce",
+    "package": {
+      "size": 6,
+      "unit": "oz"
+    },
+    "usda": {
+      "fdcId": 171711,
+      "description": "Blueberries, raw",
+      "source": "sr_legacy"
+    },
+    "per100g": {
+      "kcal": 57,
+      "protein_g": 0.74,
+      "carbs_g": 14.49,
+      "fat_g": 0.33,
+      "fiber_g": 2.4
+    },
+    "portions": [
+      {
+        "label": "1 cup",
+        "grams": 148
+      },
+      {
+        "label": "50 berries",
+        "grams": 68
+      }
+    ],
+    "allergens": [],
+    "packageGrams": 170.1
+  },
+  {
+    "key": "breadcrumbs",
+    "displayName": "Breadcrumbs (panko)",
+    "aisle": "Baking",
+    "package": {
+      "size": 8,
+      "unit": "oz"
+    },
+    "usda": {
+      "fdcId": 174928,
+      "description": "Bread, crumbs, dry, grated, plain",
+      "source": "sr_legacy"
+    },
+    "per100g": {
+      "kcal": 395,
+      "protein_g": 13.35,
+      "carbs_g": 71.98,
+      "fat_g": 5.3,
+      "fiber_g": 4.5
+    },
+    "portions": [
+      {
+        "label": "1 oz",
+        "grams": 28.35
+      },
+      {
+        "label": "1 cup",
+        "grams": 108
+      }
+    ],
+    "allergens": [
+      "wheat_gluten"
+    ],
+    "packageGrams": 226.8
+  },
+  {
+    "key": "broccoli",
+    "displayName": "Broccoli",
+    "aisle": "Produce",
+    "package": {
+      "size": 1,
+      "unit": "lb"
+    },
+    "usda": {
+      "fdcId": 170379,
+      "description": "Broccoli, raw",
+      "source": "sr_legacy"
+    },
+    "per100g": {
+      "kcal": 34,
+      "protein_g": 2.82,
+      "carbs_g": 6.64,
+      "fat_g": 0.37,
+      "fiber_g": 2.6
+    },
+    "portions": [
+      {
+        "label": "1 cup chopped",
+        "grams": 91
+      },
+      {
+        "label": "1 bunch",
+        "grams": 608
+      },
+      {
+        "label": "1 spear (about 5\" long)",
+        "grams": 31
+      },
+      {
+        "label": "1 stalk",
+        "grams": 151
+      },
+      {
+        "label": "0.5 cup, chopped or diced",
+        "grams": 44
+      },
+      {
+        "label": "1 NLEA serving",
+        "grams": 148
+      }
+    ],
+    "allergens": [],
+    "packageGrams": 453.6
+  },
+  {
+    "key": "broccoli_frozen",
+    "displayName": "Broccoli florets (frozen)",
+    "aisle": "Frozen",
+    "package": {
+      "size": 12,
+      "unit": "oz"
+    },
+    "usda": {
+      "fdcId": 169968,
+      "description": "Broccoli, frozen, chopped, unprepared",
+      "source": "sr_legacy"
+    },
+    "per100g": {
+      "kcal": 26,
+      "protein_g": 2.81,
+      "carbs_g": 4.78,
+      "fat_g": 0.29,
+      "fiber_g": 3
+    },
+    "portions": [
+      {
+        "label": "1 cup",
+        "grams": 156
+      },
+      {
+        "label": "1 package (10 oz)",
+        "grams": 284
+      }
+    ],
+    "allergens": [],
+    "packageGrams": 340.2
+  },
+  {
+    "key": "brown_rice",
+    "displayName": "Brown rice",
+    "aisle": "Rice Pasta & Grains",
+    "package": {
+      "size": 32,
+      "unit": "oz"
+    },
+    "usda": {
+      "fdcId": 169703,
+      "description": "Rice, brown, long-grain, raw (Includes foods for USDA's Food Distribution Program)",
+      "source": "sr_legacy"
+    },
+    "per100g": {
+      "kcal": 367,
+      "protein_g": 7.54,
+      "carbs_g": 76.25,
+      "fat_g": 3.2,
+      "fiber_g": 3.6
+    },
+    "portions": [
+      {
+        "label": "1 cup",
+        "grams": 185
+      }
+    ],
+    "allergens": [],
+    "packageGrams": 907.2
+  },
+  {
+    "key": "brown_sugar",
+    "displayName": "Brown sugar",
+    "aisle": "Baking",
+    "package": {
+      "size": 2,
+      "unit": "lb"
+    },
+    "usda": {
+      "fdcId": 168833,
+      "description": "Sugars, brown",
+      "source": "sr_legacy"
+    },
+    "per100g": {
+      "kcal": 380,
+      "protein_g": 0.12,
+      "carbs_g": 98.09,
+      "fat_g": 0,
+      "fiber_g": 0
+    },
+    "portions": [
+      {
+        "label": "1 tsp unpacked",
+        "grams": 3
+      },
+      {
+        "label": "1 cup packed",
+        "grams": 220
+      },
+      {
+        "label": "1 cup unpacked",
+        "grams": 145
+      },
+      {
+        "label": "1 tsp packed",
+        "grams": 4.6
+      },
+      {
+        "label": "1 tsp brownulated",
+        "grams": 3.2
+      }
+    ],
+    "allergens": [],
+    "packageGrams": 907.2
+  },
+  {
+    "key": "butter",
+    "displayName": "Butter (unsalted)",
+    "aisle": "Dairy & Eggs",
+    "package": {
+      "size": 16,
+      "unit": "oz"
+    },
+    "usda": {
+      "fdcId": 173430,
+      "description": "Butter, without salt",
+      "source": "sr_legacy"
+    },
+    "per100g": {
+      "kcal": 717,
+      "protein_g": 0.85,
+      "carbs_g": 0.06,
+      "fat_g": 81.11,
+      "fiber_g": 0
+    },
+    "portions": [
+      {
+        "label": "1 pat (1\" sq, 1/3\" high)",
+        "grams": 5
+      },
+      {
+        "label": "1 tbsp",
+        "grams": 14.2
+      },
+      {
+        "label": "1 cup",
+        "grams": 227
+      },
+      {
+        "label": "1 stick",
+        "grams": 113
+      }
+    ],
+    "allergens": [
+      "dairy"
+    ],
+    "packageGrams": 453.6
+  },
+  {
+    "key": "cabbage",
+    "displayName": "Green cabbage",
+    "aisle": "Produce",
+    "package": {
+      "size": 1,
+      "unit": "each"
+    },
+    "usda": {
+      "fdcId": 169975,
+      "description": "Cabbage, raw",
+      "source": "sr_legacy"
+    },
+    "per100g": {
+      "kcal": 25,
+      "protein_g": 1.28,
+      "carbs_g": 5.8,
+      "fat_g": 0.1,
+      "fiber_g": 2.5
+    },
+    "portions": [
+      {
+        "label": "1 cup, chopped",
+        "grams": 89
+      },
+      {
+        "label": "1 cup, shredded",
+        "grams": 70
+      },
+      {
+        "label": "1 head, large (about 7\" dia)",
+        "grams": 1248
+      },
+      {
+        "label": "1 leaf, large",
+        "grams": 33
+      },
+      {
+        "label": "1 head, medium (about 5-3/4\" dia)",
+        "grams": 908
+      },
+      {
+        "label": "1 leaf, medium",
+        "grams": 23
+      }
+    ],
+    "allergens": [],
+    "packageGrams": 908,
+    "packageNote": "USDA portion: \"1 head, medium (about 5-3/4\\\" dia)\" = 908 g"
+  },
+  {
+    "key": "canned_salmon",
+    "displayName": "Canned salmon",
+    "aisle": "Canned & Jarred",
+    "package": {
+      "size": 5,
+      "unit": "oz"
+    },
+    "usda": {
+      "fdcId": 175175,
+      "description": "Fish, salmon, pink, canned, drained solids",
+      "source": "sr_legacy"
+    },
+    "per100g": {
+      "kcal": 138,
+      "protein_g": 23.1,
+      "carbs_g": 0,
+      "fat_g": 5.02,
+      "fiber_g": 0
+    },
+    "portions": [
+      {
+        "label": "3 oz",
+        "grams": 85
+      },
+      {
+        "label": "1 can drained solids (total)",
+        "grams": 315
+      }
+    ],
+    "allergens": [
+      "fish"
+    ],
+    "packageGrams": 141.7
+  },
+  {
+    "key": "canned_tomatoes",
+    "displayName": "Diced tomatoes (canned)",
+    "aisle": "Canned & Jarred",
+    "package": {
+      "size": 14.5,
+      "unit": "oz"
+    },
+    "usda": {
+      "fdcId": 170051,
+      "description": "Tomatoes, red, ripe, canned, packed in tomato juice",
+      "source": "sr_legacy"
+    },
+    "per100g": {
+      "kcal": 16,
+      "protein_g": 0.79,
+      "carbs_g": 3.47,
+      "fat_g": 0.25,
+      "fiber_g": 1.9
+    },
+    "portions": [
+      {
+        "label": "1 cup",
+        "grams": 240
+      },
+      {
+        "label": "1 tbsp",
+        "grams": 15
+      },
+      {
+        "label": "1 can",
+        "grams": 190
+      },
+      {
+        "label": "1 large",
+        "grams": 164
+      },
+      {
+        "label": "1 medium",
+        "grams": 111
+      },
+      {
+        "label": "1 small",
+        "grams": 82
+      }
+    ],
+    "allergens": [
+      "nightshade"
+    ],
+    "packageGrams": 411.1
+  },
+  {
+    "key": "canned_tuna",
+    "displayName": "Canned tuna in water",
+    "aisle": "Canned & Jarred",
+    "package": {
+      "size": 5,
+      "unit": "oz"
+    },
+    "usda": {
+      "fdcId": 173709,
+      "description": "Fish, tuna, light, canned in water, drained solids (Includes foods for USDA's Food Distribution Program)",
+      "source": "sr_legacy"
+    },
+    "per100g": {
+      "kcal": 86,
+      "protein_g": 19.44,
+      "carbs_g": 0,
+      "fat_g": 0.96,
+      "fiber_g": 0
+    },
+    "portions": [
+      {
+        "label": "1 oz",
+        "grams": 28.35
+      },
+      {
+        "label": "3 oz",
+        "grams": 85
+      },
+      {
+        "label": "1 can",
+        "grams": 165
+      },
+      {
+        "label": "1 cup, solid or chunks",
+        "grams": 154
+      },
+      {
+        "label": "1 can (12.5 oz), drained",
+        "grams": 315
+      }
+    ],
+    "allergens": [
+      "fish"
+    ],
+    "packageGrams": 141.7
+  },
+  {
+    "key": "carrots",
+    "displayName": "Carrots",
+    "aisle": "Produce",
+    "package": {
+      "size": 1,
+      "unit": "lb"
+    },
+    "usda": {
+      "fdcId": 170393,
+      "description": "Carrots, raw",
+      "source": "sr_legacy"
+    },
+    "per100g": {
+      "kcal": 41,
+      "protein_g": 0.93,
+      "carbs_g": 9.58,
+      "fat_g": 0.24,
+      "fiber_g": 2.8
+    },
+    "portions": [
+      {
+        "label": "1 cup chopped",
+        "grams": 128
+      },
+      {
+        "label": "1 cup grated",
+        "grams": 110
+      },
+      {
+        "label": "1 cup strips or slices",
+        "grams": 122
+      },
+      {
+        "label": "1 large (7-1/4\" to 8-/1/2\" long)",
+        "grams": 72
+      },
+      {
+        "label": "1 medium",
+        "grams": 61
+      },
+      {
+        "label": "1 small (5-1/2\" long)",
+        "grams": 50
+      }
+    ],
+    "allergens": [],
+    "packageGrams": 453.6
+  },
+  {
+    "key": "cauliflower",
+    "displayName": "Cauliflower",
+    "aisle": "Produce",
+    "package": {
+      "size": 1,
+      "unit": "each"
+    },
+    "usda": {
+      "fdcId": 169986,
+      "description": "Cauliflower, raw",
+      "source": "sr_legacy"
+    },
+    "per100g": {
+      "kcal": 25,
+      "protein_g": 1.92,
+      "carbs_g": 4.97,
+      "fat_g": 0.28,
+      "fiber_g": 2
+    },
+    "portions": [
+      {
+        "label": "1 cup chopped (1/2\" pieces)",
+        "grams": 107
+      },
+      {
+        "label": "1 floweret",
+        "grams": 13
+      },
+      {
+        "label": "1 head large (6-7\" dia.)",
+        "grams": 840
+      },
+      {
+        "label": "1 head medium (5-6\" dia.)",
+        "grams": 588
+      },
+      {
+        "label": "1 head small (4\" dia.)",
+        "grams": 265
+      }
+    ],
+    "allergens": [],
+    "packageGrams": 588,
+    "packageNote": "USDA portion: \"1 head medium (5-6\\\" dia.)\" = 588 g"
+  },
+  {
+    "key": "celery",
+    "displayName": "Celery",
+    "aisle": "Produce",
+    "package": {
+      "size": 1,
+      "unit": "each"
+    },
+    "usda": {
+      "fdcId": 169988,
+      "description": "Celery, raw",
+      "source": "sr_legacy"
+    },
+    "per100g": {
+      "kcal": 14,
+      "protein_g": 0.69,
+      "carbs_g": 2.97,
+      "fat_g": 0.17,
+      "fiber_g": 1.6
+    },
+    "portions": [
+      {
+        "label": "1 cup chopped",
+        "grams": 101
+      },
+      {
+        "label": "1 NLEA serving",
+        "grams": 110
+      },
+      {
+        "label": "1 tbsp",
+        "grams": 7.5
+      },
+      {
+        "label": "1 stalk, large (11\"-12\" long)",
+        "grams": 64
+      },
+      {
+        "label": "1 stalk, medium (7-1/2\" - 8\" long)",
+        "grams": 40
+      },
+      {
+        "label": "1 stalk, small (5\" long)",
+        "grams": 17
+      }
+    ],
+    "allergens": [],
+    "packageGrams": 360,
+    "packageLabel": "1 bunch",
+    "packageNote": "assumption: 1 bunch ≈ 9 medium stalks × 40 g (USDA \"1 stalk, medium\" = 40 g)"
+  },
+  {
+    "key": "cheddar",
+    "displayName": "Cheddar cheese (shredded)",
+    "aisle": "Dairy & Eggs",
+    "package": {
+      "size": 8,
+      "unit": "oz"
+    },
+    "usda": {
+      "fdcId": 170899,
+      "description": "Cheese, cheddar, sharp, sliced",
+      "source": "sr_legacy"
+    },
+    "per100g": {
+      "kcal": 410,
+      "protein_g": 24.25,
+      "carbs_g": 2.13,
+      "fat_g": 33.82,
+      "fiber_g": 0
+    },
+    "portions": [
+      {
+        "label": "1 slice (2/3 oz)",
+        "grams": 19
+      },
+      {
+        "label": "1 slice (3/4 oz)",
+        "grams": 21
+      },
+      {
+        "label": "1 slice (1 oz)",
+        "grams": 28
+      }
+    ],
+    "allergens": [
+      "dairy"
+    ],
+    "packageGrams": 226.8
+  },
+  {
+    "key": "cherry_tomatoes",
+    "displayName": "Cherry tomatoes",
+    "aisle": "Produce",
+    "package": {
+      "size": 10,
+      "unit": "oz"
+    },
+    "usda": {
+      "fdcId": 170457,
+      "description": "Tomatoes, red, ripe, raw, year round average",
+      "source": "sr_legacy"
+    },
+    "per100g": {
+      "kcal": 18,
+      "protein_g": 0.88,
+      "carbs_g": 3.89,
+      "fat_g": 0.2,
+      "fiber_g": 1.2
+    },
+    "portions": [
+      {
+        "label": "1 cup cherry tomatoes",
+        "grams": 149
+      },
+      {
+        "label": "1 cup, chopped or sliced",
+        "grams": 180
+      },
+      {
+        "label": "1 Italian tomato",
+        "grams": 62
+      },
+      {
+        "label": "1 cherry",
+        "grams": 17
+      },
+      {
+        "label": "1 large whole (3\" dia)",
+        "grams": 182
+      },
+      {
+        "label": "1 medium whole (2-3/5\" dia)",
+        "grams": 123
+      }
+    ],
+    "allergens": [
+      "nightshade"
+    ],
+    "packageGrams": 283.5,
+    "proxyOf": "USDA has no separate entry; using Tomatoes, red, ripe, raw, year round average"
+  },
+  {
+    "key": "chia_seeds",
+    "displayName": "Chia seeds",
+    "aisle": "Pantry",
+    "package": {
+      "size": 12,
+      "unit": "oz"
+    },
+    "usda": {
+      "fdcId": 170554,
+      "description": "Seeds, chia seeds, dried",
+      "source": "sr_legacy"
+    },
+    "per100g": {
+      "kcal": 486,
+      "protein_g": 16.54,
+      "carbs_g": 42.12,
+      "fat_g": 30.74,
+      "fiber_g": 34.4
+    },
+    "portions": [
+      {
+        "label": "1 oz",
+        "grams": 28.35
+      }
+    ],
+    "allergens": [],
+    "packageGrams": 340.2
+  },
+  {
+    "key": "chicken_breast",
+    "displayName": "Chicken breast (boneless skinless)",
+    "aisle": "Meat & Seafood",
+    "package": {
+      "size": 1,
+      "unit": "lb"
+    },
+    "usda": {
+      "fdcId": 171077,
+      "description": "Chicken, broiler or fryers, breast, skinless, boneless, meat only, raw",
+      "source": "sr_legacy"
+    },
+    "per100g": {
+      "kcal": 120,
+      "protein_g": 22.5,
+      "carbs_g": 0,
+      "fat_g": 2.62,
+      "fiber_g": 0
+    },
+    "portions": [
+      {
+        "label": "4 oz",
+        "grams": 113
+      },
+      {
+        "label": "1 piece",
+        "grams": 272
+      },
+      {
+        "label": "1 package",
+        "grams": 926
+      }
+    ],
+    "allergens": [],
+    "packageGrams": 453.6
+  },
+  {
+    "key": "chicken_broth",
+    "displayName": "Chicken broth (low sodium)",
+    "aisle": "Canned & Jarred",
+    "package": {
+      "size": 32,
+      "unit": "fl oz"
+    },
+    "usda": {
+      "fdcId": 171609,
+      "description": "Soup, chicken broth, low sodium, canned",
+      "source": "sr_legacy"
+    },
+    "per100g": {
+      "kcal": 16,
+      "protein_g": 2,
+      "carbs_g": 1.2,
+      "fat_g": 0.6,
+      "fiber_g": 0
+    },
+    "portions": [
+      {
+        "label": "1 cup",
+        "grams": 240
+      }
+    ],
+    "allergens": [],
+    "packageGrams": 946.4
+  },
+  {
+    "key": "chicken_thigh",
+    "displayName": "Chicken thighs (boneless skinless)",
+    "aisle": "Meat & Seafood",
+    "package": {
+      "size": 1,
+      "unit": "lb"
+    },
+    "usda": {
+      "fdcId": 173627,
+      "description": "Chicken, broilers or fryers, dark meat, thigh, meat only, raw",
+      "source": "sr_legacy"
+    },
+    "per100g": {
+      "kcal": 121,
+      "protein_g": 19.66,
+      "carbs_g": 0,
+      "fat_g": 4.12,
+      "fiber_g": 0
+    },
+    "portions": [
+      {
+        "label": "4 oz",
+        "grams": 113
+      },
+      {
+        "label": "1 thigh without skin",
+        "grams": 149
+      }
+    ],
+    "allergens": [],
+    "packageGrams": 453.6
+  },
+  {
+    "key": "chickpeas",
+    "displayName": "Chickpeas (canned)",
+    "aisle": "Canned & Jarred",
+    "package": {
+      "size": 15,
+      "unit": "oz"
+    },
+    "usda": {
+      "fdcId": 173800,
+      "description": "Chickpeas (garbanzo beans, bengal gram), mature seeds, canned, drained solids",
+      "source": "sr_legacy"
+    },
+    "per100g": {
+      "kcal": 139,
+      "protein_g": 7.05,
+      "carbs_g": 22.53,
+      "fat_g": 2.77,
+      "fiber_g": 6.4
+    },
+    "portions": [
+      {
+        "label": "1 can drained",
+        "grams": 253
+      }
+    ],
+    "allergens": [
+      "legume"
+    ],
+    "packageGrams": 425.2
+  },
+  {
+    "key": "chili_powder",
+    "displayName": "Chili powder",
+    "aisle": "Spices",
+    "package": {
+      "size": 2.5,
+      "unit": "oz"
+    },
+    "usda": {
+      "fdcId": 171319,
+      "description": "Spices, chili powder",
+      "source": "sr_legacy"
+    },
+    "per100g": {
+      "kcal": 282,
+      "protein_g": 13.46,
+      "carbs_g": 49.7,
+      "fat_g": 14.28,
+      "fiber_g": 34.8
+    },
+    "portions": [
+      {
+        "label": "1 tsp",
+        "grams": 2.7
+      },
+      {
+        "label": "1 tbsp",
+        "grams": 8
+      }
+    ],
+    "allergens": [
+      "nightshade"
+    ],
+    "packageGrams": 70.9
+  },
+  {
+    "key": "cilantro",
+    "displayName": "Cilantro",
+    "aisle": "Produce",
+    "package": {
+      "size": 1,
+      "unit": "each"
+    },
+    "usda": {
+      "fdcId": 169997,
+      "description": "Coriander (cilantro) leaves, raw",
+      "source": "sr_legacy"
+    },
+    "per100g": {
+      "kcal": 23,
+      "protein_g": 2.13,
+      "carbs_g": 3.67,
+      "fat_g": 0.52,
+      "fiber_g": 2.8
+    },
+    "portions": [
+      {
+        "label": "0.25 cup",
+        "grams": 4
+      },
+      {
+        "label": "9 sprigs",
+        "grams": 20
+      }
+    ],
+    "allergens": [],
+    "packageGrams": null,
+    "packageLabel": "1 bunch",
+    "packageNote": "USDA has no bunch weight"
+  },
+  {
+    "key": "cinnamon",
+    "displayName": "Ground cinnamon",
+    "aisle": "Spices",
+    "package": {
+      "size": 2,
+      "unit": "oz"
+    },
+    "usda": {
+      "fdcId": 171320,
+      "description": "Spices, cinnamon, ground",
+      "source": "sr_legacy"
+    },
+    "per100g": {
+      "kcal": 247,
+      "protein_g": 3.99,
+      "carbs_g": 80.59,
+      "fat_g": 1.24,
+      "fiber_g": 53.1
+    },
+    "portions": [
+      {
+        "label": "1 tsp",
+        "grams": 2.6
+      },
+      {
+        "label": "1 tbsp",
+        "grams": 7.8
+      }
+    ],
+    "allergens": [],
+    "packageGrams": 56.7
+  },
+  {
+    "key": "cocoa_powder",
+    "displayName": "Cocoa powder (unsweetened)",
+    "aisle": "Baking",
+    "package": {
+      "size": 8,
+      "unit": "oz"
+    },
+    "usda": {
+      "fdcId": 169593,
+      "description": "Cocoa, dry powder, unsweetened",
+      "source": "sr_legacy"
+    },
+    "per100g": {
+      "kcal": 228,
+      "protein_g": 19.6,
+      "carbs_g": 57.9,
+      "fat_g": 13.7,
+      "fiber_g": 37
+    },
+    "portions": [
+      {
+        "label": "1 cup",
+        "grams": 86
+      },
+      {
+        "label": "1 tbsp",
+        "grams": 5.4
+      }
+    ],
+    "allergens": [],
+    "packageGrams": 226.8
+  },
+  {
+    "key": "coconut_milk",
+    "displayName": "Coconut milk (canned)",
+    "aisle": "International",
+    "package": {
+      "size": 13.5,
+      "unit": "fl oz"
+    },
+    "usda": {
+      "fdcId": 170173,
+      "description": "Nuts, coconut milk, canned (liquid expressed from grated meat and water)",
+      "source": "sr_legacy"
+    },
+    "per100g": {
+      "kcal": 197,
+      "protein_g": 2.02,
+      "carbs_g": 2.81,
+      "fat_g": 21.33,
+      "fiber_g": null
+    },
+    "portions": [
+      {
+        "label": "1 cup",
+        "grams": 226
+      },
+      {
+        "label": "1 tbsp",
+        "grams": 15
+      }
+    ],
+    "allergens": [],
+    "packageGrams": 399.2
+  },
+  {
+    "key": "corn_frozen",
+    "displayName": "Corn (frozen)",
+    "aisle": "Frozen",
+    "package": {
+      "size": 12,
+      "unit": "oz"
+    },
+    "usda": {
+      "fdcId": 168398,
+      "description": "Corn, sweet, yellow, frozen, kernels cut off cob, unprepared (Includes foods for USDA's Food Distribution Program)",
+      "source": "sr_legacy"
+    },
+    "per100g": {
+      "kcal": 88,
+      "protein_g": 3.02,
+      "carbs_g": 20.71,
+      "fat_g": 0.78,
+      "fiber_g": 2.1
+    },
+    "portions": [
+      {
+        "label": "1 cup",
+        "grams": 136
+      },
+      {
+        "label": "1 package",
+        "grams": 284
+      }
+    ],
+    "allergens": [
+      "corn"
+    ],
+    "packageGrams": 340.2
+  },
+  {
+    "key": "corn_tortillas",
+    "displayName": "Corn tortillas",
+    "aisle": "Bakery & Bread",
+    "package": {
+      "size": 30,
+      "unit": "each"
+    },
+    "usda": {
+      "fdcId": 175036,
+      "description": "Tortillas, ready-to-bake or -fry, corn",
+      "source": "sr_legacy"
+    },
+    "per100g": {
+      "kcal": 218,
+      "protein_g": 5.7,
+      "carbs_g": 44.64,
+      "fat_g": 2.85,
+      "fiber_g": 6.3
+    },
+    "portions": [
+      {
+        "label": "1 oz",
+        "grams": 28.35
+      },
+      {
+        "label": "1 enchilada",
+        "grams": 19
+      },
+      {
+        "label": "1 tortilla",
+        "grams": 24
+      }
+    ],
+    "allergens": [
+      "corn"
+    ],
+    "packageGrams": 720
+  },
+  {
+    "key": "cornstarch",
+    "displayName": "Cornstarch",
+    "aisle": "Baking",
+    "package": {
+      "size": 16,
+      "unit": "oz"
+    },
+    "usda": {
+      "fdcId": 169698,
+      "description": "Cornstarch",
+      "source": "sr_legacy"
+    },
+    "per100g": {
+      "kcal": 381,
+      "protein_g": 0.26,
+      "carbs_g": 91.27,
+      "fat_g": 0.05,
+      "fiber_g": 0.9
+    },
+    "portions": [
+      {
+        "label": "1 cup",
+        "grams": 128
+      }
+    ],
+    "allergens": [
+      "corn"
+    ],
+    "packageGrams": 453.6
+  },
+  {
+    "key": "cottage_cheese",
+    "displayName": "Cottage cheese (low fat)",
+    "aisle": "Dairy & Eggs",
+    "package": {
+      "size": 16,
+      "unit": "oz"
+    },
+    "usda": {
+      "fdcId": 172182,
+      "description": "Cheese, cottage, lowfat, 2% milkfat",
+      "source": "sr_legacy"
+    },
+    "per100g": {
+      "kcal": 81,
+      "protein_g": 10.45,
+      "carbs_g": 4.76,
+      "fat_g": 2.27,
+      "fiber_g": 0
+    },
+    "portions": [
+      {
+        "label": "4 oz",
+        "grams": 113
+      },
+      {
+        "label": "1 cup (not packed)",
+        "grams": 226
+      }
+    ],
+    "allergens": [
+      "dairy"
+    ],
+    "packageGrams": 453.6
+  },
+  {
+    "key": "cream_cheese",
+    "displayName": "Cream cheese",
+    "aisle": "Dairy & Eggs",
+    "package": {
+      "size": 8,
+      "unit": "oz"
+    },
+    "usda": {
+      "fdcId": 173418,
+      "description": "Cheese, cream",
+      "source": "sr_legacy"
+    },
+    "per100g": {
+      "kcal": 350,
+      "protein_g": 6.15,
+      "carbs_g": 5.52,
+      "fat_g": 34.44,
+      "fiber_g": 0
+    },
+    "portions": [
+      {
+        "label": "1 tbsp",
+        "grams": 14.5
+      },
+      {
+        "label": "1 cup",
+        "grams": 232
+      },
+      {
+        "label": "1 tbsp, whipped",
+        "grams": 10
+      },
+      {
+        "label": "1 oz",
+        "grams": 28.35
+      },
+      {
+        "label": "1 cubic inch",
+        "grams": 16
+      },
+      {
+        "label": "1 package, small (3 oz)",
+        "grams": 85
+      }
+    ],
+    "allergens": [
+      "dairy"
+    ],
+    "packageGrams": 226.8
+  },
+  {
+    "key": "cucumber",
+    "displayName": "Cucumber",
+    "aisle": "Produce",
+    "package": {
+      "size": 1,
+      "unit": "each"
+    },
+    "usda": {
+      "fdcId": 168409,
+      "description": "Cucumber, with peel, raw",
+      "source": "sr_legacy"
+    },
+    "per100g": {
+      "kcal": 15,
+      "protein_g": 0.65,
+      "carbs_g": 3.63,
+      "fat_g": 0.11,
+      "fiber_g": 0.5
+    },
+    "portions": [
+      {
+        "label": "0.5 cup slices",
+        "grams": 52
+      },
+      {
+        "label": "1 cucumber (8-1/4\")",
+        "grams": 301
+      }
+    ],
+    "allergens": [],
+    "packageGrams": 301,
+    "packageNote": "USDA portion: \"1 cucumber (8-1/4\\\")\" = 301 g"
+  },
+  {
+    "key": "cumin",
+    "displayName": "Ground cumin",
+    "aisle": "Spices",
+    "package": {
+      "size": 2,
+      "unit": "oz"
+    },
+    "usda": {
+      "fdcId": 170923,
+      "description": "Spices, cumin seed",
+      "source": "sr_legacy"
+    },
+    "per100g": {
+      "kcal": 375,
+      "protein_g": 17.81,
+      "carbs_g": 44.24,
+      "fat_g": 22.27,
+      "fiber_g": 10.5
+    },
+    "portions": [
+      {
+        "label": "1 tsp, whole",
+        "grams": 2.1
+      },
+      {
+        "label": "1 tbsp, whole",
+        "grams": 6
+      }
+    ],
+    "allergens": [],
+    "packageGrams": 56.7
+  },
+  {
+    "key": "curry_paste",
+    "displayName": "Thai curry paste",
+    "aisle": "International",
+    "package": {
+      "size": 4,
+      "unit": "oz"
+    },
+    "usda": {
+      "fdcId": 174527,
+      "description": "Sauce, ready-to-serve, pepper or hot",
+      "source": "sr_legacy"
+    },
+    "per100g": {
+      "kcal": 11,
+      "protein_g": 0.51,
+      "carbs_g": 1.75,
+      "fat_g": 0.37,
+      "fiber_g": 0.3
+    },
+    "portions": [
+      {
+        "label": "1 tsp",
+        "grams": 4.7
+      },
+      {
+        "label": "0.25 tsp",
+        "grams": 1.2
+      }
+    ],
+    "allergens": [
+      "fish",
+      "shellfish"
+    ],
+    "packageGrams": 113.4
+  },
+  {
+    "key": "curry_powder",
+    "displayName": "Curry powder",
+    "aisle": "Spices",
+    "package": {
+      "size": 2,
+      "unit": "oz"
+    },
+    "usda": {
+      "fdcId": 170924,
+      "description": "Spices, curry powder",
+      "source": "sr_legacy"
+    },
+    "per100g": {
+      "kcal": 325,
+      "protein_g": 14.29,
+      "carbs_g": 55.83,
+      "fat_g": 14.01,
+      "fiber_g": 53.2
+    },
+    "portions": [
+      {
+        "label": "1 tsp",
+        "grams": 2
+      },
+      {
+        "label": "1 tbsp",
+        "grams": 6.3
+      }
+    ],
+    "allergens": [],
+    "packageGrams": 56.7
+  },
+  {
+    "key": "dark_chocolate",
+    "displayName": "Dark chocolate",
+    "aisle": "Snacks",
+    "package": {
+      "size": 3.5,
+      "unit": "oz"
+    },
+    "usda": {
+      "fdcId": 170273,
+      "description": "Chocolate, dark, 70-85% cacao solids",
+      "source": "sr_legacy"
+    },
+    "per100g": {
+      "kcal": 598,
+      "protein_g": 7.79,
+      "carbs_g": 45.9,
+      "fat_g": 42.63,
+      "fiber_g": 10.9
+    },
+    "portions": [
+      {
+        "label": "1 oz",
+        "grams": 28.35
+      },
+      {
+        "label": "1 bar",
+        "grams": 101
+      }
+    ],
+    "allergens": [
+      "soy"
+    ],
+    "packageGrams": 99.2
+  },
+  {
+    "key": "dates_medjool",
+    "displayName": "Medjool dates",
+    "aisle": "Produce",
+    "package": {
+      "size": 8,
+      "unit": "oz"
+    },
+    "usda": {
+      "fdcId": 168191,
+      "description": "Dates, medjool",
+      "source": "sr_legacy"
+    },
+    "per100g": {
+      "kcal": 277,
+      "protein_g": 1.81,
+      "carbs_g": 74.97,
+      "fat_g": 0.15,
+      "fiber_g": 6.7
+    },
+    "portions": [
+      {
+        "label": "1 date, pitted",
+        "grams": 24
+      }
+    ],
+    "allergens": [],
+    "packageGrams": 226.8
+  },
+  {
+    "key": "deli_turkey",
+    "displayName": "Deli turkey breast",
+    "aisle": "Deli",
+    "package": {
+      "size": 8,
+      "unit": "oz"
+    },
+    "usda": {
+      "fdcId": 172941,
+      "description": "Turkey breast, sliced, prepackaged",
+      "source": "sr_legacy"
+    },
+    "per100g": {
+      "kcal": 106,
+      "protein_g": 14.81,
+      "carbs_g": 2.2,
+      "fat_g": 3.77,
+      "fiber_g": 0
+    },
+    "portions": [
+      {
+        "label": "1 slice",
+        "grams": 16
+      }
+    ],
+    "allergens": [],
+    "packageGrams": 226.8
+  },
+  {
+    "key": "edamame",
+    "displayName": "Edamame (frozen shelled)",
+    "aisle": "Frozen",
+    "package": {
+      "size": 12,
+      "unit": "oz"
+    },
+    "usda": {
+      "fdcId": 168411,
+      "description": "Edamame, frozen, prepared",
+      "source": "sr_legacy"
+    },
+    "per100g": {
+      "kcal": 121,
+      "protein_g": 11.91,
+      "carbs_g": 8.91,
+      "fat_g": 5.2,
+      "fiber_g": 5.2
+    },
+    "portions": [
+      {
+        "label": "1 cup",
+        "grams": 155
+      }
+    ],
+    "allergens": [
+      "soy",
+      "legume"
+    ],
+    "packageGrams": 340.2
+  },
+  {
+    "key": "egg_whites",
+    "displayName": "Liquid egg whites",
+    "aisle": "Dairy & Eggs",
+    "package": {
+      "size": 16,
+      "unit": "oz"
+    },
+    "usda": {
+      "fdcId": 172183,
+      "description": "Egg, white, raw, fresh",
+      "source": "sr_legacy"
+    },
+    "per100g": {
+      "kcal": 52,
+      "protein_g": 10.9,
+      "carbs_g": 0.73,
+      "fat_g": 0.17,
+      "fiber_g": 0
+    },
+    "portions": [
+      {
+        "label": "1 large",
+        "grams": 33
+      },
+      {
+        "label": "1 cup",
+        "grams": 243
+      }
+    ],
+    "allergens": [
+      "egg"
+    ],
+    "packageGrams": 453.6
+  },
+  {
+    "key": "eggs",
+    "displayName": "Eggs (large)",
+    "aisle": "Dairy & Eggs",
+    "package": {
+      "size": 12,
+      "unit": "each"
+    },
+    "usda": {
+      "fdcId": 171287,
+      "description": "Egg, whole, raw, fresh",
+      "source": "sr_legacy"
+    },
+    "per100g": {
+      "kcal": 143,
+      "protein_g": 12.56,
+      "carbs_g": 0.72,
+      "fat_g": 9.51,
+      "fiber_g": 0
+    },
+    "portions": [
+      {
+        "label": "1 large",
+        "grams": 50
+      },
+      {
+        "label": "1 extra large",
+        "grams": 56
+      },
+      {
+        "label": "1 jumbo",
+        "grams": 63
+      },
+      {
+        "label": "1 cup (4.86 large eggs)",
+        "grams": 243
+      },
+      {
+        "label": "1 medium",
+        "grams": 44
+      },
+      {
+        "label": "1 small",
+        "grams": 38
+      }
+    ],
+    "allergens": [
+      "egg"
+    ],
+    "packageGrams": 600
+  },
+  {
+    "key": "english_muffins",
+    "displayName": "English muffins (whole wheat)",
+    "aisle": "Bakery & Bread",
+    "package": {
+      "size": 6,
+      "unit": "each"
+    },
+    "usda": {
+      "fdcId": 174093,
+      "description": "English muffins, whole grain white",
+      "source": "sr_legacy"
+    },
+    "per100g": {
+      "kcal": 245,
+      "protein_g": 7.02,
+      "carbs_g": 50.17,
+      "fat_g": 1.75,
+      "fiber_g": 3.5
+    },
+    "portions": [
+      {
+        "label": "1 muffin 1 serving",
+        "grams": 57
+      }
+    ],
+    "allergens": [
+      "wheat_gluten"
+    ],
+    "packageGrams": 342
+  },
+  {
+    "key": "feta",
+    "displayName": "Feta cheese",
+    "aisle": "Dairy & Eggs",
+    "package": {
+      "size": 6,
+      "unit": "oz"
+    },
+    "usda": {
+      "fdcId": 173420,
+      "description": "Cheese, feta",
+      "source": "sr_legacy"
+    },
+    "per100g": {
+      "kcal": 265,
+      "protein_g": 14.21,
+      "carbs_g": 3.88,
+      "fat_g": 21.49,
+      "fiber_g": 0
+    },
+    "portions": [
+      {
+        "label": "1 cup, crumbled",
+        "grams": 150
+      },
+      {
+        "label": "1 oz",
+        "grams": 28.35
+      },
+      {
+        "label": "1 cubic inch",
+        "grams": 17
+      },
+      {
+        "label": "1 wedge (1.33 oz)",
+        "grams": 38
+      }
+    ],
+    "allergens": [
+      "dairy"
+    ],
+    "packageGrams": 170.1
+  },
+  {
+    "key": "flaxseed",
+    "displayName": "Ground flaxseed",
+    "aisle": "Pantry",
+    "package": {
+      "size": 16,
+      "unit": "oz"
+    },
+    "usda": {
+      "fdcId": 169414,
+      "description": "Seeds, flaxseed",
+      "source": "sr_legacy"
+    },
+    "per100g": {
+      "kcal": 534,
+      "protein_g": 18.29,
+      "carbs_g": 28.88,
+      "fat_g": 42.16,
+      "fiber_g": 27.3
+    },
+    "portions": [
+      {
+        "label": "1 tbsp, whole",
+        "grams": 10.3
+      },
+      {
+        "label": "1 cup, whole",
+        "grams": 168
+      },
+      {
+        "label": "1 tbsp, ground",
+        "grams": 7
+      },
+      {
+        "label": "1 tsp, whole",
+        "grams": 3.4
+      },
+      {
+        "label": "1 tsp, ground",
+        "grams": 2.5
+      }
+    ],
+    "allergens": [],
+    "packageGrams": 453.6
+  },
+  {
+    "key": "flour",
+    "displayName": "All-purpose flour",
+    "aisle": "Baking",
+    "package": {
+      "size": 5,
+      "unit": "lb"
+    },
+    "usda": {
+      "fdcId": 168894,
+      "description": "Wheat flour, white, all-purpose, enriched, bleached",
+      "source": "sr_legacy"
+    },
+    "per100g": {
+      "kcal": 364,
+      "protein_g": 10.33,
+      "carbs_g": 76.31,
+      "fat_g": 0.98,
+      "fiber_g": 2.7
+    },
+    "portions": [
+      {
+        "label": "1 cup",
+        "grams": 125
+      }
+    ],
+    "allergens": [
+      "wheat_gluten"
+    ],
+    "packageGrams": 2268
+  },
+  {
+    "key": "flour_tortillas",
+    "displayName": "Flour tortillas (8 in)",
+    "aisle": "Bakery & Bread",
+    "package": {
+      "size": 10,
+      "unit": "each"
+    },
+    "usda": {
+      "fdcId": 175037,
+      "description": "Tortillas, ready-to-bake or -fry, flour, refrigerated",
+      "source": "sr_legacy"
+    },
+    "per100g": {
+      "kcal": 306,
+      "protein_g": 8.2,
+      "carbs_g": 49.38,
+      "fat_g": 7.99,
+      "fiber_g": 3.5
+    },
+    "portions": [
+      {
+        "label": "1 tortilla",
+        "grams": 48
+      },
+      {
+        "label": "1 oz",
+        "grams": 28.35
+      },
+      {
+        "label": "1 tortilla medium (approx 6\" dia)",
+        "grams": 30
+      },
+      {
+        "label": "1 package",
+        "grams": 407
+      },
+      {
+        "label": "1 tortilla (approx 10\" dia)",
+        "grams": 72
+      },
+      {
+        "label": "1 tortilla (approx 12\" dia)",
+        "grams": 117
+      }
+    ],
+    "allergens": [
+      "wheat_gluten"
+    ],
+    "packageGrams": 480
+  },
+  {
+    "key": "garlic",
+    "displayName": "Garlic",
+    "aisle": "Produce",
+    "package": {
+      "size": 1,
+      "unit": "each"
+    },
+    "usda": {
+      "fdcId": 169230,
+      "description": "Garlic, raw",
+      "source": "sr_legacy"
+    },
+    "per100g": {
+      "kcal": 149,
+      "protein_g": 6.36,
+      "carbs_g": 33.06,
+      "fat_g": 0.5,
+      "fiber_g": 2.1
+    },
+    "portions": [
+      {
+        "label": "1 cup",
+        "grams": 136
+      },
+      {
+        "label": "1 tsp",
+        "grams": 2.8
+      },
+      {
+        "label": "1 clove",
+        "grams": 3
+      },
+      {
+        "label": "3 cloves",
+        "grams": 9
+      }
+    ],
+    "allergens": [
+      "onion_garlic"
+    ],
+    "packageGrams": 30,
+    "packageLabel": "1 head",
+    "packageNote": "assumption: 1 head ≈ 10 cloves × 3 g (USDA \"1 clove\" = 3 g)"
+  },
+  {
+    "key": "garlic_powder",
+    "displayName": "Garlic powder",
+    "aisle": "Spices",
+    "package": {
+      "size": 3,
+      "unit": "oz"
+    },
+    "usda": {
+      "fdcId": 171325,
+      "description": "Spices, garlic powder",
+      "source": "sr_legacy"
+    },
+    "per100g": {
+      "kcal": 331,
+      "protein_g": 16.55,
+      "carbs_g": 72.73,
+      "fat_g": 0.73,
+      "fiber_g": 9
+    },
+    "portions": [
+      {
+        "label": "1 tsp",
+        "grams": 3.1
+      },
+      {
+        "label": "1 tbsp",
+        "grams": 9.7
+      }
+    ],
+    "allergens": [
+      "onion_garlic"
+    ],
+    "packageGrams": 85
+  },
+  {
+    "key": "ginger",
+    "displayName": "Fresh ginger",
+    "aisle": "Produce",
+    "package": {
+      "size": 4,
+      "unit": "oz"
+    },
+    "usda": {
+      "fdcId": 169231,
+      "description": "Ginger root, raw",
+      "source": "sr_legacy"
+    },
+    "per100g": {
+      "kcal": 80,
+      "protein_g": 1.82,
+      "carbs_g": 17.77,
+      "fat_g": 0.75,
+      "fiber_g": 2
+    },
+    "portions": [
+      {
+        "label": "1 tsp",
+        "grams": 2
+      },
+      {
+        "label": "0.25 cup slices (1\" dia)",
+        "grams": 24
+      },
+      {
+        "label": "5 slices (1\" dia)",
+        "grams": 11
+      }
+    ],
+    "allergens": [],
+    "packageGrams": 113.4
+  },
+  {
+    "key": "granola",
+    "displayName": "Granola",
+    "aisle": "Breakfast & Cereal",
+    "package": {
+      "size": 12,
+      "unit": "oz"
+    },
+    "usda": {
+      "fdcId": 171646,
+      "description": "Cereals ready-to-eat, granola, homemade",
+      "source": "sr_legacy"
+    },
+    "per100g": {
+      "kcal": 489,
+      "protein_g": 13.67,
+      "carbs_g": 53.88,
+      "fat_g": 24.31,
+      "fiber_g": 8.9
+    },
+    "portions": [
+      {
+        "label": "1 cup",
+        "grams": 122
+      },
+      {
+        "label": "1 oz",
+        "grams": 28.35
+      }
+    ],
+    "allergens": [
+      "wheat_gluten",
+      "tree_nut"
+    ],
+    "packageGrams": 340.2
+  },
+  {
+    "key": "grapes",
+    "displayName": "Grapes",
+    "aisle": "Produce",
+    "package": {
+      "size": 1,
+      "unit": "lb"
+    },
+    "usda": {
+      "fdcId": 174683,
+      "description": "Grapes, red or green (European type, such as Thompson seedless), raw",
+      "source": "sr_legacy"
+    },
+    "per100g": {
+      "kcal": 69,
+      "protein_g": 0.72,
+      "carbs_g": 18.1,
+      "fat_g": 0.16,
+      "fiber_g": 0.9
+    },
+    "portions": [
+      {
+        "label": "1 cup",
+        "grams": 151
+      },
+      {
+        "label": "10 grapes",
+        "grams": 49
+      },
+      {
+        "label": "1 NLEA serving",
+        "grams": 126
+      }
+    ],
+    "allergens": [],
+    "packageGrams": 453.6
+  },
+  {
+    "key": "greek_yogurt",
+    "displayName": "Greek yogurt (plain nonfat)",
+    "aisle": "Dairy & Eggs",
+    "package": {
+      "size": 32,
+      "unit": "oz"
+    },
+    "usda": {
+      "fdcId": 170894,
+      "description": "Yogurt, Greek, plain, nonfat (Includes foods for USDA's Food Distribution Program)",
+      "source": "sr_legacy"
+    },
+    "per100g": {
+      "kcal": 59,
+      "protein_g": 10.19,
+      "carbs_g": 3.6,
+      "fat_g": 0.39,
+      "fiber_g": 0
+    },
+    "portions": [
+      {
+        "label": "1 container",
+        "grams": 170
+      }
+    ],
+    "allergens": [
+      "dairy"
+    ],
+    "packageGrams": 907.2
+  },
+  {
+    "key": "green_beans",
+    "displayName": "Green beans",
+    "aisle": "Produce",
+    "package": {
+      "size": 12,
+      "unit": "oz"
+    },
+    "usda": {
+      "fdcId": 169961,
+      "description": "Beans, snap, green, raw",
+      "source": "sr_legacy"
+    },
+    "per100g": {
+      "kcal": 31,
+      "protein_g": 1.83,
+      "carbs_g": 6.97,
+      "fat_g": 0.22,
+      "fiber_g": 2.7
+    },
+    "portions": [
+      {
+        "label": "1 cup 1/2\" pieces",
+        "grams": 100
+      },
+      {
+        "label": "10 beans (4\" long)",
+        "grams": 55
+      }
+    ],
+    "allergens": [
+      "legume"
+    ],
+    "packageGrams": 340.2
+  },
+  {
+    "key": "green_onion",
+    "displayName": "Green onions / scallions",
+    "aisle": "Produce",
+    "package": {
+      "size": 1,
+      "unit": "each"
+    },
+    "usda": {
+      "fdcId": 170005,
+      "description": "Onions, spring or scallions (includes tops and bulb), raw",
+      "source": "sr_legacy"
+    },
+    "per100g": {
+      "kcal": 32,
+      "protein_g": 1.83,
+      "carbs_g": 7.34,
+      "fat_g": 0.19,
+      "fiber_g": 2.6
+    },
+    "portions": [
+      {
+        "label": "1 cup, chopped",
+        "grams": 100
+      },
+      {
+        "label": "1 tbsp chopped",
+        "grams": 6
+      },
+      {
+        "label": "1 large",
+        "grams": 25
+      },
+      {
+        "label": "1 medium (4-1/8\" long)",
+        "grams": 15
+      },
+      {
+        "label": "1 small (3\" long)",
+        "grams": 5
+      }
+    ],
+    "allergens": [
+      "onion_garlic"
+    ],
+    "packageGrams": 25
+  },
+  {
+    "key": "ground_beef",
+    "displayName": "Ground beef (90% lean)",
+    "aisle": "Meat & Seafood",
+    "package": {
+      "size": 1,
+      "unit": "lb"
+    },
+    "usda": {
+      "fdcId": 174030,
+      "description": "Beef, ground, 90% lean meat / 10% fat, raw",
+      "source": "sr_legacy"
+    },
+    "per100g": {
+      "kcal": 176,
+      "protein_g": 20,
+      "carbs_g": 0,
+      "fat_g": 10,
+      "fiber_g": 0
+    },
+    "portions": [
+      {
+        "label": "4 oz",
+        "grams": 113
+      }
+    ],
+    "allergens": [],
+    "packageGrams": 453.6
+  },
+  {
+    "key": "ground_turkey",
+    "displayName": "Ground turkey (93% lean)",
+    "aisle": "Meat & Seafood",
+    "package": {
+      "size": 1,
+      "unit": "lb"
+    },
+    "usda": {
+      "fdcId": 172850,
+      "description": "Turkey, ground, 93% lean, 7% fat, raw",
+      "source": "sr_legacy"
+    },
+    "per100g": {
+      "kcal": 150,
+      "protein_g": 18.73,
+      "carbs_g": 0,
+      "fat_g": 8.34,
+      "fiber_g": 0
+    },
+    "portions": [
+      {
+        "label": "4 oz",
+        "grams": 113
+      },
+      {
+        "label": "1 lb",
+        "grams": 453
+      },
+      {
+        "label": "1 serving (cooked from 4 oz)",
+        "grams": 85
+      }
+    ],
+    "allergens": [],
+    "packageGrams": 453.6
+  },
+  {
+    "key": "honey",
+    "displayName": "Honey",
+    "aisle": "Pantry",
+    "package": {
+      "size": 12,
+      "unit": "oz"
+    },
+    "usda": {
+      "fdcId": 169640,
+      "description": "Honey",
+      "source": "sr_legacy"
+    },
+    "per100g": {
+      "kcal": 304,
+      "protein_g": 0.3,
+      "carbs_g": 82.4,
+      "fat_g": 0,
+      "fiber_g": 0.2
+    },
+    "portions": [
+      {
+        "label": "1 cup",
+        "grams": 339
+      },
+      {
+        "label": "1 tbsp",
+        "grams": 21
+      },
+      {
+        "label": "1 packet (0.5 oz)",
+        "grams": 14
+      }
+    ],
+    "allergens": [],
+    "packageGrams": 340.2
+  },
+  {
+    "key": "hot_sauce",
+    "displayName": "Hot sauce",
+    "aisle": "Condiments",
+    "package": {
+      "size": 17,
+      "unit": "oz"
+    },
+    "usda": {
+      "fdcId": 171186,
+      "description": "Sauce, hot chile, sriracha",
+      "source": "sr_legacy"
+    },
+    "per100g": {
+      "kcal": 93,
+      "protein_g": 1.93,
+      "carbs_g": 19.16,
+      "fat_g": 0.93,
+      "fiber_g": 2.2
+    },
+    "portions": [
+      {
+        "label": "1 tsp",
+        "grams": 6.5
+      }
+    ],
+    "allergens": [
+      "nightshade"
+    ],
+    "packageGrams": 481.9
+  },
+  {
+    "key": "hummus",
+    "displayName": "Hummus",
+    "aisle": "Deli",
+    "package": {
+      "size": 10,
+      "unit": "oz"
+    },
+    "usda": {
+      "fdcId": 174289,
+      "description": "Hummus, commercial",
+      "source": "sr_legacy"
+    },
+    "per100g": {
+      "kcal": 237,
+      "protein_g": 7.78,
+      "carbs_g": 15,
+      "fat_g": 17.82,
+      "fiber_g": 5.5
+    },
+    "portions": [
+      {
+        "label": "1 tbsp",
+        "grams": 15
+      },
+      {
+        "label": "1 cup",
+        "grams": 246
+      }
+    ],
+    "allergens": [
+      "sesame",
+      "legume",
+      "onion_garlic"
+    ],
+    "packageGrams": 283.5
+  },
+  {
+    "key": "italian_seasoning",
+    "displayName": "Italian seasoning",
+    "aisle": "Spices",
+    "package": {
+      "size": 1,
+      "unit": "oz"
+    },
+    "usda": {
+      "fdcId": 171317,
+      "description": "Spices, basil, dried",
+      "source": "sr_legacy"
+    },
+    "per100g": {
+      "kcal": 233,
+      "protein_g": 22.98,
+      "carbs_g": 47.75,
+      "fat_g": 4.07,
+      "fiber_g": 37.7
+    },
+    "portions": [
+      {
+        "label": "1 tsp, leaves",
+        "grams": 0.7
+      },
+      {
+        "label": "1 tbsp, leaves",
+        "grams": 2.1
+      },
+      {
+        "label": "1 tsp, ground",
+        "grams": 1.4
+      },
+      {
+        "label": "1 tbsp, ground",
+        "grams": 4.5
+      }
+    ],
+    "allergens": [],
+    "packageGrams": 28.3
+  },
+  {
+    "key": "jalapeno",
+    "displayName": "Jalapeño",
+    "aisle": "Produce",
+    "package": {
+      "size": 1,
+      "unit": "each"
+    },
+    "usda": {
+      "fdcId": 168576,
+      "description": "Peppers, jalapeno, raw",
+      "source": "sr_legacy"
+    },
+    "per100g": {
+      "kcal": 29,
+      "protein_g": 0.91,
+      "carbs_g": 6.5,
+      "fat_g": 0.37,
+      "fiber_g": 2.8
+    },
+    "portions": [
+      {
+        "label": "1 cup, sliced",
+        "grams": 90
+      },
+      {
+        "label": "1 pepper",
+        "grams": 14
+      }
+    ],
+    "allergens": [
+      "nightshade"
+    ],
+    "packageGrams": 14,
+    "packageNote": "USDA portion: \"1 pepper\" = 14 g"
+  },
+  {
+    "key": "kale",
+    "displayName": "Kale",
+    "aisle": "Produce",
+    "package": {
+      "size": 8,
+      "unit": "oz"
+    },
+    "usda": {
+      "fdcId": 168421,
+      "description": "Kale, raw",
+      "source": "sr_legacy"
+    },
+    "per100g": {
+      "kcal": 35,
+      "protein_g": 2.92,
+      "carbs_g": 4.42,
+      "fat_g": 1.49,
+      "fiber_g": 4.1
+    },
+    "portions": [
+      {
+        "label": "1 cup",
+        "grams": 21
+      }
+    ],
+    "allergens": [],
+    "packageGrams": 226.8
+  },
+  {
+    "key": "ketchup",
+    "displayName": "Ketchup",
+    "aisle": "Condiments",
+    "package": {
+      "size": 20,
+      "unit": "oz"
+    },
+    "usda": {
+      "fdcId": 168556,
+      "description": "Catsup",
+      "source": "sr_legacy"
+    },
+    "per100g": {
+      "kcal": 101,
+      "protein_g": 1.04,
+      "carbs_g": 27.4,
+      "fat_g": 0.1,
+      "fiber_g": 0.3
+    },
+    "portions": [
+      {
+        "label": "1 tbsp",
+        "grams": 17
+      },
+      {
+        "label": "1 packet",
+        "grams": 9
+      },
+      {
+        "label": "1 cup",
+        "grams": 240
+      }
+    ],
+    "allergens": [
+      "nightshade"
+    ],
+    "packageGrams": 567
+  },
+  {
+    "key": "kidney_beans",
+    "displayName": "Kidney beans (canned)",
+    "aisle": "Canned & Jarred",
+    "package": {
+      "size": 15,
+      "unit": "oz"
+    },
+    "usda": {
+      "fdcId": 174285,
+      "description": "Beans, kidney, red, mature seeds, canned, drained solids",
+      "source": "sr_legacy"
+    },
+    "per100g": {
+      "kcal": 124,
+      "protein_g": 7.98,
+      "carbs_g": 21.49,
+      "fat_g": 1.05,
+      "fiber_g": 5.5
+    },
+    "portions": [
+      {
+        "label": "1 can drained solids",
+        "grams": 266
+      }
+    ],
+    "allergens": [
+      "legume"
+    ],
+    "packageGrams": 425.2
+  },
+  {
+    "key": "kimchi",
+    "displayName": "Kimchi",
+    "aisle": "International",
+    "package": {
+      "size": 14,
+      "unit": "oz"
+    },
+    "usda": {
+      "fdcId": 170392,
+      "description": "Cabbage, kimchi",
+      "source": "sr_legacy"
+    },
+    "per100g": {
+      "kcal": 15,
+      "protein_g": 1.1,
+      "carbs_g": 2.4,
+      "fat_g": 0.5,
+      "fiber_g": 1.6
+    },
+    "portions": [
+      {
+        "label": "1 cup",
+        "grams": 150
+      }
+    ],
+    "allergens": [
+      "fish",
+      "shellfish"
+    ],
+    "packageGrams": 396.9
+  },
+  {
+    "key": "lemon",
+    "displayName": "Lemon",
+    "aisle": "Produce",
+    "package": {
+      "size": 1,
+      "unit": "each"
+    },
+    "usda": {
+      "fdcId": 167746,
+      "description": "Lemons, raw, without peel",
+      "source": "sr_legacy"
+    },
+    "per100g": {
+      "kcal": 29,
+      "protein_g": 1.1,
+      "carbs_g": 9.32,
+      "fat_g": 0.3,
+      "fiber_g": 2.8
+    },
+    "portions": [
+      {
+        "label": "1 cup, sections",
+        "grams": 212
+      },
+      {
+        "label": "1 fruit (2-1/8\" dia)",
+        "grams": 58
+      },
+      {
+        "label": "1 fruit (2-3/8\" dia)",
+        "grams": 84
+      },
+      {
+        "label": "1 wedge or slice (1/8 of one 2-1/8\" dia lemon)",
+        "grams": 7
+      },
+      {
+        "label": "1 NLEA serving",
+        "grams": 58
+      }
+    ],
+    "allergens": [],
+    "packageGrams": 58,
+    "packageNote": "USDA portion: \"1 fruit (2-1/8\\\" dia)\" = 58 g"
+  },
+  {
+    "key": "lentils_dry",
+    "displayName": "Lentils (dry)",
+    "aisle": "Rice Pasta & Grains",
+    "package": {
+      "size": 16,
+      "unit": "oz"
+    },
+    "usda": {
+      "fdcId": 172420,
+      "description": "Lentils, raw",
+      "source": "sr_legacy"
+    },
+    "per100g": {
+      "kcal": 352,
+      "protein_g": 24.63,
+      "carbs_g": 63.35,
+      "fat_g": 1.06,
+      "fiber_g": 10.7
+    },
+    "portions": [
+      {
+        "label": "1 cup",
+        "grams": 192
+      },
+      {
+        "label": "1 tablespoon",
+        "grams": 12
+      }
+    ],
+    "allergens": [
+      "legume"
+    ],
+    "packageGrams": 453.6
+  },
+  {
+    "key": "lime",
+    "displayName": "Lime",
+    "aisle": "Produce",
+    "package": {
+      "size": 1,
+      "unit": "each"
+    },
+    "usda": {
+      "fdcId": 168155,
+      "description": "Limes, raw",
+      "source": "sr_legacy"
+    },
+    "per100g": {
+      "kcal": 30,
+      "protein_g": 0.7,
+      "carbs_g": 10.54,
+      "fat_g": 0.2,
+      "fiber_g": 2.8
+    },
+    "portions": [
+      {
+        "label": "1 fruit (2\" dia)",
+        "grams": 67
+      },
+      {
+        "label": "1 NLEA serving",
+        "grams": 67
+      }
+    ],
+    "allergens": [],
+    "packageGrams": 67,
+    "packageNote": "USDA portion: \"1 fruit (2\\\" dia)\" = 67 g"
+  },
+  {
+    "key": "mango_frozen",
+    "displayName": "Mango chunks (frozen)",
+    "aisle": "Frozen",
+    "package": {
+      "size": 16,
+      "unit": "oz"
+    },
+    "usda": {
+      "fdcId": 169910,
+      "description": "Mangos, raw",
+      "source": "sr_legacy"
+    },
+    "per100g": {
+      "kcal": 60,
+      "protein_g": 0.82,
+      "carbs_g": 14.98,
+      "fat_g": 0.38,
+      "fiber_g": 1.6
+    },
+    "portions": [
+      {
+        "label": "1 cup pieces",
+        "grams": 165
+      },
+      {
+        "label": "1 fruit without refuse",
+        "grams": 336
+      }
+    ],
+    "allergens": [],
+    "packageGrams": 453.6,
+    "proxyOf": "USDA has no separate entry; using Mangos, raw"
+  },
+  {
+    "key": "maple_syrup",
+    "displayName": "Maple syrup",
+    "aisle": "Pantry",
+    "package": {
+      "size": 8,
+      "unit": "fl oz"
+    },
+    "usda": {
+      "fdcId": 169661,
+      "description": "Syrups, maple",
+      "source": "sr_legacy"
+    },
+    "per100g": {
+      "kcal": 260,
+      "protein_g": 0.04,
+      "carbs_g": 67.04,
+      "fat_g": 0.06,
+      "fiber_g": 0
+    },
+    "portions": [
+      {
+        "label": "1 tbsp",
+        "grams": 20
+      },
+      {
+        "label": "1 serving 1/4 cup",
+        "grams": 83
+      },
+      {
+        "label": "1 cup",
+        "grams": 315
+      }
+    ],
+    "allergens": [],
+    "packageGrams": 236.6
+  },
+  {
+    "key": "mayo",
+    "displayName": "Mayonnaise",
+    "aisle": "Condiments",
+    "package": {
+      "size": 15,
+      "unit": "oz"
+    },
+    "usda": {
+      "fdcId": 171009,
+      "description": "Salad dressing, mayonnaise, regular",
+      "source": "sr_legacy"
+    },
+    "per100g": {
+      "kcal": 680,
+      "protein_g": 0.96,
+      "carbs_g": 0.57,
+      "fat_g": 74.85,
+      "fiber_g": 0
+    },
+    "portions": [
+      {
+        "label": "1 tbsp",
+        "grams": 13.8
+      },
+      {
+        "label": "1 cup",
+        "grams": 220
+      },
+      {
+        "label": "1 packet",
+        "grams": 10
+      }
+    ],
+    "allergens": [
+      "egg"
+    ],
+    "packageGrams": 425.2
+  },
+  {
+    "key": "milk",
+    "displayName": "Milk (2%)",
+    "aisle": "Dairy & Eggs",
+    "package": {
+      "size": 64,
+      "unit": "fl oz"
+    },
+    "usda": {
+      "fdcId": 171267,
+      "description": "Milk, reduced fat, fluid, 2% milkfat, with added vitamin A and vitamin D",
+      "source": "sr_legacy"
+    },
+    "per100g": {
+      "kcal": 50,
+      "protein_g": 3.3,
+      "carbs_g": 4.8,
+      "fat_g": 1.98,
+      "fiber_g": 0
+    },
+    "portions": [
+      {
+        "label": "1 cup",
+        "grams": 244
+      },
+      {
+        "label": "1 fl oz",
+        "grams": 30.5
+      },
+      {
+        "label": "1 quart",
+        "grams": 976
+      }
+    ],
+    "allergens": [
+      "dairy"
+    ],
+    "packageGrams": 1892.7
+  },
+  {
+    "key": "mixed_greens",
+    "displayName": "Mixed greens / spring mix",
+    "aisle": "Produce",
+    "package": {
+      "size": 5,
+      "unit": "oz"
+    },
+    "usda": {
+      "fdcId": 169249,
+      "description": "Lettuce, green leaf, raw",
+      "source": "sr_legacy"
+    },
+    "per100g": {
+      "kcal": 15,
+      "protein_g": 1.36,
+      "carbs_g": 2.87,
+      "fat_g": 0.15,
+      "fiber_g": 1.3
+    },
+    "portions": [
+      {
+        "label": "1 cup shredded",
+        "grams": 36
+      },
+      {
+        "label": "1 head",
+        "grams": 360
+      },
+      {
+        "label": "1 leaf inner",
+        "grams": 4.8
+      },
+      {
+        "label": "1 leaf outer",
+        "grams": 24
+      }
+    ],
+    "allergens": [],
+    "packageGrams": 141.7
+  },
+  {
+    "key": "mixed_veg_frozen",
+    "displayName": "Mixed vegetables (frozen)",
+    "aisle": "Frozen",
+    "package": {
+      "size": 12,
+      "unit": "oz"
+    },
+    "usda": {
+      "fdcId": 170471,
+      "description": "Vegetables, mixed, frozen, unprepared",
+      "source": "sr_legacy"
+    },
+    "per100g": {
+      "kcal": 72,
+      "protein_g": 3.33,
+      "carbs_g": 13.47,
+      "fat_g": 0.52,
+      "fiber_g": 4
+    },
+    "portions": [
+      {
+        "label": "0.33 package (10 oz)",
+        "grams": 95
+      },
+      {
+        "label": "1 package (10 oz)",
+        "grams": 284
+      },
+      {
+        "label": "1 pack (2-1/2 lb)",
+        "grams": 1134
+      }
+    ],
+    "allergens": [],
+    "packageGrams": 340.2
+  },
+  {
+    "key": "mozzarella",
+    "displayName": "Mozzarella (shredded part-skim)",
+    "aisle": "Dairy & Eggs",
+    "package": {
+      "size": 8,
+      "unit": "oz"
+    },
+    "usda": {
+      "fdcId": 170847,
+      "description": "Cheese, mozzarella, part skim milk",
+      "source": "sr_legacy"
+    },
+    "per100g": {
+      "kcal": 254,
+      "protein_g": 24.26,
+      "carbs_g": 2.77,
+      "fat_g": 15.92,
+      "fiber_g": 0
+    },
+    "portions": [
+      {
+        "label": "1 oz",
+        "grams": 28.35
+      }
+    ],
+    "allergens": [
+      "dairy"
+    ],
+    "packageGrams": 226.8
+  },
+  {
+    "key": "mushrooms",
+    "displayName": "Mushrooms (white)",
+    "aisle": "Produce",
+    "package": {
+      "size": 8,
+      "unit": "oz"
+    },
+    "usda": {
+      "fdcId": 169251,
+      "description": "Mushrooms, white, raw",
+      "source": "sr_legacy"
+    },
+    "per100g": {
+      "kcal": 22,
+      "protein_g": 3.09,
+      "carbs_g": 3.26,
+      "fat_g": 0.34,
+      "fiber_g": 1
+    },
+    "portions": [
+      {
+        "label": "1 cup, pieces or slices",
+        "grams": 70
+      },
+      {
+        "label": "1 cup, whole",
+        "grams": 96
+      },
+      {
+        "label": "1 large",
+        "grams": 23
+      },
+      {
+        "label": "1 medium",
+        "grams": 18
+      },
+      {
+        "label": "1 slice",
+        "grams": 6
+      },
+      {
+        "label": "1 small",
+        "grams": 10
+      }
+    ],
+    "allergens": [],
+    "packageGrams": 226.8
+  },
+  {
+    "key": "mustard",
+    "displayName": "Dijon mustard",
+    "aisle": "Condiments",
+    "package": {
+      "size": 8,
+      "unit": "oz"
+    },
+    "usda": {
+      "fdcId": 172234,
+      "description": "Mustard, prepared, yellow",
+      "source": "sr_legacy"
+    },
+    "per100g": {
+      "kcal": 60,
+      "protein_g": 3.74,
+      "carbs_g": 5.83,
+      "fat_g": 3.34,
+      "fiber_g": 4
+    },
+    "portions": [
+      {
+        "label": "1 tsp or 1 packet",
+        "grams": 5
+      },
+      {
+        "label": "1 cup",
+        "grams": 249
+      }
+    ],
+    "allergens": [],
+    "packageGrams": 226.8
+  },
+  {
+    "key": "olive_oil",
+    "displayName": "Olive oil",
+    "aisle": "Oils & Vinegars",
+    "package": {
+      "size": 16.9,
+      "unit": "fl oz"
+    },
+    "usda": {
+      "fdcId": 171413,
+      "description": "Oil, olive, salad or cooking",
+      "source": "sr_legacy"
+    },
+    "per100g": {
+      "kcal": 884,
+      "protein_g": 0,
+      "carbs_g": 0,
+      "fat_g": 100,
+      "fiber_g": 0
+    },
+    "portions": [
+      {
+        "label": "1 tablespoon",
+        "grams": 13.5
+      },
+      {
+        "label": "1 cup",
+        "grams": 216
+      },
+      {
+        "label": "1 tsp",
+        "grams": 4.5
+      }
+    ],
+    "allergens": [],
+    "packageGrams": 499.8
+  },
+  {
+    "key": "onion",
+    "displayName": "Yellow onion",
+    "aisle": "Produce",
+    "package": {
+      "size": 1,
+      "unit": "each"
+    },
+    "usda": {
+      "fdcId": 170000,
+      "description": "Onions, raw",
+      "source": "sr_legacy"
+    },
+    "per100g": {
+      "kcal": 40,
+      "protein_g": 1.1,
+      "carbs_g": 9.34,
+      "fat_g": 0.1,
+      "fiber_g": 1.7
+    },
+    "portions": [
+      {
+        "label": "1 cup, chopped",
+        "grams": 160
+      },
+      {
+        "label": "1 cup, sliced",
+        "grams": 115
+      },
+      {
+        "label": "1 tbsp chopped",
+        "grams": 10
+      },
+      {
+        "label": "1 large",
+        "grams": 150
+      },
+      {
+        "label": "1 slice, large (1/4\" thick)",
+        "grams": 38
+      },
+      {
+        "label": "1 medium (2-1/2\" dia)",
+        "grams": 110
+      }
+    ],
+    "allergens": [
+      "onion_garlic"
+    ],
+    "packageGrams": 110,
+    "packageNote": "USDA portion: \"1 medium (2-1/2\\\" dia)\" = 110 g; store onions are medium, not large"
+  },
+  {
+    "key": "onion_powder",
+    "displayName": "Onion powder",
+    "aisle": "Spices",
+    "package": {
+      "size": 3,
+      "unit": "oz"
+    },
+    "usda": {
+      "fdcId": 171327,
+      "description": "Spices, onion powder",
+      "source": "sr_legacy"
+    },
+    "per100g": {
+      "kcal": 341,
+      "protein_g": 10.41,
+      "carbs_g": 79.12,
+      "fat_g": 1.04,
+      "fiber_g": 15.2
+    },
+    "portions": [
+      {
+        "label": "1 tsp",
+        "grams": 2.4
+      },
+      {
+        "label": "1 tbsp",
+        "grams": 6.9
+      }
+    ],
+    "allergens": [
+      "onion_garlic"
+    ],
+    "packageGrams": 85
+  },
+  {
+    "key": "orange",
+    "displayName": "Oranges",
+    "aisle": "Produce",
+    "package": {
+      "size": 1,
+      "unit": "lb"
+    },
+    "usda": {
+      "fdcId": 169097,
+      "description": "Oranges, raw, all commercial varieties",
+      "source": "sr_legacy"
+    },
+    "per100g": {
+      "kcal": 47,
+      "protein_g": 0.94,
+      "carbs_g": 11.75,
+      "fat_g": 0.12,
+      "fiber_g": 2.4
+    },
+    "portions": [
+      {
+        "label": "1 cup, sections",
+        "grams": 180
+      },
+      {
+        "label": "1 large (3-1/16\" dia)",
+        "grams": 184
+      },
+      {
+        "label": "1 small (2-3/8\" dia)",
+        "grams": 96
+      },
+      {
+        "label": "1 fruit (2-5/8\" dia)",
+        "grams": 131
+      }
+    ],
+    "allergens": [],
+    "packageGrams": 453.6
+  },
+  {
+    "key": "oregano",
+    "displayName": "Dried oregano",
+    "aisle": "Spices",
+    "package": {
+      "size": 1,
+      "unit": "oz"
+    },
+    "usda": {
+      "fdcId": 171328,
+      "description": "Spices, oregano, dried",
+      "source": "sr_legacy"
+    },
+    "per100g": {
+      "kcal": 265,
+      "protein_g": 9,
+      "carbs_g": 68.92,
+      "fat_g": 4.28,
+      "fiber_g": 42.5
+    },
+    "portions": [
+      {
+        "label": "1 tsp, leaves",
+        "grams": 1
+      },
+      {
+        "label": "1 tsp, ground",
+        "grams": 1.8
+      }
+    ],
+    "allergens": [],
+    "packageGrams": 28.3
+  },
+  {
+    "key": "paprika",
+    "displayName": "Smoked paprika",
+    "aisle": "Spices",
+    "package": {
+      "size": 2,
+      "unit": "oz"
+    },
+    "usda": {
+      "fdcId": 171329,
+      "description": "Spices, paprika",
+      "source": "sr_legacy"
+    },
+    "per100g": {
+      "kcal": 282,
+      "protein_g": 14.14,
+      "carbs_g": 53.99,
+      "fat_g": 12.89,
+      "fiber_g": 34.9
+    },
+    "portions": [
+      {
+        "label": "1 tsp",
+        "grams": 2.3
+      },
+      {
+        "label": "1 tbsp",
+        "grams": 6.8
+      }
+    ],
+    "allergens": [
+      "nightshade"
+    ],
+    "packageGrams": 56.7
+  },
+  {
+    "key": "parmesan",
+    "displayName": "Parmesan (grated)",
+    "aisle": "Dairy & Eggs",
+    "package": {
+      "size": 5,
+      "unit": "oz"
+    },
+    "usda": {
+      "fdcId": 171247,
+      "description": "Cheese, parmesan, grated",
+      "source": "sr_legacy"
+    },
+    "per100g": {
+      "kcal": 420,
+      "protein_g": 28.42,
+      "carbs_g": 13.91,
+      "fat_g": 27.84,
+      "fiber_g": 0
+    },
+    "portions": [
+      {
+        "label": "1 cup",
+        "grams": 100
+      },
+      {
+        "label": "1 tbsp",
+        "grams": 5
+      },
+      {
+        "label": "1 oz",
+        "grams": 28.35
+      }
+    ],
+    "allergens": [
+      "dairy"
+    ],
+    "packageGrams": 141.7
+  },
+  {
+    "key": "parsley",
+    "displayName": "Parsley",
+    "aisle": "Produce",
+    "package": {
+      "size": 1,
+      "unit": "each"
+    },
+    "usda": {
+      "fdcId": 170416,
+      "description": "Parsley, fresh",
+      "source": "sr_legacy"
+    },
+    "per100g": {
+      "kcal": 36,
+      "protein_g": 2.97,
+      "carbs_g": 6.33,
+      "fat_g": 0.79,
+      "fiber_g": 3.3
+    },
+    "portions": [
+      {
+        "label": "1 cup chopped",
+        "grams": 60
+      },
+      {
+        "label": "1 tbsp",
+        "grams": 3.8
+      },
+      {
+        "label": "10 sprigs",
+        "grams": 10
+      }
+    ],
+    "allergens": [],
+    "packageGrams": null,
+    "packageLabel": "1 bunch",
+    "packageNote": "USDA has no bunch weight"
+  },
+  {
+    "key": "pasta",
+    "displayName": "Pasta (spaghetti/penne)",
+    "aisle": "Rice Pasta & Grains",
+    "package": {
+      "size": 16,
+      "unit": "oz"
+    },
+    "usda": {
+      "fdcId": 168927,
+      "description": "Pasta, dry, unenriched",
+      "source": "sr_legacy"
+    },
+    "per100g": {
+      "kcal": 371,
+      "protein_g": 13.04,
+      "carbs_g": 74.67,
+      "fat_g": 1.51,
+      "fiber_g": 3.2
+    },
+    "portions": [
+      {
+        "label": "1 cup spaghetti",
+        "grams": 91
+      },
+      {
+        "label": "2 oz",
+        "grams": 57
+      },
+      {
+        "label": "1 cup elbows",
+        "grams": 122
+      },
+      {
+        "label": "1 cup penne",
+        "grams": 95
+      },
+      {
+        "label": "1 cup farfalle",
+        "grams": 81
+      },
+      {
+        "label": "1 cup rotini",
+        "grams": 96
+      }
+    ],
+    "allergens": [
+      "wheat_gluten"
+    ],
+    "packageGrams": 453.6
+  },
+  {
+    "key": "pasta_sauce",
+    "displayName": "Marinara / pasta sauce",
+    "aisle": "Canned & Jarred",
+    "package": {
+      "size": 24,
+      "unit": "oz"
+    },
+    "usda": {
+      "fdcId": 171192,
+      "description": "Sauce, pasta, spaghetti/marinara, ready-to-serve",
+      "source": "sr_legacy"
+    },
+    "per100g": {
+      "kcal": 50,
+      "protein_g": 1.39,
+      "carbs_g": 7.43,
+      "fat_g": 1.61,
+      "fiber_g": 1.8
+    },
+    "portions": [
+      {
+        "label": "1 serving 1/2 cup",
+        "grams": 132
+      }
+    ],
+    "allergens": [
+      "nightshade",
+      "onion_garlic"
+    ],
+    "packageGrams": 680.4
+  },
+  {
+    "key": "peanut_butter",
+    "displayName": "Peanut butter",
+    "aisle": "Pantry",
+    "package": {
+      "size": 16,
+      "unit": "oz"
+    },
+    "usda": {
+      "fdcId": 172470,
+      "description": "Peanut butter, smooth style, without salt",
+      "source": "sr_legacy"
+    },
+    "per100g": {
+      "kcal": 598,
+      "protein_g": 22.21,
+      "carbs_g": 22.31,
+      "fat_g": 51.36,
+      "fiber_g": 5
+    },
+    "portions": [
+      {
+        "label": "2 tbsp",
+        "grams": 32
+      },
+      {
+        "label": "1 cup",
+        "grams": 258
+      }
+    ],
+    "allergens": [
+      "peanut",
+      "legume"
+    ],
+    "packageGrams": 453.6
+  },
+  {
+    "key": "peanuts",
+    "displayName": "Peanuts (roasted)",
+    "aisle": "Pantry",
+    "package": {
+      "size": 16,
+      "unit": "oz"
+    },
+    "usda": {
+      "fdcId": 173806,
+      "description": "Peanuts, all types, dry-roasted, without salt",
+      "source": "sr_legacy"
+    },
+    "per100g": {
+      "kcal": 587,
+      "protein_g": 24.35,
+      "carbs_g": 21.26,
+      "fat_g": 49.66,
+      "fiber_g": 8.4
+    },
+    "portions": [
+      {
+        "label": "1 cup",
+        "grams": 146
+      },
+      {
+        "label": "1 oz",
+        "grams": 28.35
+      },
+      {
+        "label": "1 peanut",
+        "grams": 1
+      }
+    ],
+    "allergens": [
+      "peanut",
+      "legume"
+    ],
+    "packageGrams": 453.6
+  },
+  {
+    "key": "peas_frozen",
+    "displayName": "Peas (frozen)",
+    "aisle": "Frozen",
+    "package": {
+      "size": 12,
+      "unit": "oz"
+    },
+    "usda": {
+      "fdcId": 170016,
+      "description": "Peas, green, frozen, unprepared (Includes foods for USDA's Food Distribution Program)",
+      "source": "sr_legacy"
+    },
+    "per100g": {
+      "kcal": 77,
+      "protein_g": 5.22,
+      "carbs_g": 13.62,
+      "fat_g": 0.4,
+      "fiber_g": 4.5
+    },
+    "portions": [
+      {
+        "label": "1 cup",
+        "grams": 134
+      },
+      {
+        "label": "1 package",
+        "grams": 284
+      }
+    ],
+    "allergens": [
+      "legume"
+    ],
+    "packageGrams": 340.2
+  },
+  {
+    "key": "pineapple_frozen",
+    "displayName": "Pineapple chunks (frozen)",
+    "aisle": "Frozen",
+    "package": {
+      "size": 16,
+      "unit": "oz"
+    },
+    "usda": {
+      "fdcId": 169124,
+      "description": "Pineapple, raw, all varieties",
+      "source": "sr_legacy"
+    },
+    "per100g": {
+      "kcal": 50,
+      "protein_g": 0.54,
+      "carbs_g": 13.12,
+      "fat_g": 0.12,
+      "fiber_g": 1.4
+    },
+    "portions": [
+      {
+        "label": "1 cup, chunks",
+        "grams": 165
+      },
+      {
+        "label": "1 fruit",
+        "grams": 905
+      },
+      {
+        "label": "1 slice (4-2/3\" dia x 3/4\" thick)",
+        "grams": 166
+      },
+      {
+        "label": "1 slice (3-1/2\" dia x 3/4\" thick)",
+        "grams": 84
+      },
+      {
+        "label": "1 slice, thin (3-1/2\" dia x 1/2\" thick)",
+        "grams": 56
+      }
+    ],
+    "allergens": [],
+    "packageGrams": 453.6,
+    "proxyOf": "USDA has no separate entry; using Pineapple, raw, all varieties"
+  },
+  {
+    "key": "pinto_beans",
+    "displayName": "Pinto beans (canned)",
+    "aisle": "Canned & Jarred",
+    "package": {
+      "size": 15,
+      "unit": "oz"
+    },
+    "usda": {
+      "fdcId": 173797,
+      "description": "Beans, pinto, mature seeds, canned, drained solids, rinsed in tap water",
+      "source": "sr_legacy"
+    },
+    "per100g": {
+      "kcal": 117,
+      "protein_g": 7.04,
+      "carbs_g": 20.77,
+      "fat_g": 0.97,
+      "fiber_g": null
+    },
+    "portions": [
+      {
+        "label": "1 cup",
+        "grams": 169
+      },
+      {
+        "label": "1 can",
+        "grams": 258
+      }
+    ],
+    "allergens": [
+      "legume"
+    ],
+    "packageGrams": 425.2
+  },
+  {
+    "key": "pita",
+    "displayName": "Pita bread (whole wheat)",
+    "aisle": "Bakery & Bread",
+    "package": {
+      "size": 6,
+      "unit": "each"
+    },
+    "usda": {
+      "fdcId": 174916,
+      "description": "Bread, pita, whole-wheat",
+      "source": "sr_legacy"
+    },
+    "per100g": {
+      "kcal": 262,
+      "protein_g": 9.8,
+      "carbs_g": 55.89,
+      "fat_g": 1.71,
+      "fiber_g": 6.1
+    },
+    "portions": [
+      {
+        "label": "1 pita, large (6-1/2\" dia)",
+        "grams": 64
+      },
+      {
+        "label": "1 pita, small  (4\" dia)",
+        "grams": 28
+      }
+    ],
+    "allergens": [
+      "wheat_gluten"
+    ],
+    "packageGrams": 384,
+    "packageNote": "USDA portion: \"1 pita, large (6-1/2\\\" dia)\" = 64 g each; package is 6 pitas = 384 g"
+  },
+  {
+    "key": "popcorn_kernels",
+    "displayName": "Popcorn kernels",
+    "aisle": "Snacks",
+    "package": {
+      "size": 32,
+      "unit": "oz"
+    },
+    "usda": {
+      "fdcId": 167959,
+      "description": "Snacks, popcorn, air-popped",
+      "source": "sr_legacy"
+    },
+    "per100g": {
+      "kcal": 387,
+      "protein_g": 12.94,
+      "carbs_g": 77.78,
+      "fat_g": 4.54,
+      "fiber_g": 14.5
+    },
+    "portions": [
+      {
+        "label": "1 cup",
+        "grams": 8
+      },
+      {
+        "label": "1 oz",
+        "grams": 28.35
+      }
+    ],
+    "allergens": [
+      "corn"
+    ],
+    "packageGrams": 907.2
+  },
+  {
+    "key": "pork_loin",
+    "displayName": "Pork loin chops",
+    "aisle": "Meat & Seafood",
+    "package": {
+      "size": 1,
+      "unit": "lb"
+    },
+    "usda": {
+      "fdcId": 168263,
+      "description": "Pork, fresh, loin, center loin (chops), boneless, separable lean only, raw",
+      "source": "sr_legacy"
+    },
+    "per100g": {
+      "kcal": 123,
+      "protein_g": 23.75,
+      "carbs_g": 0,
+      "fat_g": 3.09,
+      "fiber_g": 0
+    },
+    "portions": [
+      {
+        "label": "4 oz",
+        "grams": 113
+      },
+      {
+        "label": "1 chop",
+        "grams": 170
+      }
+    ],
+    "allergens": [],
+    "packageGrams": 453.6
+  },
+  {
+    "key": "potatoes",
+    "displayName": "Potatoes (russet)",
+    "aisle": "Produce",
+    "package": {
+      "size": 5,
+      "unit": "lb"
+    },
+    "usda": {
+      "fdcId": 170027,
+      "description": "Potatoes, russet, flesh and skin, raw (Includes foods for USDA's Food Distribution Program)",
+      "source": "sr_legacy"
+    },
+    "per100g": {
+      "kcal": 79,
+      "protein_g": 2.14,
+      "carbs_g": 18.07,
+      "fat_g": 0.08,
+      "fiber_g": 1.3
+    },
+    "portions": [
+      {
+        "label": "0.5 cup, diced",
+        "grams": 75
+      },
+      {
+        "label": "1 potato large (3\" to 4-1/4\" dia)",
+        "grams": 369
+      },
+      {
+        "label": "1 Potato medium (2-1/4\" to 3-1/4\" dia)",
+        "grams": 213
+      },
+      {
+        "label": "1 Potato small (1-3/4\" to 2-1/4\" dia)",
+        "grams": 170
+      }
+    ],
+    "allergens": [
+      "nightshade"
+    ],
+    "packageGrams": 2268
+  },
+  {
+    "key": "protein_powder_whey",
+    "displayName": "Whey protein powder",
+    "aisle": "Pantry",
+    "package": {
+      "size": 32,
+      "unit": "oz"
+    },
+    "usda": {
+      "fdcId": 173180,
+      "description": "Beverages, Protein powder whey based",
+      "source": "sr_legacy"
+    },
+    "per100g": {
+      "kcal": 352,
+      "protein_g": 78.13,
+      "carbs_g": 6.25,
+      "fat_g": 1.56,
+      "fiber_g": 3.1
+    },
+    "portions": [
+      {
+        "label": "0.33 cup",
+        "grams": 32
+      }
+    ],
+    "allergens": [
+      "dairy"
+    ],
+    "packageGrams": 907.2
+  },
+  {
+    "key": "quinoa",
+    "displayName": "Quinoa",
+    "aisle": "Rice Pasta & Grains",
+    "package": {
+      "size": 16,
+      "unit": "oz"
+    },
+    "usda": {
+      "fdcId": 168874,
+      "description": "Quinoa, uncooked",
+      "source": "sr_legacy"
+    },
+    "per100g": {
+      "kcal": 368,
+      "protein_g": 14.12,
+      "carbs_g": 64.16,
+      "fat_g": 6.07,
+      "fiber_g": 7
+    },
+    "portions": [
+      {
+        "label": "1 cup",
+        "grams": 170
+      }
+    ],
+    "allergens": [],
+    "packageGrams": 453.6
+  },
+  {
+    "key": "red_onion",
+    "displayName": "Red onion",
+    "aisle": "Produce",
+    "package": {
+      "size": 1,
+      "unit": "each"
+    },
+    "usda": {
+      "fdcId": 170000,
+      "description": "Onions, raw",
+      "source": "sr_legacy"
+    },
+    "per100g": {
+      "kcal": 40,
+      "protein_g": 1.1,
+      "carbs_g": 9.34,
+      "fat_g": 0.1,
+      "fiber_g": 1.7
+    },
+    "portions": [
+      {
+        "label": "1 cup, chopped",
+        "grams": 160
+      },
+      {
+        "label": "1 cup, sliced",
+        "grams": 115
+      },
+      {
+        "label": "1 tbsp chopped",
+        "grams": 10
+      },
+      {
+        "label": "1 large",
+        "grams": 150
+      },
+      {
+        "label": "1 slice, large (1/4\" thick)",
+        "grams": 38
+      },
+      {
+        "label": "1 medium (2-1/2\" dia)",
+        "grams": 110
+      }
+    ],
+    "allergens": [
+      "onion_garlic"
+    ],
+    "packageGrams": 110,
+    "packageNote": "USDA portion: \"1 medium (2-1/2\\\" dia)\" = 110 g; store onions are medium, not large",
+    "proxyOf": "USDA has no separate entry; using Onions, raw"
+  },
+  {
+    "key": "red_pepper_flakes",
+    "displayName": "Red pepper flakes",
+    "aisle": "Spices",
+    "package": {
+      "size": 1.5,
+      "unit": "oz"
+    },
+    "usda": {
+      "fdcId": 170932,
+      "description": "Spices, pepper, red or cayenne",
+      "source": "sr_legacy"
+    },
+    "per100g": {
+      "kcal": 318,
+      "protein_g": 12.01,
+      "carbs_g": 56.63,
+      "fat_g": 17.27,
+      "fiber_g": 27.2
+    },
+    "portions": [
+      {
+        "label": "1 tsp",
+        "grams": 1.8
+      },
+      {
+        "label": "1 tbsp",
+        "grams": 5.3
+      }
+    ],
+    "allergens": [
+      "nightshade"
+    ],
+    "packageGrams": 42.5
+  },
+  {
+    "key": "rice_cakes",
+    "displayName": "Rice cakes",
+    "aisle": "Snacks",
+    "package": {
+      "size": 4.5,
+      "unit": "oz"
+    },
+    "usda": {
+      "fdcId": 170250,
+      "description": "Snacks, rice cakes, brown rice, plain, unsalted",
+      "source": "sr_legacy"
+    },
+    "per100g": {
+      "kcal": 387,
+      "protein_g": 8.2,
+      "carbs_g": 81.5,
+      "fat_g": 2.8,
+      "fiber_g": 4.2
+    },
+    "portions": [
+      {
+        "label": "1 cake",
+        "grams": 9
+      },
+      {
+        "label": "2 cakes",
+        "grams": 18
+      }
+    ],
+    "allergens": [],
+    "packageGrams": 127.6
+  },
+  {
+    "key": "rolled_oats",
+    "displayName": "Rolled oats",
+    "aisle": "Breakfast & Cereal",
+    "package": {
+      "size": 42,
+      "unit": "oz"
+    },
+    "usda": {
+      "fdcId": 173904,
+      "description": "Cereals, oats, regular and quick, not fortified, dry",
+      "source": "sr_legacy"
+    },
+    "per100g": {
+      "kcal": 379,
+      "protein_g": 13.15,
+      "carbs_g": 67.7,
+      "fat_g": 6.52,
+      "fiber_g": 10.1
+    },
+    "portions": [
+      {
+        "label": "1 cup",
+        "grams": 81
+      },
+      {
+        "label": "0.33 cup",
+        "grams": 27
+      }
+    ],
+    "allergens": [],
+    "packageGrams": 1190.7
+  },
+  {
+    "key": "romaine",
+    "displayName": "Romaine lettuce",
+    "aisle": "Produce",
+    "package": {
+      "size": 1,
+      "unit": "each"
+    },
+    "usda": {
+      "fdcId": 169247,
+      "description": "Lettuce, cos or romaine, raw",
+      "source": "sr_legacy"
+    },
+    "per100g": {
+      "kcal": 17,
+      "protein_g": 1.23,
+      "carbs_g": 3.29,
+      "fat_g": 0.3,
+      "fiber_g": 2.1
+    },
+    "portions": [
+      {
+        "label": "1 cup shredded",
+        "grams": 47
+      },
+      {
+        "label": "1 leaf inner",
+        "grams": 6
+      },
+      {
+        "label": "1 leaf outer",
+        "grams": 28
+      },
+      {
+        "label": "1 head",
+        "grams": 626
+      },
+      {
+        "label": "1 NLEA serving",
+        "grams": 85
+      }
+    ],
+    "allergens": [],
+    "packageGrams": 626
+  },
+  {
+    "key": "salmon",
+    "displayName": "Salmon fillet (Atlantic)",
+    "aisle": "Meat & Seafood",
+    "package": {
+      "size": 1,
+      "unit": "lb"
+    },
+    "usda": {
+      "fdcId": 175167,
+      "description": "Fish, salmon, Atlantic, farmed, raw",
+      "source": "sr_legacy"
+    },
+    "per100g": {
+      "kcal": 208,
+      "protein_g": 20.42,
+      "carbs_g": 0,
+      "fat_g": 13.42,
+      "fiber_g": 0
+    },
+    "portions": [
+      {
+        "label": "3 oz",
+        "grams": 85
+      },
+      {
+        "label": "0.5 fillet",
+        "grams": 198
+      }
+    ],
+    "allergens": [
+      "fish"
+    ],
+    "packageGrams": 453.6
+  },
+  {
+    "key": "salsa",
+    "displayName": "Salsa",
+    "aisle": "International",
+    "package": {
+      "size": 16,
+      "unit": "oz"
+    },
+    "usda": {
+      "fdcId": 174524,
+      "description": "Sauce, salsa, ready-to-serve",
+      "source": "sr_legacy"
+    },
+    "per100g": {
+      "kcal": 29,
+      "protein_g": 1.52,
+      "carbs_g": 6.64,
+      "fat_g": 0.17,
+      "fiber_g": 1.9
+    },
+    "portions": [
+      {
+        "label": "2 tbsp",
+        "grams": 36
+      },
+      {
+        "label": "0.5 cup",
+        "grams": 130
+      },
+      {
+        "label": "1 cup",
+        "grams": 259
+      }
+    ],
+    "allergens": [
+      "nightshade",
+      "onion_garlic"
+    ],
+    "packageGrams": 453.6
+  },
+  {
+    "key": "salt",
+    "displayName": "Salt",
+    "aisle": "Spices",
+    "package": {
+      "size": 26,
+      "unit": "oz"
+    },
+    "usda": {
+      "fdcId": 173468,
+      "description": "Salt, table",
+      "source": "sr_legacy"
+    },
+    "per100g": {
+      "kcal": 0,
+      "protein_g": 0,
+      "carbs_g": 0,
+      "fat_g": 0,
+      "fiber_g": 0
+    },
+    "portions": [
+      {
+        "label": "1 tsp",
+        "grams": 6
+      },
+      {
+        "label": "1 tbsp",
+        "grams": 18
+      },
+      {
+        "label": "1 cup",
+        "grams": 292
+      },
+      {
+        "label": "1 dash",
+        "grams": 0.4
+      }
+    ],
+    "allergens": [],
+    "packageGrams": 737.1
+  },
+  {
+    "key": "sesame_oil",
+    "displayName": "Sesame oil",
+    "aisle": "Oils & Vinegars",
+    "package": {
+      "size": 5,
+      "unit": "fl oz"
+    },
+    "usda": {
+      "fdcId": 171016,
+      "description": "Oil, sesame, salad or cooking",
+      "source": "sr_legacy"
+    },
+    "per100g": {
+      "kcal": 884,
+      "protein_g": 0,
+      "carbs_g": 0,
+      "fat_g": 100,
+      "fiber_g": 0
+    },
+    "portions": [
+      {
+        "label": "1 tablespoon",
+        "grams": 13.6
+      },
+      {
+        "label": "1 cup",
+        "grams": 218
+      },
+      {
+        "label": "1 tsp",
+        "grams": 4.5
+      }
+    ],
+    "allergens": [
+      "sesame"
+    ],
+    "packageGrams": 147.9
+  },
+  {
+    "key": "shrimp",
+    "displayName": "Shrimp (raw peeled)",
+    "aisle": "Meat & Seafood",
+    "package": {
+      "size": 1,
+      "unit": "lb"
+    },
+    "usda": {
+      "fdcId": 175179,
+      "description": "Crustaceans, shrimp, raw",
+      "source": "sr_legacy"
+    },
+    "per100g": {
+      "kcal": 85,
+      "protein_g": 20.1,
+      "carbs_g": 0,
+      "fat_g": 0.51,
+      "fiber_g": null
+    },
+    "portions": [
+      {
+        "label": "3 oz",
+        "grams": 85
+      }
+    ],
+    "allergens": [
+      "shellfish"
+    ],
+    "packageGrams": 453.6
+  },
+  {
+    "key": "sour_cream",
+    "displayName": "Sour cream",
+    "aisle": "Dairy & Eggs",
+    "package": {
+      "size": 16,
+      "unit": "oz"
+    },
+    "usda": {
+      "fdcId": 171257,
+      "description": "Cream, sour, cultured",
+      "source": "sr_legacy"
+    },
+    "per100g": {
+      "kcal": 198,
+      "protein_g": 2.44,
+      "carbs_g": 4.63,
+      "fat_g": 19.35,
+      "fiber_g": 0
+    },
+    "portions": [
+      {
+        "label": "1 tbsp",
+        "grams": 12
+      },
+      {
+        "label": "1 cup",
+        "grams": 230
+      }
+    ],
+    "allergens": [
+      "dairy"
+    ],
+    "packageGrams": 453.6
+  },
+  {
+    "key": "soy_sauce",
+    "displayName": "Soy sauce",
+    "aisle": "International",
+    "package": {
+      "size": 10,
+      "unit": "fl oz"
+    },
+    "usda": {
+      "fdcId": 174277,
+      "description": "Soy sauce made from soy and wheat (shoyu)",
+      "source": "sr_legacy"
+    },
+    "per100g": {
+      "kcal": 53,
+      "protein_g": 8.14,
+      "carbs_g": 4.93,
+      "fat_g": 0.57,
+      "fiber_g": 0.8
+    },
+    "portions": [
+      {
+        "label": "1 tbsp",
+        "grams": 16
+      },
+      {
+        "label": "1 tsp",
+        "grams": 5.3
+      },
+      {
+        "label": "1 cup",
+        "grams": 255
+      },
+      {
+        "label": "1 individual packet",
+        "grams": 8.9
+      }
+    ],
+    "allergens": [
+      "soy",
+      "wheat_gluten",
+      "legume"
+    ],
+    "packageGrams": 295.7
+  },
+  {
+    "key": "spinach",
+    "displayName": "Baby spinach",
+    "aisle": "Produce",
+    "package": {
+      "size": 5,
+      "unit": "oz"
+    },
+    "usda": {
+      "fdcId": 168462,
+      "description": "Spinach, raw",
+      "source": "sr_legacy"
+    },
+    "per100g": {
+      "kcal": 23,
+      "protein_g": 2.86,
+      "carbs_g": 3.63,
+      "fat_g": 0.39,
+      "fiber_g": 2.2
+    },
+    "portions": [
+      {
+        "label": "1 cup",
+        "grams": 30
+      },
+      {
+        "label": "1 bunch",
+        "grams": 340
+      },
+      {
+        "label": "1 leaf",
+        "grams": 10
+      },
+      {
+        "label": "1 package (10 oz)",
+        "grams": 284
+      }
+    ],
+    "allergens": [],
+    "packageGrams": 141.7
+  },
+  {
+    "key": "strawberries",
+    "displayName": "Strawberries",
+    "aisle": "Produce",
+    "package": {
+      "size": 16,
+      "unit": "oz"
+    },
+    "usda": {
+      "fdcId": 167762,
+      "description": "Strawberries, raw",
+      "source": "sr_legacy"
+    },
+    "per100g": {
+      "kcal": 32,
+      "protein_g": 0.67,
+      "carbs_g": 7.68,
+      "fat_g": 0.3,
+      "fiber_g": 2
+    },
+    "portions": [
+      {
+        "label": "1 cup, halves",
+        "grams": 152
+      },
+      {
+        "label": "1 cup, pureed",
+        "grams": 232
+      },
+      {
+        "label": "1 cup, sliced",
+        "grams": 166
+      },
+      {
+        "label": "1 cup, whole",
+        "grams": 144
+      },
+      {
+        "label": "1 extra large (1-5/8\" dia)",
+        "grams": 27
+      },
+      {
+        "label": "1 large (1-3/8\" dia)",
+        "grams": 18
+      }
+    ],
+    "allergens": [],
+    "packageGrams": 453.6
+  },
+  {
+    "key": "string_cheese",
+    "displayName": "String cheese",
+    "aisle": "Dairy & Eggs",
+    "package": {
+      "size": 12,
+      "unit": "each"
+    },
+    "usda": {
+      "fdcId": 171244,
+      "description": "Cheese, mozzarella, low moisture, part-skim",
+      "source": "sr_legacy"
+    },
+    "per100g": {
+      "kcal": 295,
+      "protein_g": 23.75,
+      "carbs_g": 5.58,
+      "fat_g": 19.78,
+      "fiber_g": 0
+    },
+    "portions": [
+      {
+        "label": "1 cup, diced",
+        "grams": 132
+      },
+      {
+        "label": "1 cup, shredded",
+        "grams": 113
+      },
+      {
+        "label": "1 oz",
+        "grams": 28.35
+      },
+      {
+        "label": "1 cubic inch",
+        "grams": 18
+      },
+      {
+        "label": "1 slice (1 oz)",
+        "grams": 28
+      }
+    ],
+    "allergens": [
+      "dairy"
+    ],
+    "packageGrams": 336
+  },
+  {
+    "key": "sugar",
+    "displayName": "Sugar",
+    "aisle": "Baking",
+    "package": {
+      "size": 4,
+      "unit": "lb"
+    },
+    "usda": {
+      "fdcId": 169655,
+      "description": "Sugars, granulated",
+      "source": "sr_legacy"
+    },
+    "per100g": {
+      "kcal": 387,
+      "protein_g": 0,
+      "carbs_g": 99.98,
+      "fat_g": 0,
+      "fiber_g": 0
+    },
+    "portions": [
+      {
+        "label": "1 serving packet",
+        "grams": 2.8
+      },
+      {
+        "label": "1 tsp",
+        "grams": 4.2
+      },
+      {
+        "label": "1 cup",
+        "grams": 200
+      },
+      {
+        "label": "1 serving 1 cube",
+        "grams": 2.3
+      }
+    ],
+    "allergens": [],
+    "packageGrams": 1814.4
+  },
+  {
+    "key": "sunflower_seeds",
+    "displayName": "Sunflower seeds",
+    "aisle": "Pantry",
+    "package": {
+      "size": 8,
+      "unit": "oz"
+    },
+    "usda": {
+      "fdcId": 170563,
+      "description": "Seeds, sunflower seed kernels, dry roasted, without salt",
+      "source": "sr_legacy"
+    },
+    "per100g": {
+      "kcal": 582,
+      "protein_g": 19.33,
+      "carbs_g": 24.07,
+      "fat_g": 49.8,
+      "fiber_g": 11.1
+    },
+    "portions": [
+      {
+        "label": "1 cup",
+        "grams": 128
+      },
+      {
+        "label": "1 oz",
+        "grams": 28.35
+      }
+    ],
+    "allergens": [],
+    "packageGrams": 226.8
+  },
+  {
+    "key": "sweet_potatoes",
+    "displayName": "Sweet potatoes",
+    "aisle": "Produce",
+    "package": {
+      "size": 1,
+      "unit": "lb"
+    },
+    "usda": {
+      "fdcId": 168482,
+      "description": "Sweet potato, raw, unprepared (Includes foods for USDA's Food Distribution Program)",
+      "source": "sr_legacy"
+    },
+    "per100g": {
+      "kcal": 86,
+      "protein_g": 1.57,
+      "carbs_g": 20.12,
+      "fat_g": 0.05,
+      "fiber_g": 3
+    },
+    "portions": [
+      {
+        "label": "1 cup, cubes",
+        "grams": 133
+      },
+      {
+        "label": "1 sweetpotato, 5\" long",
+        "grams": 130
+      }
+    ],
+    "allergens": [],
+    "packageGrams": 453.6
+  },
+  {
+    "key": "tilapia",
+    "displayName": "Tilapia fillet",
+    "aisle": "Meat & Seafood",
+    "package": {
+      "size": 1,
+      "unit": "lb"
+    },
+    "usda": {
+      "fdcId": 175176,
+      "description": "Fish, tilapia, raw",
+      "source": "sr_legacy"
+    },
+    "per100g": {
+      "kcal": 96,
+      "protein_g": 20.08,
+      "carbs_g": 0,
+      "fat_g": 1.7,
+      "fiber_g": 0
+    },
+    "portions": [
+      {
+        "label": "1 fillet",
+        "grams": 116
+      }
+    ],
+    "allergens": [
+      "fish"
+    ],
+    "packageGrams": 453.6
+  },
+  {
+    "key": "tofu_firm",
+    "displayName": "Tofu (firm)",
+    "aisle": "Produce",
+    "package": {
+      "size": 14,
+      "unit": "oz"
+    },
+    "usda": {
+      "fdcId": 172448,
+      "description": "Tofu, firm, prepared with calcium sulfate and magnesium chloride (nigari)",
+      "source": "sr_legacy"
+    },
+    "per100g": {
+      "kcal": 78,
+      "protein_g": 9.04,
+      "carbs_g": 2.85,
+      "fat_g": 4.17,
+      "fiber_g": 0.9
+    },
+    "portions": [
+      {
+        "label": "0.5 cup",
+        "grams": 126
+      },
+      {
+        "label": "0.25 block",
+        "grams": 81
+      },
+      {
+        "label": "0.2 block",
+        "grams": 91
+      }
+    ],
+    "allergens": [
+      "soy",
+      "legume"
+    ],
+    "packageGrams": 396.9
+  },
+  {
+    "key": "tomato_paste",
+    "displayName": "Tomato paste",
+    "aisle": "Canned & Jarred",
+    "package": {
+      "size": 6,
+      "unit": "oz"
+    },
+    "usda": {
+      "fdcId": 170459,
+      "description": "Tomato products, canned, paste, without salt added (Includes foods for USDA's Food Distribution Program)",
+      "source": "sr_legacy"
+    },
+    "per100g": {
+      "kcal": 82,
+      "protein_g": 4.32,
+      "carbs_g": 18.91,
+      "fat_g": 0.47,
+      "fiber_g": 4.1
+    },
+    "portions": [
+      {
+        "label": "0.25 cup",
+        "grams": 66
+      },
+      {
+        "label": "1 cup",
+        "grams": 262
+      },
+      {
+        "label": "1 tbsp",
+        "grams": 16
+      },
+      {
+        "label": "1 can (6 oz)",
+        "grams": 170
+      }
+    ],
+    "allergens": [
+      "nightshade"
+    ],
+    "packageGrams": 170.1
+  },
+  {
+    "key": "tomatoes",
+    "displayName": "Tomatoes (roma)",
+    "aisle": "Produce",
+    "package": {
+      "size": 1,
+      "unit": "lb"
+    },
+    "usda": {
+      "fdcId": 170457,
+      "description": "Tomatoes, red, ripe, raw, year round average",
+      "source": "sr_legacy"
+    },
+    "per100g": {
+      "kcal": 18,
+      "protein_g": 0.88,
+      "carbs_g": 3.89,
+      "fat_g": 0.2,
+      "fiber_g": 1.2
+    },
+    "portions": [
+      {
+        "label": "1 cup cherry tomatoes",
+        "grams": 149
+      },
+      {
+        "label": "1 cup, chopped or sliced",
+        "grams": 180
+      },
+      {
+        "label": "1 Italian tomato",
+        "grams": 62
+      },
+      {
+        "label": "1 cherry",
+        "grams": 17
+      },
+      {
+        "label": "1 large whole (3\" dia)",
+        "grams": 182
+      },
+      {
+        "label": "1 medium whole (2-3/5\" dia)",
+        "grams": 123
+      }
+    ],
+    "allergens": [
+      "nightshade"
+    ],
+    "packageGrams": 453.6
+  },
+  {
+    "key": "tzatziki",
+    "displayName": "Tzatziki / cucumber yogurt dip",
+    "aisle": "Deli",
+    "package": {
+      "size": 8,
+      "unit": "oz"
+    },
+    "usda": {
+      "fdcId": 170903,
+      "description": "Yogurt, Greek, plain, lowfat",
+      "source": "sr_legacy"
+    },
+    "per100g": {
+      "kcal": 73,
+      "protein_g": 9.95,
+      "carbs_g": 3.94,
+      "fat_g": 1.92,
+      "fiber_g": 0
+    },
+    "portions": [
+      {
+        "label": "1 container (7 oz)",
+        "grams": 200
+      }
+    ],
+    "allergens": [
+      "dairy"
+    ],
+    "packageGrams": 226.8
+  },
+  {
+    "key": "vegetable_broth",
+    "displayName": "Vegetable broth",
+    "aisle": "Canned & Jarred",
+    "package": {
+      "size": 32,
+      "unit": "fl oz"
+    },
+    "usda": {
+      "fdcId": 171583,
+      "description": "Soup, vegetable broth, ready to serve",
+      "source": "sr_legacy"
+    },
+    "per100g": {
+      "kcal": 5,
+      "protein_g": 0.24,
+      "carbs_g": 0.93,
+      "fat_g": 0.07,
+      "fiber_g": 0
+    },
+    "portions": [
+      {
+        "label": "1 cup",
+        "grams": 221
+      },
+      {
+        "label": "1 can",
+        "grams": 390
+      },
+      {
+        "label": "1 carton (32 oz)",
+        "grams": 926
+      }
+    ],
+    "allergens": [],
+    "packageGrams": 946.4
+  },
+  {
+    "key": "vegetable_oil",
+    "displayName": "Vegetable/canola oil",
+    "aisle": "Oils & Vinegars",
+    "package": {
+      "size": 48,
+      "unit": "fl oz"
+    },
+    "usda": {
+      "fdcId": 172336,
+      "description": "Oil, canola",
+      "source": "sr_legacy"
+    },
+    "per100g": {
+      "kcal": 884,
+      "protein_g": 0,
+      "carbs_g": 0,
+      "fat_g": 100,
+      "fiber_g": 0
+    },
+    "portions": [
+      {
+        "label": "1 tbsp",
+        "grams": 14
+      },
+      {
+        "label": "1 cup",
+        "grams": 218
+      },
+      {
+        "label": "1 tsp",
+        "grams": 4.5
+      }
+    ],
+    "allergens": [],
+    "packageGrams": 1419.5
+  },
+  {
+    "key": "vinegar_balsamic",
+    "displayName": "Balsamic vinegar",
+    "aisle": "Oils & Vinegars",
+    "package": {
+      "size": 8.5,
+      "unit": "fl oz"
+    },
+    "usda": {
+      "fdcId": 172241,
+      "description": "Vinegar, balsamic",
+      "source": "sr_legacy"
+    },
+    "per100g": {
+      "kcal": 88,
+      "protein_g": 0.49,
+      "carbs_g": 17.03,
+      "fat_g": 0,
+      "fiber_g": null
+    },
+    "portions": [
+      {
+        "label": "1 tbsp",
+        "grams": 16
+      },
+      {
+        "label": "1 cup",
+        "grams": 255
+      },
+      {
+        "label": "1 tsp",
+        "grams": 5.3
+      }
+    ],
+    "allergens": [],
+    "packageGrams": 251.4
+  },
+  {
+    "key": "vinegar_rice",
+    "displayName": "Rice vinegar",
+    "aisle": "Oils & Vinegars",
+    "package": {
+      "size": 12,
+      "unit": "fl oz"
+    },
+    "usda": {
+      "fdcId": 172237,
+      "description": "Vinegar, distilled",
+      "source": "sr_legacy"
+    },
+    "per100g": {
+      "kcal": 18,
+      "protein_g": 0,
+      "carbs_g": 0.04,
+      "fat_g": 0,
+      "fiber_g": 0
+    },
+    "portions": [
+      {
+        "label": "1 tbsp",
+        "grams": 14.9
+      },
+      {
+        "label": "1 cup",
+        "grams": 238
+      },
+      {
+        "label": "1 tsp",
+        "grams": 5
+      }
+    ],
+    "allergens": [],
+    "packageGrams": 354.9
+  },
+  {
+    "key": "walnuts",
+    "displayName": "Walnuts",
+    "aisle": "Pantry",
+    "package": {
+      "size": 8,
+      "unit": "oz"
+    },
+    "usda": {
+      "fdcId": 170187,
+      "description": "Nuts, walnuts, english",
+      "source": "sr_legacy"
+    },
+    "per100g": {
+      "kcal": 654,
+      "protein_g": 15.23,
+      "carbs_g": 13.71,
+      "fat_g": 65.21,
+      "fiber_g": 6.7
+    },
+    "portions": [
+      {
+        "label": "1 cup, chopped",
+        "grams": 117
+      },
+      {
+        "label": "1 cup, ground",
+        "grams": 80
+      },
+      {
+        "label": "1 cup, in shell, edible yield (7 nuts)",
+        "grams": 28
+      },
+      {
+        "label": "1 cup shelled (50 halves)",
+        "grams": 100
+      },
+      {
+        "label": "1 cup pieces or chips",
+        "grams": 120
+      },
+      {
+        "label": "1 oz (14 halves)",
+        "grams": 28.35
+      }
+    ],
+    "allergens": [
+      "tree_nut"
+    ],
+    "packageGrams": 226.8
+  },
+  {
+    "key": "white_rice",
+    "displayName": "White rice (long grain)",
+    "aisle": "Rice Pasta & Grains",
+    "package": {
+      "size": 32,
+      "unit": "oz"
+    },
+    "usda": {
+      "fdcId": 169756,
+      "description": "Rice, white, long-grain, regular, raw, unenriched",
+      "source": "sr_legacy"
+    },
+    "per100g": {
+      "kcal": 365,
+      "protein_g": 7.13,
+      "carbs_g": 79.95,
+      "fat_g": 0.66,
+      "fiber_g": 1.3
+    },
+    "portions": [
+      {
+        "label": "1 cup",
+        "grams": 185
+      }
+    ],
+    "allergens": [],
+    "packageGrams": 907.2
+  },
+  {
+    "key": "whole_wheat_bread",
+    "displayName": "Whole wheat bread",
+    "aisle": "Bakery & Bread",
+    "package": {
+      "size": 20,
+      "unit": "oz"
+    },
+    "usda": {
+      "fdcId": 172688,
+      "description": "Bread, whole-wheat, commercially prepared",
+      "source": "sr_legacy"
+    },
+    "per100g": {
+      "kcal": 252,
+      "protein_g": 12.45,
+      "carbs_g": 42.71,
+      "fat_g": 3.5,
+      "fiber_g": 6
+    },
+    "portions": [
+      {
+        "label": "1 slice",
+        "grams": 32
+      },
+      {
+        "label": "1 oz",
+        "grams": 28.35
+      }
+    ],
+    "allergens": [
+      "wheat_gluten"
+    ],
+    "packageGrams": 567
+  },
+  {
+    "key": "whole_wheat_pasta",
+    "displayName": "Whole wheat pasta",
+    "aisle": "Rice Pasta & Grains",
+    "package": {
+      "size": 16,
+      "unit": "oz"
+    },
+    "usda": {
+      "fdcId": 169738,
+      "description": "Pasta, whole-wheat, dry (Includes foods for USDA's Food Distribution Program)",
+      "source": "sr_legacy"
+    },
+    "per100g": {
+      "kcal": 352,
+      "protein_g": 13.87,
+      "carbs_g": 73.37,
+      "fat_g": 2.93,
+      "fiber_g": 9.2
+    },
+    "portions": [
+      {
+        "label": "1 cup spaghetti",
+        "grams": 91
+      },
+      {
+        "label": "1 cup elbows",
+        "grams": 122
+      },
+      {
+        "label": "1 cup penne",
+        "grams": 95
+      },
+      {
+        "label": "1 cup farfalle",
+        "grams": 81
+      },
+      {
+        "label": "1 cup rotini",
+        "grams": 96
+      },
+      {
+        "label": "1 cup shells",
+        "grams": 64
+      }
+    ],
+    "allergens": [
+      "wheat_gluten"
+    ],
+    "packageGrams": 453.6
+  },
+  {
+    "key": "zucchini",
+    "displayName": "Zucchini",
+    "aisle": "Produce",
+    "package": {
+      "size": 1,
+      "unit": "lb"
+    },
+    "usda": {
+      "fdcId": 169291,
+      "description": "Squash, summer, zucchini, includes skin, raw",
+      "source": "sr_legacy"
+    },
+    "per100g": {
+      "kcal": 17,
+      "protein_g": 1.21,
+      "carbs_g": 3.11,
+      "fat_g": 0.32,
+      "fiber_g": 1
+    },
+    "portions": [
+      {
+        "label": "1 cup, chopped",
+        "grams": 124
+      },
+      {
+        "label": "1 cup, sliced",
+        "grams": 113
+      },
+      {
+        "label": "1 large",
+        "grams": 323
+      },
+      {
+        "label": "1 medium",
+        "grams": 196
+      },
+      {
+        "label": "1 slice",
+        "grams": 9.9
+      },
+      {
+        "label": "1 small",
+        "grams": 118
+      }
+    ],
+    "allergens": [],
+    "packageGrams": 453.6
+  }
+]

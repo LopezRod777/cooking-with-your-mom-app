@@ -1,0 +1,78 @@
+{
+  "status": "Every source below was fetched on 2026-11-03 and the quote found on the page. Drinks are treats, not hydration plans.",
+  "sources": {
+    "petmd_cranberries": { "org": "PetMD", "title": "Can Dogs Eat Cranberries?", "url": "https://www.petmd.com/dog/nutrition/can-dogs-eat-cranberries", "accessedAt": "2026-11-03", "quote": "Yes, dogs can have a little bit of cranberry juice—as long as the cranberry juice is 100% juice with no sugar added." },
+    "akc_cranberries": { "org": "AKC", "title": "Can Dogs Eat Cranberries?", "url": "https://www.akc.org/expert-advice/nutrition/can-dogs-eat-cranberries/", "accessedAt": "2026-11-03", "quote": "Prepared cranberry dishes are also risky, as are any grape/cranberry juice blends and cranberry dishes with sugar or alcohol." },
+    "akc_watermelon": { "org": "AKC", "title": "Can Dogs Eat Watermelon?", "url": "https://www.akc.org/expert-advice/nutrition/can-dogs-eat-watermelon/", "accessedAt": "2026-11-03", "quote": "Seedless, rind-free frozen watermelon chunks can be a safe and refreshing treat, particularly during warmer months." },
+    "petmd_blueberries": { "org": "PetMD", "title": "Can Dogs Eat Blueberries?", "url": "https://www.petmd.com/dog/nutrition/can-dogs-eat-blueberries", "accessedAt": "2026-11-03", "quote": "Yes, frozen blueberries are safe for most dogs and can be a refreshing treat during warm weather." },
+    "petmd_chicken": { "org": "PetMD", "title": "Can Dogs Eat Chicken?", "url": "https://www.petmd.com/dog/nutrition/can-dogs-eat-chicken", "accessedAt": "2026-11-03", "quote": "Onion and garlic are both common additives found in canned chicken broth and—again—these are toxic to dogs." },
+    "petmd_yogurt": { "org": "PetMD", "title": "Can Dogs Eat Yogurt?", "url": "https://www.petmd.com/dog/nutrition/can-dogs-eat-yogurt", "accessedAt": "2026-11-03", "quote": "Never give your dog a yogurt containing xylitol, which can be fatal." },
+    "petmd_pumpkin": { "org": "PetMD", "title": "Can Dogs Eat Pumpkin?", "url": "https://www.petmd.com/dog/nutrition/can-dogs-eat-pumpkin", "accessedAt": "2026-11-03", "quote": "Yes, dogs can eat pumpkin puree as long as it's 100% pumpkin with no added ingredients." },
+    "pph_xylitol": { "org": "Pet Poison Helpline", "title": "Is Xylitol Dangerous for Dogs", "url": "https://www.petpoisonhelpline.com/uncategorized/is-xylitol-dangerous-for-dogs/", "accessedAt": "2026-11-03", "quote": "Sugar-free substitutes such as xylitol are extremely toxic to dogs." },
+    "aspca_people_foods": { "org": "ASPCA", "title": "People Foods to Avoid Feeding Your Pets", "url": "https://www.aspca.org/pet-care/aspca-poison-control/people-foods-avoid-feeding-your-pets", "accessedAt": "2026-11-03", "quote": "Since dogs are not able to process tartaric acid, exposure to grapes/raisins can lead to kidney damage." },
+    "pph_caffeine": { "org": "Pet Poison Helpline", "title": "Caffeine Are Toxic To Pets", "url": "https://www.petpoisonhelpline.com/poison/caffeine/", "accessedAt": "2026-11-03", "quote": "Ingestion of unused coffee grounds or beans, tea bags, or supplements could cause serious toxicity in dogs or cats." },
+    "pph_alcohol": { "org": "Pet Poison Helpline", "title": "Alcohol Is Toxic To Pets", "url": "https://www.petpoisonhelpline.com/poison/alcohol/", "accessedAt": "2026-11-03", "quote": "Alcohol Is Toxic To Pets" },
+    "akc_treats": { "org": "AKC", "title": "How Many Treats Can Your Dog Have?", "url": "https://www.akc.org/expert-advice/nutrition/how-many-treats-can-dog-have/", "accessedAt": "2026-11-03", "quote": "Treats should make up no more than 10% of your dog's daily calories" },
+    "petmd_cats_milk": { "org": "PetMD", "title": "Can Cats Drink Milk?", "url": "https://www.petmd.com/cat/nutrition/can-cats-drink-milk", "accessedAt": "2026-11-03", "quote": "Unfortunately, most cats do develop lactose intolerance as they mature." },
+    "petmd_cats_water": { "org": "PetMD", "title": "Why Your Cat Won't Drink Water and What to Do", "url": "https://www.petmd.com/cat/symptoms/why-your-cat-wont-drink-water-and-what-do", "accessedAt": "2026-11-03", "quote": "Cats love running water and a pet water fountain is a great way to help encourage them to drink." }
+  },
+  "rules": {
+    "treat": { "text": "A sip is a treat. Water first, and treats stay under 10% of the day.", "sourceIds": ["akc_treats"] },
+    "never": { "text": "Never: grape or raisin juice, anything sugar-free (xylitol), coffee, tea, alcohol, onion or garlic broth.", "sourceIds": ["aspca_people_foods", "pph_xylitol", "pph_caffeine", "pph_alcohol", "petmd_chicken"] },
+    "catsMilk": { "text": "No milk for cats: most adult cats are lactose intolerant.", "sourceIds": ["petmd_cats_milk"] }
+  },
+  "sips": [
+    {
+      "id": "cranberry_splash",
+      "species": ["dog"],
+      "name": "Cranberry splash",
+      "how": "A bowl of water with a splash of 100% cranberry juice, no sugar added. A tablespoon in a cup of water is plenty.",
+      "note": "Not juice cocktail, not grape-cranberry blends.",
+      "sourceIds": ["petmd_cranberries", "akc_cranberries"]
+    },
+    {
+      "id": "watermelon_ice",
+      "species": ["dog"],
+      "name": "Watermelon ice",
+      "how": "Seedless, rind-free watermelon frozen in cubes. One cube in the water bowl on a hot day.",
+      "sourceIds": ["akc_watermelon"]
+    },
+    {
+      "id": "blueberry_cubes",
+      "species": ["dog"],
+      "name": "Blueberry cubes",
+      "how": "A few blueberries frozen inside water ice cubes. Drop one in the bowl.",
+      "sourceIds": ["petmd_blueberries"]
+    },
+    {
+      "id": "broth_cooler",
+      "species": ["dog"],
+      "name": "Broth cooler",
+      "how": "Homemade or plain low-sodium chicken broth with no onion or garlic, chilled or frozen in cubes.",
+      "note": "Read the label: canned broth often has onion and garlic.",
+      "sourceIds": ["petmd_chicken"]
+    },
+    {
+      "id": "pumpkin_smoothie",
+      "species": ["dog"],
+      "name": "Pumpkin smoothie",
+      "how": "A spoon of 100% pumpkin puree stirred into a spoon of plain unsweetened Greek yogurt and a little water.",
+      "note": "Not pie filling. Never a yogurt with xylitol. Skip the yogurt if dairy upsets them.",
+      "sourceIds": ["petmd_pumpkin", "petmd_yogurt"]
+    },
+    {
+      "id": "cat_broth_sip",
+      "species": ["cat"],
+      "name": "Broth sip",
+      "how": "A spoon of plain chicken broth with no onion or garlic, if your vet is fine with it.",
+      "sourceIds": ["petmd_cats_water", "petmd_chicken"]
+    },
+    {
+      "id": "cat_fountain",
+      "species": ["cat"],
+      "name": "Running water",
+      "how": "Cats drink more from moving water. A small fountain beats a still bowl.",
+      "sourceIds": ["petmd_cats_water"]
+    }
+  ]
+}

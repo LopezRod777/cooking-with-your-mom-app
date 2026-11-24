@@ -1,0 +1,66 @@
+{
+  "dog": [
+    {
+      "id": "dog_chicken_rice",
+      "name": "Chicken & rice bowl",
+      "imagePrompt": "Plain boiled chicken breast, white rice and diced carrots, cooled and chopped small, in a simple ceramic dog bowl on a wooden floor, overhead, soft natural light, photoreal, no text",
+      "note": "Tufts describes chicken and rice as a short-term option to discuss with your vet.",
+      "components": [
+        { "foodId": "chicken_breast_cooked", "pct": 60 },
+        { "foodId": "white_rice_cooked", "pct": 30 },
+        { "foodId": "carrot_cooked", "pct": 10 }
+      ]
+    },
+    {
+      "id": "dog_turkey_sweet_potato",
+      "name": "Turkey & sweet potato bowl",
+      "imagePrompt": "Plain roasted turkey breast, baked sweet potato and pumpkin, cooled and chopped small, in a simple steel dog bowl on a wooden floor, overhead, soft natural light, photoreal, no text",
+      "components": [
+        { "foodId": "turkey_breast_cooked", "pct": 60 },
+        { "foodId": "sweet_potato_baked", "pct": 30 },
+        { "foodId": "pumpkin_cooked", "pct": 10 }
+      ]
+    },
+    {
+      "id": "dog_salmon_pumpkin",
+      "name": "Salmon & pumpkin bowl",
+      "imagePrompt": "Plain cooked salmon flakes with no skin and mashed pumpkin, in a simple ceramic dog bowl on a wooden floor, overhead, soft natural light, photoreal, no text",
+      "components": [
+        { "foodId": "salmon_cooked", "pct": 60 },
+        { "foodId": "pumpkin_cooked", "pct": 40 }
+      ]
+    },
+    {
+      "id": "dog_egg_oats",
+      "name": "Egg & oats bowl",
+      "imagePrompt": "Chopped hard-boiled egg and cooked oatmeal made with water only, in a simple ceramic dog bowl on a wooden kitchen floor, overhead, soft natural light, photoreal, no text",
+      "components": [
+        { "foodId": "egg_hard_boiled", "pct": 40 },
+        { "foodId": "oats_cooked", "pct": 60 }
+      ]
+    }
+  ],
+  "cat": [
+    {
+      "id": "cat_chicken",
+      "name": "Chicken bowl",
+      "imagePrompt": "Plain boiled chicken breast, finely diced, in a shallow ceramic cat dish on a wooden floor, overhead, soft natural light, photoreal, no text",
+      "components": [{ "foodId": "chicken_breast_cooked", "pct": 100 }]
+    },
+    {
+      "id": "cat_turkey_egg",
+      "name": "Turkey & egg bowl",
+      "imagePrompt": "Plain roasted turkey breast finely diced with chopped hard-boiled egg, in a shallow ceramic cat dish on a wooden floor, overhead, soft natural light, photoreal, no text",
+      "components": [
+        { "foodId": "turkey_breast_cooked", "pct": 70 },
+        { "foodId": "egg_hard_boiled", "pct": 30 }
+      ]
+    },
+    {
+      "id": "cat_salmon",
+      "name": "Salmon bowl",
+      "imagePrompt": "Plain cooked salmon flakes, in a shallow ceramic cat dish on a wooden floor, overhead, soft natural light, photoreal, no text",
+      "components": [{ "foodId": "salmon_cooked", "pct": 100 }]
+    }
+  ]
+}

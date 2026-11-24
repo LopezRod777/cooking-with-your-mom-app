@@ -1,0 +1,153 @@
+{
+  "items": [
+    {
+      "id": "chicken_breast_cooked",
+      "species": [
+        "dog",
+        "cat"
+      ],
+      "label": "Chicken breast, cooked, roasted, meat only (no skin)",
+      "shortLabel": "Chicken breast",
+      "fdcId": 171477,
+      "usdaDescription": "Chicken, broilers or fryers, breast, meat only, cooked, roasted",
+      "kcalPer100g": 165,
+      "accessedAt": "2026-10-31",
+      "formWords": [
+        "cooked",
+        "roasted"
+      ]
+    },
+    {
+      "id": "turkey_breast_cooked",
+      "species": [
+        "dog",
+        "cat"
+      ],
+      "label": "Turkey breast, cooked, roasted, meat only",
+      "shortLabel": "Turkey breast",
+      "fdcId": 171496,
+      "usdaDescription": "Turkey, whole, breast, meat only, cooked, roasted",
+      "kcalPer100g": 147,
+      "accessedAt": "2026-10-31",
+      "formWords": [
+        "cooked",
+        "roasted"
+      ]
+    },
+    {
+      "id": "egg_hard_boiled",
+      "species": [
+        "dog",
+        "cat"
+      ],
+      "label": "Egg, whole, hard-boiled",
+      "shortLabel": "Hard-boiled egg",
+      "fdcId": 173424,
+      "usdaDescription": "Egg, whole, cooked, hard-boiled",
+      "kcalPer100g": 155,
+      "accessedAt": "2026-10-31",
+      "formWords": [
+        "cooked",
+        "hard-boiled"
+      ]
+    },
+    {
+      "id": "salmon_cooked",
+      "species": [
+        "dog",
+        "cat"
+      ],
+      "label": "Salmon, Atlantic farmed, cooked, dry heat",
+      "shortLabel": "Salmon",
+      "fdcId": 175168,
+      "usdaDescription": "Fish, salmon, Atlantic, farmed, cooked, dry heat",
+      "kcalPer100g": 206,
+      "accessedAt": "2026-10-31",
+      "formWords": [
+        "cooked",
+        "dry heat"
+      ]
+    },
+    {
+      "id": "white_rice_cooked",
+      "species": [
+        "dog"
+      ],
+      "label": "White rice, long-grain, cooked, without salt",
+      "shortLabel": "White rice",
+      "fdcId": 169757,
+      "usdaDescription": "Rice, white, long-grain, regular, unenriched, cooked without salt",
+      "kcalPer100g": 130,
+      "accessedAt": "2026-10-31",
+      "formWords": [
+        "cooked",
+        "without salt"
+      ]
+    },
+    {
+      "id": "oats_cooked",
+      "species": [
+        "dog"
+      ],
+      "label": "Oats, cooked with water, without salt",
+      "shortLabel": "Oats",
+      "fdcId": 173905,
+      "usdaDescription": "Cereals, oats, regular and quick, unenriched, cooked with water (includes boiling and microwaving), without salt",
+      "kcalPer100g": 71,
+      "accessedAt": "2026-10-31",
+      "formWords": [
+        "cooked",
+        "without salt"
+      ]
+    },
+    {
+      "id": "sweet_potato_baked",
+      "species": [
+        "dog"
+      ],
+      "label": "Sweet potato, baked, flesh only (skin removed), without salt",
+      "shortLabel": "Sweet potato",
+      "fdcId": 168483,
+      "usdaDescription": "Sweet potato, cooked, baked in skin, flesh, without salt",
+      "kcalPer100g": 90,
+      "accessedAt": "2026-10-31",
+      "formWords": [
+        "cooked",
+        "baked",
+        "without salt"
+      ]
+    },
+    {
+      "id": "pumpkin_cooked",
+      "species": [
+        "dog"
+      ],
+      "label": "Pumpkin, cooked, boiled, without salt",
+      "shortLabel": "Pumpkin",
+      "fdcId": 168449,
+      "usdaDescription": "Pumpkin, cooked, boiled, drained, without salt",
+      "kcalPer100g": 20,
+      "accessedAt": "2026-10-31",
+      "formWords": [
+        "cooked",
+        "without salt"
+      ]
+    },
+    {
+      "id": "carrot_cooked",
+      "species": [
+        "dog"
+      ],
+      "label": "Carrots, cooked, boiled, without salt",
+      "shortLabel": "Carrots",
+      "fdcId": 170394,
+      "usdaDescription": "Carrots, cooked, boiled, drained, without salt",
+      "kcalPer100g": 35,
+      "accessedAt": "2026-10-31",
+      "formWords": [
+        "cooked",
+        "without salt"
+      ]
+    }
+  ]
+}

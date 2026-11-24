@@ -1,0 +1,17 @@
+{
+  "avocado": { "packageGrams": 201, "note": "USDA portion: \"1 avocado, NS as to Florida or California\" = 201 g" },
+  "cucumber": { "packageGrams": 301, "note": "USDA portion: \"1 cucumber (8-1/4\\\")\" = 301 g" },
+  "jalapeno": { "packageGrams": 14, "note": "USDA portion: \"1 pepper\" = 14 g" },
+  "lemon": { "packageGrams": 58, "note": "USDA portion: \"1 fruit (2-1/8\\\" dia)\" = 58 g" },
+  "lime": { "packageGrams": 67, "note": "USDA portion: \"1 fruit (2\\\" dia)\" = 67 g" },
+  "pita": { "packageGrams": 384, "note": "USDA portion: \"1 pita, large (6-1/2\\\" dia)\" = 64 g each; package is 6 pitas = 384 g" },
+  "garlic": { "packageGrams": 30, "packageLabel": "1 head", "note": "assumption: 1 head ≈ 10 cloves × 3 g (USDA \"1 clove\" = 3 g)" },
+  "cabbage": { "packageGrams": 908, "note": "USDA portion: \"1 head, medium (about 5-3/4\\\" dia)\" = 908 g" },
+  "cauliflower": { "packageGrams": 588, "note": "USDA portion: \"1 head medium (5-6\\\" dia.)\" = 588 g" },
+  "celery": { "packageGrams": 360, "packageLabel": "1 bunch", "note": "assumption: 1 bunch ≈ 9 medium stalks × 40 g (USDA \"1 stalk, medium\" = 40 g)" },
+  "cilantro": { "packageGrams": null, "packageLabel": "1 bunch", "note": "USDA has no bunch weight" },
+  "parsley": { "packageGrams": null, "packageLabel": "1 bunch", "note": "USDA has no bunch weight" },
+  "onion": { "packageGrams": 110, "note": "USDA portion: \"1 medium (2-1/2\\\" dia)\" = 110 g; store onions are medium, not large" },
+  "red_onion": { "packageGrams": 110, "note": "USDA portion: \"1 medium (2-1/2\\\" dia)\" = 110 g; store onions are medium, not large" },
+  "bell_pepper": { "packageGrams": 119, "note": "USDA portion: \"1 medium (approx 2-3/4\\\" long, 2-1/2 dia.)\" = 119 g" }
+}

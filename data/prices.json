@@ -1,0 +1,753 @@
+{
+  "generatedAt": "2026-10-31",
+  "items": {
+    "acai_frozen": {
+      "usd": 7.99,
+      "basis": "estimate",
+      "source": "category average, unverified"
+    },
+    "almond_milk": {
+      "usd": 3.99,
+      "basis": "estimate",
+      "source": "category average, unverified"
+    },
+    "almonds": {
+      "usd": 4.49,
+      "basis": "estimate",
+      "source": "category average, unverified"
+    },
+    "apple": {
+      "usd": 1.99,
+      "basis": "estimate",
+      "source": "category average, unverified",
+      "note": "BLS Red Delicious series APU0000711111 discontinued (last value 2017)"
+    },
+    "asparagus": {
+      "usd": 3.49,
+      "basis": "estimate",
+      "source": "category average, unverified"
+    },
+    "avocado": {
+      "usd": 1.25,
+      "basis": "estimate",
+      "source": "category average, unverified"
+    },
+    "baby_carrots": {
+      "usd": 1.99,
+      "basis": "estimate",
+      "source": "category average, unverified"
+    },
+    "baking_powder": {
+      "usd": 2.49,
+      "basis": "estimate",
+      "source": "category average, unverified"
+    },
+    "banana": {
+      "usd": 0.66,
+      "basis": "bls",
+      "source": "BLS APU0000711211 (Bananas, per lb), Sep 2026",
+      "note": "per lb x1 (0.656)"
+    },
+    "basil": {
+      "usd": 2.49,
+      "basis": "estimate",
+      "source": "category average, unverified"
+    },
+    "bbq_sauce": {
+      "usd": 3.29,
+      "basis": "estimate",
+      "source": "category average, unverified"
+    },
+    "beef_sirloin": {
+      "usd": 9.99,
+      "basis": "estimate",
+      "source": "category average, unverified"
+    },
+    "bell_pepper": {
+      "usd": 1.29,
+      "basis": "estimate",
+      "source": "category average, unverified"
+    },
+    "berries_frozen": {
+      "usd": 3.99,
+      "basis": "estimate",
+      "source": "category average, unverified"
+    },
+    "black_beans": {
+      "usd": 1.29,
+      "basis": "estimate",
+      "source": "category average, unverified"
+    },
+    "black_pepper": {
+      "usd": 3.49,
+      "basis": "estimate",
+      "source": "category average, unverified"
+    },
+    "blueberries": {
+      "usd": 3.49,
+      "basis": "estimate",
+      "source": "category average, unverified"
+    },
+    "breadcrumbs": {
+      "usd": 2.99,
+      "basis": "estimate",
+      "source": "category average, unverified"
+    },
+    "broccoli": {
+      "usd": 2.49,
+      "basis": "estimate",
+      "source": "category average, unverified"
+    },
+    "broccoli_frozen": {
+      "usd": 1.99,
+      "basis": "estimate",
+      "source": "category average, unverified"
+    },
+    "brown_rice": {
+      "usd": 2.99,
+      "basis": "estimate",
+      "source": "category average, unverified"
+    },
+    "brown_sugar": {
+      "usd": 2.79,
+      "basis": "estimate",
+      "source": "category average, unverified"
+    },
+    "butter": {
+      "usd": 3.96,
+      "basis": "bls",
+      "source": "BLS APU0000FS1101 (Butter, stick, per lb), Sep 2026",
+      "note": "per lb x1 (3.959); catalog package is 16 oz = 1 lb"
+    },
+    "cabbage": {
+      "usd": 1.99,
+      "basis": "estimate",
+      "source": "category average, unverified"
+    },
+    "canned_salmon": {
+      "usd": 3.49,
+      "basis": "estimate",
+      "source": "category average, unverified"
+    },
+    "canned_tomatoes": {
+      "usd": 1.29,
+      "basis": "estimate",
+      "source": "category average, unverified"
+    },
+    "canned_tuna": {
+      "usd": 1.29,
+      "basis": "estimate",
+      "source": "category average, unverified"
+    },
+    "carrots": {
+      "usd": 1.29,
+      "basis": "estimate",
+      "source": "category average, unverified"
+    },
+    "cauliflower": {
+      "usd": 3.49,
+      "basis": "estimate",
+      "source": "category average, unverified"
+    },
+    "celery": {
+      "usd": 2.29,
+      "basis": "estimate",
+      "source": "category average, unverified"
+    },
+    "cheddar": {
+      "usd": 3.29,
+      "basis": "estimate",
+      "source": "category average, unverified",
+      "note": "no verified BLS cheddar series found (APU0000710211 is American processed cheese)"
+    },
+    "cherry_tomatoes": {
+      "usd": 3.49,
+      "basis": "estimate",
+      "source": "category average, unverified"
+    },
+    "chia_seeds": {
+      "usd": 4.49,
+      "basis": "estimate",
+      "source": "category average, unverified"
+    },
+    "chicken_breast": {
+      "usd": 4.2,
+      "basis": "bls",
+      "source": "BLS APU0000FF1101 (Chicken breast, boneless, per lb), Sep 2026",
+      "note": "per lb x1 (4.203)"
+    },
+    "chicken_broth": {
+      "usd": 2.49,
+      "basis": "estimate",
+      "source": "category average, unverified"
+    },
+    "chicken_thigh": {
+      "usd": 2.99,
+      "basis": "estimate",
+      "source": "category average, unverified"
+    },
+    "chickpeas": {
+      "usd": 1.19,
+      "basis": "estimate",
+      "source": "category average, unverified"
+    },
+    "chili_powder": {
+      "usd": 2.49,
+      "basis": "estimate",
+      "source": "category average, unverified"
+    },
+    "cilantro": {
+      "usd": 0.79,
+      "basis": "estimate",
+      "source": "category average, unverified"
+    },
+    "cinnamon": {
+      "usd": 2.49,
+      "basis": "estimate",
+      "source": "category average, unverified"
+    },
+    "cocoa_powder": {
+      "usd": 4.29,
+      "basis": "estimate",
+      "source": "category average, unverified"
+    },
+    "coconut_milk": {
+      "usd": 2.49,
+      "basis": "estimate",
+      "source": "category average, unverified"
+    },
+    "corn_frozen": {
+      "usd": 1.79,
+      "basis": "estimate",
+      "source": "category average, unverified"
+    },
+    "corn_tortillas": {
+      "usd": 3.49,
+      "basis": "estimate",
+      "source": "category average, unverified"
+    },
+    "cornstarch": {
+      "usd": 2.29,
+      "basis": "estimate",
+      "source": "category average, unverified"
+    },
+    "cottage_cheese": {
+      "usd": 3.49,
+      "basis": "estimate",
+      "source": "category average, unverified"
+    },
+    "cream_cheese": {
+      "usd": 2.99,
+      "basis": "estimate",
+      "source": "category average, unverified"
+    },
+    "cucumber": {
+      "usd": 0.99,
+      "basis": "estimate",
+      "source": "category average, unverified"
+    },
+    "cumin": {
+      "usd": 2.49,
+      "basis": "estimate",
+      "source": "category average, unverified"
+    },
+    "curry_paste": {
+      "usd": 3.49,
+      "basis": "estimate",
+      "source": "category average, unverified"
+    },
+    "curry_powder": {
+      "usd": 2.49,
+      "basis": "estimate",
+      "source": "category average, unverified"
+    },
+    "dark_chocolate": {
+      "usd": 3.49,
+      "basis": "estimate",
+      "source": "category average, unverified"
+    },
+    "dates_medjool": {
+      "usd": 6.99,
+      "basis": "estimate",
+      "source": "category average, unverified"
+    },
+    "deli_turkey": {
+      "usd": 4.99,
+      "basis": "estimate",
+      "source": "category average, unverified"
+    },
+    "edamame": {
+      "usd": 3.49,
+      "basis": "estimate",
+      "source": "category average, unverified"
+    },
+    "egg_whites": {
+      "usd": 3.49,
+      "basis": "estimate",
+      "source": "category average, unverified"
+    },
+    "eggs": {
+      "usd": 2.27,
+      "basis": "bls",
+      "source": "BLS APU0000708111 (Eggs, Grade A, Large, per dozen), Sep 2026",
+      "note": "dozen = package 12 each (2.272)"
+    },
+    "english_muffins": {
+      "usd": 3.29,
+      "basis": "estimate",
+      "source": "category average, unverified"
+    },
+    "feta": {
+      "usd": 3.49,
+      "basis": "estimate",
+      "source": "category average, unverified"
+    },
+    "flaxseed": {
+      "usd": 4.99,
+      "basis": "estimate",
+      "source": "category average, unverified"
+    },
+    "flour": {
+      "usd": 2.73,
+      "basis": "bls",
+      "source": "BLS APU0000701111 (Flour, white, all purpose, per lb), Sep 2026",
+      "note": "per lb 0.545 x5 = 5 lb"
+    },
+    "flour_tortillas": {
+      "usd": 2.99,
+      "basis": "estimate",
+      "source": "category average, unverified"
+    },
+    "garlic": {
+      "usd": 0.79,
+      "basis": "estimate",
+      "source": "category average, unverified"
+    },
+    "garlic_powder": {
+      "usd": 2.49,
+      "basis": "estimate",
+      "source": "category average, unverified"
+    },
+    "ginger": {
+      "usd": 1.99,
+      "basis": "estimate",
+      "source": "category average, unverified"
+    },
+    "granola": {
+      "usd": 4.49,
+      "basis": "estimate",
+      "source": "category average, unverified"
+    },
+    "grapes": {
+      "usd": 2.99,
+      "basis": "estimate",
+      "source": "category average, unverified",
+      "note": "BLS grape series found only through 2021 (APU0000711417)"
+    },
+    "greek_yogurt": {
+      "usd": 5.49,
+      "basis": "estimate",
+      "source": "category average, unverified"
+    },
+    "green_beans": {
+      "usd": 2.49,
+      "basis": "estimate",
+      "source": "category average, unverified"
+    },
+    "green_onion": {
+      "usd": 0.79,
+      "basis": "estimate",
+      "source": "category average, unverified"
+    },
+    "ground_beef": {
+      "usd": 8.46,
+      "basis": "bls",
+      "source": "BLS APU0000703113 (Ground beef, lean and extra lean, per lb), Sep 2026",
+      "note": "per lb x1 (8.461); closest BLS category to 90% lean (proxy)"
+    },
+    "ground_turkey": {
+      "usd": 4.99,
+      "basis": "estimate",
+      "source": "category average, unverified"
+    },
+    "honey": {
+      "usd": 4.49,
+      "basis": "estimate",
+      "source": "category average, unverified"
+    },
+    "hot_sauce": {
+      "usd": 2.99,
+      "basis": "estimate",
+      "source": "category average, unverified"
+    },
+    "hummus": {
+      "usd": 3.49,
+      "basis": "estimate",
+      "source": "category average, unverified"
+    },
+    "italian_seasoning": {
+      "usd": 2.49,
+      "basis": "estimate",
+      "source": "category average, unverified"
+    },
+    "jalapeno": {
+      "usd": 0.49,
+      "basis": "estimate",
+      "source": "category average, unverified"
+    },
+    "kale": {
+      "usd": 2.99,
+      "basis": "estimate",
+      "source": "category average, unverified"
+    },
+    "ketchup": {
+      "usd": 2.99,
+      "basis": "estimate",
+      "source": "category average, unverified"
+    },
+    "kidney_beans": {
+      "usd": 1.19,
+      "basis": "estimate",
+      "source": "category average, unverified"
+    },
+    "kimchi": {
+      "usd": 4.99,
+      "basis": "estimate",
+      "source": "category average, unverified"
+    },
+    "lemon": {
+      "usd": 0.69,
+      "basis": "estimate",
+      "source": "category average, unverified"
+    },
+    "lentils_dry": {
+      "usd": 2.49,
+      "basis": "estimate",
+      "source": "category average, unverified"
+    },
+    "lime": {
+      "usd": 0.49,
+      "basis": "estimate",
+      "source": "category average, unverified"
+    },
+    "mango_frozen": {
+      "usd": 3.49,
+      "basis": "estimate",
+      "source": "category average, unverified"
+    },
+    "maple_syrup": {
+      "usd": 6.49,
+      "basis": "estimate",
+      "source": "category average, unverified"
+    },
+    "mayo": {
+      "usd": 3.99,
+      "basis": "estimate",
+      "source": "category average, unverified"
+    },
+    "milk": {
+      "usd": 2.05,
+      "basis": "estimate",
+      "source": "BLS APU0000709112 (Milk, whole, fortified, per gal), Sep 2026",
+      "note": "BLS whole milk per gallon ÷ 2 for a 64 fl oz package; BLS has no matching 2% half-gallon series verified"
+    },
+    "mixed_greens": {
+      "usd": 3.49,
+      "basis": "estimate",
+      "source": "category average, unverified"
+    },
+    "mixed_veg_frozen": {
+      "usd": 1.79,
+      "basis": "estimate",
+      "source": "category average, unverified"
+    },
+    "mozzarella": {
+      "usd": 2.99,
+      "basis": "estimate",
+      "source": "category average, unverified"
+    },
+    "mushrooms": {
+      "usd": 2.49,
+      "basis": "estimate",
+      "source": "category average, unverified"
+    },
+    "mustard": {
+      "usd": 2.49,
+      "basis": "estimate",
+      "source": "category average, unverified"
+    },
+    "olive_oil": {
+      "usd": 8.99,
+      "basis": "estimate",
+      "source": "category average, unverified"
+    },
+    "onion": {
+      "usd": 0.99,
+      "basis": "estimate",
+      "source": "category average, unverified"
+    },
+    "onion_powder": {
+      "usd": 2.49,
+      "basis": "estimate",
+      "source": "category average, unverified"
+    },
+    "orange": {
+      "usd": 1.72,
+      "basis": "bls",
+      "source": "BLS APU0000711311 (Oranges, navel, per lb), Sep 2026",
+      "note": "per lb x1 (1.723)"
+    },
+    "oregano": {
+      "usd": 2.49,
+      "basis": "estimate",
+      "source": "category average, unverified"
+    },
+    "paprika": {
+      "usd": 3.49,
+      "basis": "estimate",
+      "source": "category average, unverified"
+    },
+    "parmesan": {
+      "usd": 4.49,
+      "basis": "estimate",
+      "source": "category average, unverified"
+    },
+    "parsley": {
+      "usd": 0.99,
+      "basis": "estimate",
+      "source": "category average, unverified"
+    },
+    "pasta": {
+      "usd": 1.38,
+      "basis": "bls",
+      "source": "BLS APU0000701322 (Spaghetti and macaroni, per lb), Sep 2026",
+      "note": "per lb x1 (1.375); 16 oz package"
+    },
+    "pasta_sauce": {
+      "usd": 2.99,
+      "basis": "estimate",
+      "source": "category average, unverified"
+    },
+    "peanut_butter": {
+      "usd": 3.49,
+      "basis": "estimate",
+      "source": "category average, unverified",
+      "note": "BLS peanut butter series APU0000716141 discontinued (last value 2017)"
+    },
+    "peanuts": {
+      "usd": 4.99,
+      "basis": "estimate",
+      "source": "category average, unverified"
+    },
+    "peas_frozen": {
+      "usd": 1.79,
+      "basis": "estimate",
+      "source": "category average, unverified"
+    },
+    "pineapple_frozen": {
+      "usd": 3.29,
+      "basis": "estimate",
+      "source": "category average, unverified"
+    },
+    "pinto_beans": {
+      "usd": 1.19,
+      "basis": "estimate",
+      "source": "category average, unverified"
+    },
+    "pita": {
+      "usd": 2.99,
+      "basis": "estimate",
+      "source": "category average, unverified"
+    },
+    "popcorn_kernels": {
+      "usd": 3.49,
+      "basis": "estimate",
+      "source": "category average, unverified"
+    },
+    "pork_loin": {
+      "usd": 4.49,
+      "basis": "estimate",
+      "source": "category average, unverified"
+    },
+    "potatoes": {
+      "usd": 4.95,
+      "basis": "bls",
+      "source": "BLS APU0000712112 (Potatoes, white, per lb), Sep 2026",
+      "note": "per lb 0.989 x5 = 5 lb; BLS white potatoes, catalog is russet (proxy)"
+    },
+    "protein_powder_whey": {
+      "usd": 29.99,
+      "basis": "estimate",
+      "source": "category average, unverified"
+    },
+    "quinoa": {
+      "usd": 4.99,
+      "basis": "estimate",
+      "source": "category average, unverified"
+    },
+    "red_onion": {
+      "usd": 1.19,
+      "basis": "estimate",
+      "source": "category average, unverified"
+    },
+    "red_pepper_flakes": {
+      "usd": 2.49,
+      "basis": "estimate",
+      "source": "category average, unverified"
+    },
+    "rice_cakes": {
+      "usd": 2.49,
+      "basis": "estimate",
+      "source": "category average, unverified"
+    },
+    "rolled_oats": {
+      "usd": 4.49,
+      "basis": "estimate",
+      "source": "category average, unverified"
+    },
+    "romaine": {
+      "usd": 2.49,
+      "basis": "estimate",
+      "source": "category average, unverified"
+    },
+    "salmon": {
+      "usd": 11.99,
+      "basis": "estimate",
+      "source": "category average, unverified"
+    },
+    "salsa": {
+      "usd": 3.49,
+      "basis": "estimate",
+      "source": "category average, unverified"
+    },
+    "salt": {
+      "usd": 1.29,
+      "basis": "estimate",
+      "source": "category average, unverified"
+    },
+    "sesame_oil": {
+      "usd": 4.49,
+      "basis": "estimate",
+      "source": "category average, unverified"
+    },
+    "shrimp": {
+      "usd": 9.99,
+      "basis": "estimate",
+      "source": "category average, unverified"
+    },
+    "sour_cream": {
+      "usd": 2.49,
+      "basis": "estimate",
+      "source": "category average, unverified"
+    },
+    "soy_sauce": {
+      "usd": 2.99,
+      "basis": "estimate",
+      "source": "category average, unverified"
+    },
+    "spinach": {
+      "usd": 3.49,
+      "basis": "estimate",
+      "source": "category average, unverified"
+    },
+    "strawberries": {
+      "usd": 3.79,
+      "basis": "bls",
+      "source": "BLS APU0000711415 (Strawberries, dry pint, per 12 oz), Sep 2026",
+      "note": "per 12 oz 2.840 x16/12 = 16 oz"
+    },
+    "string_cheese": {
+      "usd": 4.49,
+      "basis": "estimate",
+      "source": "category average, unverified"
+    },
+    "sugar": {
+      "usd": 4.08,
+      "basis": "bls",
+      "source": "BLS APU0000715211 (Sugar, white, all sizes, per lb), Sep 2026",
+      "note": "per lb 1.019 x4 = 4 lb"
+    },
+    "sunflower_seeds": {
+      "usd": 3.49,
+      "basis": "estimate",
+      "source": "category average, unverified"
+    },
+    "sweet_potatoes": {
+      "usd": 1.49,
+      "basis": "estimate",
+      "source": "category average, unverified"
+    },
+    "tilapia": {
+      "usd": 5.99,
+      "basis": "estimate",
+      "source": "category average, unverified"
+    },
+    "tofu_firm": {
+      "usd": 2.49,
+      "basis": "estimate",
+      "source": "category average, unverified"
+    },
+    "tomato_paste": {
+      "usd": 1.19,
+      "basis": "estimate",
+      "source": "category average, unverified"
+    },
+    "tomatoes": {
+      "usd": 1.99,
+      "basis": "bls",
+      "source": "BLS APU0000712311 (Tomatoes, field grown, per lb), Sep 2026",
+      "note": "per lb x1 (1.992); field-grown tomatoes, roma used as proxy"
+    },
+    "tzatziki": {
+      "usd": 3.99,
+      "basis": "estimate",
+      "source": "category average, unverified"
+    },
+    "vegetable_broth": {
+      "usd": 2.49,
+      "basis": "estimate",
+      "source": "category average, unverified"
+    },
+    "vegetable_oil": {
+      "usd": 5.49,
+      "basis": "estimate",
+      "source": "category average, unverified"
+    },
+    "vinegar_balsamic": {
+      "usd": 3.49,
+      "basis": "estimate",
+      "source": "category average, unverified"
+    },
+    "vinegar_rice": {
+      "usd": 2.99,
+      "basis": "estimate",
+      "source": "category average, unverified"
+    },
+    "walnuts": {
+      "usd": 4.99,
+      "basis": "estimate",
+      "source": "category average, unverified"
+    },
+    "white_rice": {
+      "usd": 2.24,
+      "basis": "bls",
+      "source": "BLS APU0000701312 (Rice, white, long grain, uncooked, per lb), Sep 2026",
+      "note": "per lb 1.118 x2 = 32 oz"
+    },
+    "whole_wheat_bread": {
+      "usd": 3.49,
+      "basis": "estimate",
+      "source": "category average, unverified"
+    },
+    "whole_wheat_pasta": {
+      "usd": 2.49,
+      "basis": "estimate",
+      "source": "category average, unverified"
+    },
+    "zucchini": {
+      "usd": 1.79,
+      "basis": "estimate",
+      "source": "category average, unverified"
+    }
+  }
+}

@@ -1,0 +1,32 @@
+[
+  {
+    "key": "acai_frozen",
+    "displayName": "Açaí packs (frozen, unsweetened)",
+    "aisle": "Frozen",
+    "package": {
+      "size": 14.1,
+      "unit": "oz"
+    },
+    "usda": {
+      "fdcId": 2038653,
+      "description": "PURE UNSWEETENED SUPERFRUIT PACKS, PURE ACAI BERRY (Sambazon, Inc.)",
+      "source": "branded"
+    },
+    "per100g": {
+      "kcal": 70,
+      "protein_g": 1,
+      "carbs_g": 4,
+      "fat_g": 5,
+      "fiber_g": 3
+    },
+    "portions": [
+      {
+        "label": "1 pack (100 g)",
+        "grams": 100
+      }
+    ],
+    "allergens": [],
+    "packageGrams": 400,
+    "packageNote": "4 packs of 100 g; label nutrients per 100 g from USDA FoodData Central Branded entry 2038653 (published 2021-10-28)."
+  }
+]

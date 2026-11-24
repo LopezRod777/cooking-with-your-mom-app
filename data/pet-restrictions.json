@@ -1,0 +1,68 @@
+{
+  "allergens": {
+    "chicken": ["chicken_breast_cooked"],
+    "beef": [],
+    "turkey": ["turkey_breast_cooked"],
+    "fish": ["salmon_cooked"],
+    "egg": ["egg_hard_boiled"],
+    "grain": ["white_rice_cooked", "oats_cooked"],
+    "dairy": []
+  },
+  "medical": {
+    "pancreatitis": {
+      "block": true,
+      "text": "Extras need your vet's OK with pancreatitis (VCA: low-fat, easy-to-digest diet).",
+      "sourceId": "vca_pancreatitis"
+    },
+    "kidney": {
+      "block": true,
+      "text": "Extras need your vet's OK with kidney disease (therapeutic diet).",
+      "sourceId": "merck_ckd_dogs",
+      "catSourceId": "cornell_ckd_cats"
+    },
+    "diabetes": {
+      "block": true,
+      "text": "Extras need your vet's OK with diabetes (our conservative rule).",
+      "sourceId": null,
+      "ourRule": true
+    },
+    "other": {
+      "block": true,
+      "template": "Extras need your vet's OK with {text} (our conservative rule).",
+      "sourceId": null,
+      "ourRule": true
+    }
+  },
+  "sources": {
+    "vca_pancreatitis": {
+      "org": "VCA Animal Hospitals",
+      "url": "https://vcahospitals.com/know-your-pet/pancreatitis-in-dogs",
+      "quote": "With mild pancreatitis, the treatment is supportive; it involves treating pain and nausea and feeding small amounts of a low-fat, easy-to-digest diet.",
+      "accessedAt": "2026-10-31"
+    },
+    "cornell_ckd_cats": {
+      "org": "Cornell Feline Health Center",
+      "url": "https://www.vet.cornell.edu/departments-centers-and-institutes/cornell-feline-health-center/health-information/feline-health-topics/chronic-kidney-disease",
+      "quote": "Studies suggest that therapeutic diets that are restricted in protein, phosphorus and sodium content and high in water-soluble vitamins, fiber, and antioxidant concentrations may prolong life and improve quality of life in cats with CKD.",
+      "accessedAt": "2026-10-31"
+    },
+    "merck_ckd_dogs": {
+      "org": "Merck Veterinary Manual",
+      "url": "https://www.merckvetmanual.com/dog-owners/kidney-and-urinary-tract-disorders-of-dogs/chronic-kidney-disease-in-dogs",
+      "quote": "It can involve controlling blood pressure, treating infections, switching to a kidney-support diet, decreasing the amount of phosphorus in the diet, adding fish oil to the diet, and giving medications or supplements.",
+      "accessedAt": "2026-10-31"
+    },
+    "vca_food_allergy": {
+      "org": "VCA Animal Hospitals",
+      "url": "https://vcahospitals.com/know-your-pet/food-allergies-in-dogs",
+      "quote": "The best and most accurate method of diagnosing a food allergy is to feed a hypoallergenic diet for 8 to 12 weeks as a food trial, called an elimination trial.",
+      "accessedAt": "2026-10-31"
+    },
+    "tufts_bland": {
+      "org": "Tufts Cummings School of Veterinary Medicine (Petfoodology)",
+      "url": "https://sites.tufts.edu/petfoodology/2022/02/22/does-my-pet-need-a-bland-diet/",
+      "quote": "one low fat example is cooked white rice and cooked chicken or turkey breast in a 2:1 ratio. For example, this would be 2 cups (approximately 300 grams) of cooked white rice and 1 cup (approximately 150 grams) of chopped baked chicken or turkey breast.",
+      "accessedAt": "2026-10-31"
+    }
+  }
+}

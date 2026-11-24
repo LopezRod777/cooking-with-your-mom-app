@@ -1,0 +1,17 @@
+{
+  "name": "cwym-extract",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Extraction service: yt-dlp download, Vercel Blob storage, Gemini analysis",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "start": "node server.mjs",
+    "test": "node --test test/*.test.mjs"
+  },
+  "dependencies": {
+    "@vercel/blob": "2.8.2"
+  }
+}

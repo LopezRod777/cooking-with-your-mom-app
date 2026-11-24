@@ -1,0 +1,196 @@
+{
+  "breeds": {
+    "labrador": {
+      "label": "Labrador Retriever",
+      "plural": "Labradors",
+      "aliases": [
+        "labrador",
+        "lab",
+        "labrador retriever",
+        "labradoodle"
+      ],
+      "mixAliases": [
+        "labradoodle"
+      ],
+      "conditionIds": [
+        "copper_prone",
+        "growth_large"
+      ]
+    },
+    "doberman": {
+      "label": "Doberman Pinscher",
+      "plural": "Dobermans",
+      "aliases": [
+        "doberman",
+        "dobermann",
+        "doberman pinscher",
+        "dobermann pinscher"
+      ],
+      "mixAliases": [],
+      "conditionIds": [
+        "copper_prone",
+        "growth_large"
+      ]
+    },
+    "dalmatian": {
+      "label": "Dalmatian",
+      "plural": "Dalmatians",
+      "aliases": [
+        "dalmatian",
+        "dalmata",
+        "dalmatin"
+      ],
+      "mixAliases": [],
+      "conditionIds": [
+        "urate",
+        "growth_large"
+      ]
+    },
+    "mini_schnauzer": {
+      "label": "Miniature Schnauzer",
+      "plural": "Miniature Schnauzers",
+      "aliases": [
+        "miniature schnauzer",
+        "mini schnauzer",
+        "schnauzer miniatura",
+        "schnauzer mini",
+        "zwergschnauzer",
+        "schnauzer"
+      ],
+      "mixAliases": [],
+      "uncertainAliases": [
+        "schnauzer"
+      ],
+      "conditionIds": [
+        "pancreatitis_prone"
+      ]
+    },
+    "westie": {
+      "label": "West Highland White Terrier",
+      "plural": "Westies",
+      "aliases": [
+        "westie",
+        "west highland white terrier",
+        "west highland terrier",
+        "west highland white",
+        "west highland"
+      ],
+      "mixAliases": [],
+      "conditionIds": [
+        "copper_prone"
+      ]
+    },
+    "bedlington": {
+      "label": "Bedlington Terrier",
+      "plural": "Bedlingtons",
+      "aliases": [
+        "bedlington",
+        "bedlington terrier"
+      ],
+      "mixAliases": [],
+      "conditionIds": [
+        "copper_prone"
+      ]
+    }
+  },
+  "mixWords": [
+    "mix",
+    "mixed",
+    "cross",
+    "mestizo",
+    "mestiza",
+    "cruza",
+    "mezcla",
+    "doodle"
+  ],
+  "conditions": {
+    "urate": {
+      "title": "{Plural} and urate stones",
+      "text": "{Plural} are prone to urate bladder stones, and Merck's prevention is a low-purine diet. Liver and other organ meats are high in purine; eggs and vegetables are low (VCA). We never list organ meats as something to share. {name} is {ageText}, {lb} lb{kcalClause}. Ask your vet about a low-purine food.",
+      "sourceIds": [
+        "merck_urolithiasis_dogs",
+        "vca_dalmatian"
+      ]
+    },
+    "pancreatitis_prone": {
+      "title": "{Plural} and pancreatitis",
+      "text": "{Plural} are dramatically overrepresented among dogs with pancreatitis (Merck), and very high blood triglycerides raise the risk. Most Schnauzers do fine on a normal diet; ask your vet to check triglycerides at check-ups. For dogs being treated for pancreatitis, Merck's diet is less than 20 g fat per 1,000 kcal. That is a treatment diet your vet would set, not a rule for every Schnauzer. If {name} is ever diagnosed, add Pancreatitis under restrictions and extras pause. {name} is {ageText}, {lb} lb{kcalClause}. Ask your vet.",
+      "sourceIds": [
+        "merck_pancreatitis",
+        "jvim_schnauzer_2020"
+      ]
+    },
+    "copper_prone": {
+      "title": "{Plural} and copper",
+      "text": "{Plural} are among the breeds prone to copper build-up in the liver (Cornell). Most dogs never have a problem; ask your vet about a copper check at {name}'s next visit. If a vet ever puts {name} on a low-copper diet, Cornell's list is: no organ meats, no shellfish, no mushrooms, fewer green leafy vegetables. Add it under restrictions here and extras pause until you say otherwise. Ask your vet.",
+      "sourceIds": [
+        "cornell_copper"
+      ]
+    },
+    "growth_large": {
+      "title": "A growing {label}",
+      "text": "{name} is {monthsText}. Large-breed puppies stay on puppy food until 12 to 18 months; ask your vet which. Keep {name} trim (body condition 4 to 5 of 9) and follow the growth chart at check-ups. Ask your vet.",
+      "sourceIds": [
+        "tufts_growth_2022",
+        "wsava_bcs_dog"
+      ],
+      "stages": [
+        "too_young",
+        "puppy",
+        "growing_large"
+      ],
+      "requiresSize": "large"
+    }
+  },
+  "sources": {
+    "merck_urolithiasis_dogs": {
+      "org": "Merck Veterinary Manual",
+      "title": "Urolithiasis in Dogs",
+      "url": "https://www.merckvetmanual.com/urinary-system/urolithiasis-in-small-animals/urolithiasis-in-dogs",
+      "quote": "A mutation of a gene that encodes for a uric acid transporter (SLC2A9) has been found in Dalmatians with hyperuricosuria. Feeding a low-purine diet with or without supplemental potassium citrate to alkalinize the urine discourages the formation of new stones.",
+      "accessedAt": "2026-10-31"
+    },
+    "vca_dalmatian": {
+      "org": "VCA Animal Hospitals",
+      "title": "Dalmatian",
+      "url": "https://vcahospitals.com/collinsville/know-your-pet/dog-breeds/dalmatian",
+      "quote": "Liver and other organ meats are high in purine and should be avoided in these dogs. Eggs and vegetables are low in purine.",
+      "accessedAt": "2026-10-31"
+    },
+    "merck_pancreatitis": {
+      "org": "Merck Veterinary Manual",
+      "title": "Pancreatitis in Dogs and Cats",
+      "url": "https://www.merckvetmanual.com/digestive-system/the-exocrine-pancreas/pancreatitis-in-dogs-and-cats",
+      "quote": "Miniature Schnauzers have been reported to be dramatically overrepresented. In dogs, feeding a low-fat diet (ie, less than 20 g fat/1,000 kcal) is crucial for treatment success.",
+      "accessedAt": "2026-10-31"
+    },
+    "jvim_schnauzer_2020": {
+      "org": "Journal of Veterinary Internal Medicine (2020)",
+      "title": "Effect of a low-fat diet on serum triglyceride and cholesterol concentrations and lipoprotein profiles in Miniature Schnauzers with hypertriglyceridemia",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7694839/",
+      "quote": "The most commonly recommended initial approach in the management of hypertriglyceridemia is the use of a low-fat diet.",
+      "accessedAt": "2026-10-31"
+    },
+    "cornell_copper": {
+      "org": "Cornell Riney Canine Health Center",
+      "title": "Copper hepatopathy and dietary management",
+      "url": "https://www.vet.cornell.edu/departments-centers-and-institutes/riney-canine-health-center/canine-health-topics/copper-hepatopathy-and-dietary-management",
+      "quote": "Labrador Retriever, Doberman Pinscher, Bedlington Terrier, and West Highland White are examples of highly prone breeds. No organ meats. No shellfish. No mushrooms. Fewer green leafy vegetables.",
+      "accessedAt": "2026-10-31"
+    },
+    "tufts_growth_2022": {
+      "org": "Tufts Cummings School, Petfoodology",
+      "title": "Growth guide: keeping your puppy on the right track",
+      "url": "https://sites.tufts.edu/petfoodology/2022/01/31/growth-guide-keeping-your-puppy-on-the-right-track/",
+      "quote": "But PLEASE don't change to an adult food before 12 months of age in small, medium, or large-sized breeds",
+      "accessedAt": "2026-10-31"
+    },
+    "wsava_bcs_dog": {
+      "org": "WSAVA Global Nutrition Committee",
+      "title": "Body Condition Score (dog)",
+      "url": "https://wsava.org/wp-content/uploads/2020/01/Body-Condition-Score-Dog.pdf",
+      "quote": "Body condition score chart, 9-point scale; ideal 4 to 5.",
+      "accessedAt": "2026-10-31"
+    }
+  }
+}

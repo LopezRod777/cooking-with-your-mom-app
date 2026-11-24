@@ -1,0 +1,79 @@
+{
+ "@type": "Recipe",
+ "name": "Birria Tacos",
+ "recipeYield": [
+  "8",
+  "8 servings (2 tacos each)"
+ ],
+ "recipeIngredient": [
+  "2 lbs. beef chuck roast (braising steak) (boneless, $14.98*)",
+  "1 tsp salt ($0.04)",
+  "¼ tsp black pepper (freshly cracked, $0.04)",
+  "1 cup white onion (chopped, (½ onion, 180g) $0.65)",
+  "4 garlic cloves (minced, (2 Tbsp) $0.38)",
+  "3 cups beef broth (24 oz, $0.36**)",
+  "1 Tbsp tomato paste ($0.07)",
+  "1 chipotle pepper in adobo sauce (diced, $0.23)",
+  "2 tsp chili powder ($0.07)",
+  "1 tsp smoked paprika ($0.08)",
+  "1 tsp ground cumin ($0.04)",
+  "1 tsp dried oregano ($0.05)",
+  "½ tsp ground cinnamon ($0.02)",
+  "2 bay leaves ($0.20)",
+  "16 small corn tortillas (taco size, $1.05)",
+  "2 cups Monterey Jack cheese (shredded (211g, 8 oz.) $1.89)",
+  "¼ cup white onion (diced, for garnish $0.16)",
+  "¼ cup fresh cilantro (coriander) (chopped, for garnish $0.20)",
+  "2 limes (sliced into wedges, for garnish $0.50)"
+ ],
+ "recipeInstructions": [
+  {
+   "@type": "HowToStep",
+   "text": "Gather and prep all ingredients.",
+   "name": "Gather",
+   "url": "https://www.budgetbytes.com/birria-tacos/#wprm-recipe-137899-step-0-0"
+  },
+  {
+   "@type": "HowToStep",
+   "text": "Pat dry the chuck roast and season all over with salt and pepper.",
+   "name": "Season",
+   "url": "https://www.budgetbytes.com/birria-tacos/#wprm-recipe-137899-step-0-1"
+  },
+  {
+   "@type": "HowToStep",
+   "text": "Add the beef, chopped onion, minced garlic, beef broth, tomato paste, diced chipotle pepper, spices, and bay leaves to a slow cooker (mine is 6-quarts). Cover and cook on low for 6–8 hours or high for 4–5 hours until the beef is fall-apart tender.***",
+   "name": "Cook",
+   "url": "https://www.budgetbytes.com/birria-tacos/#wprm-recipe-137899-step-0-2"
+  },
+  {
+   "@type": "HowToStep",
+   "text": "Remove bay leaves and shred the meat directly in the slow cooker.",
+   "name": "Shred",
+   "url": "https://www.budgetbytes.com/birria-tacos/#wprm-recipe-137899-step-0-3"
+  },
+  {
+   "@type": "HowToStep",
+   "text": "Ladle some broth (consomé) into a bowl. Lightly dip both sides of a tortilla into it.****",
+   "name": "Dip",
+   "url": "https://www.budgetbytes.com/birria-tacos/#wprm-recipe-137899-step-0-4"
+  },
+  {
+   "@type": "HowToStep",
+   "text": "Heat a non-stick skillet over medium. Place the dipped tortilla in the skillet and sprinkle with cheese on half, top with shredded birria, and fold into a taco.",
+   "name": "Sprinkle",
+   "url": "https://www.budgetbytes.com/birria-tacos/#wprm-recipe-137899-step-0-5"
+  },
+  {
+   "@type": "HowToStep",
+   "text": "Cook 2–3 min per side until crispy and golden. Repeat with the remaining tacos.",
+   "name": "Cook",
+   "url": "https://www.budgetbytes.com/birria-tacos/#wprm-recipe-137899-step-0-6"
+  },
+  {
+   "@type": "HowToStep",
+   "text": "Serve your birria tacos hot with small bowls of consomé for dipping. Garnish with diced onion, cilantro, and lime wedges.",
+   "name": "Serve",
+   "url": "https://www.budgetbytes.com/birria-tacos/#wprm-recipe-137899-step-0-7"
+  }
+ ]
+}

@@ -1,0 +1,744 @@
+{
+  "generatedAt": "2026-10-31T04:14:33.724Z",
+  "keys": {
+    "acai_frozen": {
+      "dog": "not_for_pets",
+      "cat": "not_for_pets",
+      "note": "default"
+    },
+    "almond_milk": {
+      "dog": "not_for_pets",
+      "cat": "not_for_pets",
+      "note": "default"
+    },
+    "almonds": {
+      "dog": "not_for_pets",
+      "cat": "not_for_pets",
+      "note": "default"
+    },
+    "apple": {
+      "dog": "shareable_if_plain",
+      "cat": "not_for_pets",
+      "note": "Remove core and seeds."
+    },
+    "asparagus": {
+      "dog": "not_for_pets",
+      "cat": "not_for_pets",
+      "note": "default"
+    },
+    "avocado": {
+      "dog": "not_for_pets",
+      "cat": "not_for_pets",
+      "note": "Avocado: ASPCA says it is mainly a problem for birds, rabbits, horses; still not for pets by default."
+    },
+    "baby_carrots": {
+      "dog": "shareable_if_plain",
+      "cat": "not_for_pets",
+      "note": "Cooked or plain, no salt."
+    },
+    "baking_powder": {
+      "dog": "not_for_pets",
+      "cat": "not_for_pets",
+      "note": "default"
+    },
+    "banana": {
+      "dog": "shareable_if_plain",
+      "cat": "not_for_pets",
+      "note": "Plain, no added sugar."
+    },
+    "basil": {
+      "dog": "not_for_pets",
+      "cat": "not_for_pets",
+      "note": "default"
+    },
+    "bbq_sauce": {
+      "dog": "not_for_pets",
+      "cat": "not_for_pets",
+      "note": "default"
+    },
+    "beef_sirloin": {
+      "dog": "shareable_if_plain",
+      "cat": "shareable_if_plain",
+      "note": "Cook plain; trim fat. Raw key: cook before sharing."
+    },
+    "bell_pepper": {
+      "dog": "not_for_pets",
+      "cat": "not_for_pets",
+      "note": "default"
+    },
+    "berries_frozen": {
+      "dog": "not_for_pets",
+      "cat": "not_for_pets",
+      "note": "default"
+    },
+    "black_beans": {
+      "dog": "not_for_pets",
+      "cat": "not_for_pets",
+      "note": "default"
+    },
+    "black_pepper": {
+      "dog": "not_for_pets",
+      "cat": "not_for_pets",
+      "note": "default"
+    },
+    "blueberries": {
+      "dog": "shareable_if_plain",
+      "cat": "not_for_pets",
+      "note": "Plain."
+    },
+    "breadcrumbs": {
+      "dog": "not_for_pets",
+      "cat": "not_for_pets",
+      "note": "default"
+    },
+    "broccoli": {
+      "dog": "shareable_if_plain",
+      "cat": "not_for_pets",
+      "note": "Cooked, plain, small amounts."
+    },
+    "broccoli_frozen": {
+      "dog": "not_for_pets",
+      "cat": "not_for_pets",
+      "note": "default"
+    },
+    "brown_rice": {
+      "dog": "shareable_if_plain",
+      "cat": "not_for_pets",
+      "note": "Cooked, plain."
+    },
+    "brown_sugar": {
+      "dog": "not_for_pets",
+      "cat": "not_for_pets",
+      "note": "default"
+    },
+    "butter": {
+      "dog": "not_for_pets",
+      "cat": "not_for_pets",
+      "note": "default"
+    },
+    "cabbage": {
+      "dog": "not_for_pets",
+      "cat": "not_for_pets",
+      "note": "default"
+    },
+    "canned_salmon": {
+      "dog": "not_for_pets",
+      "cat": "not_for_pets",
+      "note": "Canned salmon: salted/processed; not for pets."
+    },
+    "canned_tomatoes": {
+      "dog": "not_for_pets",
+      "cat": "not_for_pets",
+      "note": "default"
+    },
+    "canned_tuna": {
+      "dog": "not_for_pets",
+      "cat": "not_for_pets",
+      "note": "Canned tuna: salted/processed; not for pets."
+    },
+    "carrots": {
+      "dog": "shareable_if_plain",
+      "cat": "not_for_pets",
+      "note": "Cooked or plain, no salt."
+    },
+    "cauliflower": {
+      "dog": "not_for_pets",
+      "cat": "not_for_pets",
+      "note": "default"
+    },
+    "celery": {
+      "dog": "not_for_pets",
+      "cat": "not_for_pets",
+      "note": "default"
+    },
+    "cheddar": {
+      "dog": "not_for_pets",
+      "cat": "not_for_pets",
+      "note": "default"
+    },
+    "cherry_tomatoes": {
+      "dog": "not_for_pets",
+      "cat": "not_for_pets",
+      "note": "default"
+    },
+    "chia_seeds": {
+      "dog": "not_for_pets",
+      "cat": "not_for_pets",
+      "note": "default"
+    },
+    "chicken_breast": {
+      "dog": "shareable_if_plain",
+      "cat": "shareable_if_plain",
+      "note": "Cook plain; no salt/sauce."
+    },
+    "chicken_broth": {
+      "dog": "not_for_pets",
+      "cat": "not_for_pets",
+      "note": "default"
+    },
+    "chicken_thigh": {
+      "dog": "shareable_if_plain",
+      "cat": "shareable_if_plain",
+      "note": "Cook plain; no salt/sauce."
+    },
+    "chickpeas": {
+      "dog": "not_for_pets",
+      "cat": "not_for_pets",
+      "note": "default"
+    },
+    "chili_powder": {
+      "dog": "not_for_pets",
+      "cat": "not_for_pets",
+      "note": "default"
+    },
+    "cilantro": {
+      "dog": "not_for_pets",
+      "cat": "not_for_pets",
+      "note": "default"
+    },
+    "cinnamon": {
+      "dog": "not_for_pets",
+      "cat": "not_for_pets",
+      "note": "default"
+    },
+    "cocoa_powder": {
+      "dog": "hazard",
+      "cat": "hazard",
+      "sourceId": "merck_chocolate",
+      "note": "Cocoa: same theobromine hazard as chocolate, more concentrated (Chocolate: dogs named in Merck text; cats not named in fetched source (group rule, unverified for cats).)"
+    },
+    "coconut_milk": {
+      "dog": "not_for_pets",
+      "cat": "not_for_pets",
+      "note": "default"
+    },
+    "corn_frozen": {
+      "dog": "not_for_pets",
+      "cat": "not_for_pets",
+      "note": "default"
+    },
+    "corn_tortillas": {
+      "dog": "not_for_pets",
+      "cat": "not_for_pets",
+      "note": "default"
+    },
+    "cornstarch": {
+      "dog": "not_for_pets",
+      "cat": "not_for_pets",
+      "note": "default"
+    },
+    "cottage_cheese": {
+      "dog": "not_for_pets",
+      "cat": "not_for_pets",
+      "note": "default"
+    },
+    "cream_cheese": {
+      "dog": "not_for_pets",
+      "cat": "not_for_pets",
+      "note": "default"
+    },
+    "cucumber": {
+      "dog": "not_for_pets",
+      "cat": "not_for_pets",
+      "note": "default"
+    },
+    "cumin": {
+      "dog": "not_for_pets",
+      "cat": "not_for_pets",
+      "note": "default"
+    },
+    "curry_paste": {
+      "dog": "not_for_pets",
+      "cat": "not_for_pets",
+      "note": "default"
+    },
+    "curry_powder": {
+      "dog": "not_for_pets",
+      "cat": "not_for_pets",
+      "note": "default"
+    },
+    "dark_chocolate": {
+      "dog": "hazard",
+      "cat": "hazard",
+      "sourceId": "merck_chocolate",
+      "note": "Chocolate: dogs named in Merck text; cats not named in fetched source (group rule, unverified for cats)."
+    },
+    "dates_medjool": {
+      "dog": "not_for_pets",
+      "cat": "not_for_pets",
+      "note": "default"
+    },
+    "deli_turkey": {
+      "dog": "not_for_pets",
+      "cat": "not_for_pets",
+      "note": "Deli meat: processed, salted."
+    },
+    "edamame": {
+      "dog": "not_for_pets",
+      "cat": "not_for_pets",
+      "note": "default"
+    },
+    "egg_whites": {
+      "dog": "not_for_pets",
+      "cat": "not_for_pets",
+      "note": "default"
+    },
+    "eggs": {
+      "dog": "shareable_if_plain",
+      "cat": "shareable_if_plain",
+      "note": "Cook fully; no raw egg."
+    },
+    "english_muffins": {
+      "dog": "not_for_pets",
+      "cat": "not_for_pets",
+      "note": "default"
+    },
+    "feta": {
+      "dog": "not_for_pets",
+      "cat": "not_for_pets",
+      "note": "default"
+    },
+    "flaxseed": {
+      "dog": "not_for_pets",
+      "cat": "not_for_pets",
+      "note": "default"
+    },
+    "flour": {
+      "dog": "not_for_pets",
+      "cat": "not_for_pets",
+      "note": "default"
+    },
+    "flour_tortillas": {
+      "dog": "not_for_pets",
+      "cat": "not_for_pets",
+      "note": "default"
+    },
+    "garlic": {
+      "dog": "hazard",
+      "cat": "hazard",
+      "sourceId": "merck_allium",
+      "note": "Allium: cooked, raw or dehydrated (Merck)."
+    },
+    "garlic_powder": {
+      "dog": "hazard",
+      "cat": "hazard",
+      "sourceId": "merck_allium",
+      "note": "Concentrated allium form; more potent per gram than fresh garlic."
+    },
+    "ginger": {
+      "dog": "not_for_pets",
+      "cat": "not_for_pets",
+      "note": "default"
+    },
+    "granola": {
+      "dog": "not_for_pets",
+      "cat": "not_for_pets",
+      "note": "default"
+    },
+    "grapes": {
+      "dog": "hazard",
+      "cat": "hazard",
+      "sourceId": "pph_grapes",
+      "note": "Grapes/raisins: kidney failure in dogs (Pet Poison Helpline). Cats: anecdotal only, per same page."
+    },
+    "greek_yogurt": {
+      "dog": "not_for_pets",
+      "cat": "not_for_pets",
+      "note": "Dairy: not in the plain-food list; default deny."
+    },
+    "green_beans": {
+      "dog": "shareable_if_plain",
+      "cat": "not_for_pets",
+      "note": "Cooked, plain, no salt."
+    },
+    "green_onion": {
+      "dog": "hazard",
+      "cat": "hazard",
+      "sourceId": "merck_allium",
+      "note": "Allium: scallions are Allium spp."
+    },
+    "ground_beef": {
+      "dog": "shareable_if_plain",
+      "cat": "shareable_if_plain",
+      "note": "Cook, drain fat, no salt; 90% lean."
+    },
+    "ground_turkey": {
+      "dog": "shareable_if_plain",
+      "cat": "shareable_if_plain",
+      "note": "Cook plain; no salt."
+    },
+    "honey": {
+      "dog": "not_for_pets",
+      "cat": "not_for_pets",
+      "note": "default"
+    },
+    "hot_sauce": {
+      "dog": "not_for_pets",
+      "cat": "not_for_pets",
+      "note": "default"
+    },
+    "hummus": {
+      "dog": "not_for_pets",
+      "cat": "not_for_pets",
+      "note": "default"
+    },
+    "italian_seasoning": {
+      "dog": "not_for_pets",
+      "cat": "not_for_pets",
+      "note": "default"
+    },
+    "jalapeno": {
+      "dog": "not_for_pets",
+      "cat": "not_for_pets",
+      "note": "default"
+    },
+    "kale": {
+      "dog": "not_for_pets",
+      "cat": "not_for_pets",
+      "note": "default"
+    },
+    "ketchup": {
+      "dog": "not_for_pets",
+      "cat": "not_for_pets",
+      "note": "default"
+    },
+    "kidney_beans": {
+      "dog": "not_for_pets",
+      "cat": "not_for_pets",
+      "note": "default"
+    },
+    "kimchi": {
+      "dog": "not_for_pets",
+      "cat": "not_for_pets",
+      "note": "default"
+    },
+    "lemon": {
+      "dog": "not_for_pets",
+      "cat": "not_for_pets",
+      "note": "default"
+    },
+    "lentils_dry": {
+      "dog": "not_for_pets",
+      "cat": "not_for_pets",
+      "note": "default"
+    },
+    "lime": {
+      "dog": "not_for_pets",
+      "cat": "not_for_pets",
+      "note": "default"
+    },
+    "mango_frozen": {
+      "dog": "not_for_pets",
+      "cat": "not_for_pets",
+      "note": "default"
+    },
+    "maple_syrup": {
+      "dog": "not_for_pets",
+      "cat": "not_for_pets",
+      "note": "default"
+    },
+    "mayo": {
+      "dog": "not_for_pets",
+      "cat": "not_for_pets",
+      "note": "default"
+    },
+    "milk": {
+      "dog": "not_for_pets",
+      "cat": "not_for_pets",
+      "note": "default"
+    },
+    "mixed_greens": {
+      "dog": "not_for_pets",
+      "cat": "not_for_pets",
+      "note": "default"
+    },
+    "mixed_veg_frozen": {
+      "dog": "not_for_pets",
+      "cat": "not_for_pets",
+      "note": "default"
+    },
+    "mozzarella": {
+      "dog": "not_for_pets",
+      "cat": "not_for_pets",
+      "note": "default"
+    },
+    "mushrooms": {
+      "dog": "not_for_pets",
+      "cat": "not_for_pets",
+      "note": "default"
+    },
+    "mustard": {
+      "dog": "not_for_pets",
+      "cat": "not_for_pets",
+      "note": "default"
+    },
+    "olive_oil": {
+      "dog": "not_for_pets",
+      "cat": "not_for_pets",
+      "note": "default"
+    },
+    "onion": {
+      "dog": "hazard",
+      "cat": "hazard",
+      "sourceId": "merck_allium",
+      "note": "Allium: cooked, raw or dehydrated (Merck)."
+    },
+    "onion_powder": {
+      "dog": "hazard",
+      "cat": "hazard",
+      "sourceId": "merck_allium",
+      "note": "Concentrated allium form; more potent per gram than fresh onion."
+    },
+    "orange": {
+      "dog": "not_for_pets",
+      "cat": "not_for_pets",
+      "note": "default"
+    },
+    "oregano": {
+      "dog": "not_for_pets",
+      "cat": "not_for_pets",
+      "note": "default"
+    },
+    "paprika": {
+      "dog": "not_for_pets",
+      "cat": "not_for_pets",
+      "note": "default"
+    },
+    "parmesan": {
+      "dog": "not_for_pets",
+      "cat": "not_for_pets",
+      "note": "default"
+    },
+    "parsley": {
+      "dog": "not_for_pets",
+      "cat": "not_for_pets",
+      "note": "default"
+    },
+    "pasta": {
+      "dog": "not_for_pets",
+      "cat": "not_for_pets",
+      "note": "default"
+    },
+    "pasta_sauce": {
+      "dog": "not_for_pets",
+      "cat": "not_for_pets",
+      "note": "default"
+    },
+    "peanut_butter": {
+      "dog": "not_for_pets",
+      "cat": "not_for_pets",
+      "note": "default"
+    },
+    "peanuts": {
+      "dog": "not_for_pets",
+      "cat": "not_for_pets",
+      "note": "default"
+    },
+    "peas_frozen": {
+      "dog": "shareable_if_plain",
+      "cat": "not_for_pets",
+      "note": "Cooked, plain."
+    },
+    "pineapple_frozen": {
+      "dog": "not_for_pets",
+      "cat": "not_for_pets",
+      "note": "default"
+    },
+    "pinto_beans": {
+      "dog": "not_for_pets",
+      "cat": "not_for_pets",
+      "note": "default"
+    },
+    "pita": {
+      "dog": "not_for_pets",
+      "cat": "not_for_pets",
+      "note": "default"
+    },
+    "popcorn_kernels": {
+      "dog": "not_for_pets",
+      "cat": "not_for_pets",
+      "note": "default"
+    },
+    "pork_loin": {
+      "dog": "not_for_pets",
+      "cat": "not_for_pets",
+      "note": "default"
+    },
+    "potatoes": {
+      "dog": "not_for_pets",
+      "cat": "not_for_pets",
+      "note": "default"
+    },
+    "protein_powder_whey": {
+      "dog": "not_for_pets",
+      "cat": "not_for_pets",
+      "note": "default"
+    },
+    "quinoa": {
+      "dog": "not_for_pets",
+      "cat": "not_for_pets",
+      "note": "default"
+    },
+    "red_onion": {
+      "dog": "hazard",
+      "cat": "hazard",
+      "sourceId": "merck_allium",
+      "note": "Allium: cooked, raw or dehydrated (Merck)."
+    },
+    "red_pepper_flakes": {
+      "dog": "not_for_pets",
+      "cat": "not_for_pets",
+      "note": "default"
+    },
+    "rice_cakes": {
+      "dog": "not_for_pets",
+      "cat": "not_for_pets",
+      "note": "default"
+    },
+    "rolled_oats": {
+      "dog": "shareable_if_plain",
+      "cat": "not_for_pets",
+      "note": "Cooked with water only."
+    },
+    "romaine": {
+      "dog": "not_for_pets",
+      "cat": "not_for_pets",
+      "note": "default"
+    },
+    "salmon": {
+      "dog": "shareable_if_plain",
+      "cat": "shareable_if_plain",
+      "note": "Cook (dry heat), no salt/oil; bones removed."
+    },
+    "salsa": {
+      "dog": "not_for_pets",
+      "cat": "not_for_pets",
+      "note": "default"
+    },
+    "salt": {
+      "dog": "not_for_pets",
+      "cat": "not_for_pets",
+      "note": "default"
+    },
+    "sesame_oil": {
+      "dog": "not_for_pets",
+      "cat": "not_for_pets",
+      "note": "default"
+    },
+    "shrimp": {
+      "dog": "not_for_pets",
+      "cat": "not_for_pets",
+      "note": "default"
+    },
+    "sour_cream": {
+      "dog": "not_for_pets",
+      "cat": "not_for_pets",
+      "note": "default"
+    },
+    "soy_sauce": {
+      "dog": "not_for_pets",
+      "cat": "not_for_pets",
+      "note": "default"
+    },
+    "spinach": {
+      "dog": "shareable_if_plain",
+      "cat": "not_for_pets",
+      "note": "Small amounts; plain, cooked."
+    },
+    "strawberries": {
+      "dog": "not_for_pets",
+      "cat": "not_for_pets",
+      "note": "default"
+    },
+    "string_cheese": {
+      "dog": "not_for_pets",
+      "cat": "not_for_pets",
+      "note": "default"
+    },
+    "sugar": {
+      "dog": "not_for_pets",
+      "cat": "not_for_pets",
+      "note": "default"
+    },
+    "sunflower_seeds": {
+      "dog": "not_for_pets",
+      "cat": "not_for_pets",
+      "note": "default"
+    },
+    "sweet_potatoes": {
+      "dog": "shareable_if_plain",
+      "cat": "not_for_pets",
+      "note": "Cooked, plain, no skin/salt."
+    },
+    "tilapia": {
+      "dog": "shareable_if_plain",
+      "cat": "shareable_if_plain",
+      "note": "Cook, plain, no salt; no food entry yet."
+    },
+    "tofu_firm": {
+      "dog": "not_for_pets",
+      "cat": "not_for_pets",
+      "note": "default"
+    },
+    "tomato_paste": {
+      "dog": "not_for_pets",
+      "cat": "not_for_pets",
+      "note": "default"
+    },
+    "tomatoes": {
+      "dog": "not_for_pets",
+      "cat": "not_for_pets",
+      "note": "default"
+    },
+    "tzatziki": {
+      "dog": "not_for_pets",
+      "cat": "not_for_pets",
+      "note": "default"
+    },
+    "vegetable_broth": {
+      "dog": "not_for_pets",
+      "cat": "not_for_pets",
+      "note": "default"
+    },
+    "vegetable_oil": {
+      "dog": "not_for_pets",
+      "cat": "not_for_pets",
+      "note": "default"
+    },
+    "vinegar_balsamic": {
+      "dog": "not_for_pets",
+      "cat": "not_for_pets",
+      "note": "default"
+    },
+    "vinegar_rice": {
+      "dog": "not_for_pets",
+      "cat": "not_for_pets",
+      "note": "default"
+    },
+    "walnuts": {
+      "dog": "not_for_pets",
+      "cat": "not_for_pets",
+      "note": "default"
+    },
+    "white_rice": {
+      "dog": "shareable_if_plain",
+      "cat": "not_for_pets",
+      "note": "Cooked, plain, no salt/butter."
+    },
+    "whole_wheat_bread": {
+      "dog": "not_for_pets",
+      "cat": "not_for_pets",
+      "note": "default"
+    },
+    "whole_wheat_pasta": {
+      "dog": "not_for_pets",
+      "cat": "not_for_pets",
+      "note": "default"
+    },
+    "zucchini": {
+      "dog": "not_for_pets",
+      "cat": "not_for_pets",
+      "note": "default"
+    }
+  }
+}

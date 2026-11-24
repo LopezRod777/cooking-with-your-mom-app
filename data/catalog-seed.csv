@@ -1,0 +1,146 @@
+key,display_name,aisle,usda_search_hint,package_size,package_unit
+chicken_breast,Chicken breast (boneless skinless),Meat & Seafood,"Chicken, broilers or fryers, breast, meat only, raw",1,lb
+chicken_thigh,Chicken thighs (boneless skinless),Meat & Seafood,"Chicken, broilers or fryers, thigh, meat only, raw",1,lb
+ground_turkey,Ground turkey (93% lean),Meat & Seafood,"Turkey, ground, 93% lean, 7% fat, raw",1,lb
+ground_beef,Ground beef (90% lean),Meat & Seafood,"Beef, ground, 90% lean meat / 10% fat, raw",1,lb
+beef_sirloin,Beef sirloin steak,Meat & Seafood,"Beef, loin, top sirloin, separable lean only, trimmed to 0"" fat, raw",1,lb
+pork_loin,Pork loin chops,Meat & Seafood,"Pork, fresh, loin, center loin (chops), boneless, separable lean only, raw",1,lb
+salmon,Salmon fillet (Atlantic),Meat & Seafood,"Fish, salmon, Atlantic, farmed, raw",1,lb
+tilapia,Tilapia fillet,Meat & Seafood,"Fish, tilapia, raw",1,lb
+shrimp,Shrimp (raw peeled),Meat & Seafood,"Crustaceans, shrimp, raw",1,lb
+canned_tuna,Canned tuna in water,Canned & Jarred,"Fish, tuna, light, canned in water, drained solids",5,oz
+canned_salmon,Canned salmon,Canned & Jarred,"Fish, salmon, pink, canned, drained solids",5,oz
+deli_turkey,Deli turkey breast,Deli,"Turkey breast, sliced, prepackaged",8,oz
+eggs,Eggs (large),Dairy & Eggs,"Egg, whole, raw, fresh",12,each
+egg_whites,Liquid egg whites,Dairy & Eggs,"Egg, white, raw, fresh",16,oz
+greek_yogurt,Greek yogurt (plain nonfat),Dairy & Eggs,"Yogurt, Greek, plain, nonfat",32,oz
+cottage_cheese,Cottage cheese (low fat),Dairy & Eggs,"Cheese, cottage, lowfat, 2% milkfat",16,oz
+milk,Milk (2%),Dairy & Eggs,"Milk, reduced fat, fluid, 2% milkfat, with added vitamin A and vitamin D",64,fl oz
+cheddar,Cheddar cheese (shredded),Dairy & Eggs,"Cheese, cheddar",8,oz
+mozzarella,Mozzarella (shredded part-skim),Dairy & Eggs,"Cheese, mozzarella, part skim milk",8,oz
+parmesan,Parmesan (grated),Dairy & Eggs,"Cheese, parmesan, grated",5,oz
+feta,Feta cheese,Dairy & Eggs,"Cheese, feta",6,oz
+butter,Butter (unsalted),Dairy & Eggs,"Butter, without salt",16,oz
+tofu_firm,Tofu (firm),Produce,"Tofu, firm, prepared with calcium sulfate and magnesium chloride (nigari)",14,oz
+edamame,Edamame (frozen shelled),Frozen,"Edamame, frozen, prepared",12,oz
+black_beans,Black beans (canned),Canned & Jarred,"Beans, black, mature seeds, canned, low sodium",15,oz
+chickpeas,Chickpeas (canned),Canned & Jarred,"Chickpeas (garbanzo beans, bengal gram), mature seeds, canned, drained solids",15,oz
+kidney_beans,Kidney beans (canned),Canned & Jarred,"Beans, kidney, red, mature seeds, canned, drained solids",15,oz
+pinto_beans,Pinto beans (canned),Canned & Jarred,"Beans, pinto, mature seeds, canned, drained solids",15,oz
+lentils_dry,Lentils (dry),Rice Pasta & Grains,"Lentils, raw",16,oz
+white_rice,White rice (long grain),Rice Pasta & Grains,"Rice, white, long-grain, regular, raw, unenriched",32,oz
+brown_rice,Brown rice,Rice Pasta & Grains,"Rice, brown, long-grain, raw",32,oz
+quinoa,Quinoa,Rice Pasta & Grains,"Quinoa, uncooked",16,oz
+rolled_oats,Rolled oats,Breakfast & Cereal,"Cereals, oats, regular and quick, not fortified, dry",42,oz
+pasta,Pasta (spaghetti/penne),Rice Pasta & Grains,"Pasta, dry, unenriched",16,oz
+whole_wheat_pasta,Whole wheat pasta,Rice Pasta & Grains,"Pasta, whole-wheat, dry",16,oz
+flour_tortillas,Flour tortillas (8 in),Bakery & Bread,"Tortillas, ready-to-bake or -fry, flour, refrigerated",10,each
+corn_tortillas,Corn tortillas,Bakery & Bread,"Tortillas, ready-to-bake or -fry, corn",30,each
+whole_wheat_bread,Whole wheat bread,Bakery & Bread,"Bread, whole-wheat, commercially prepared",20,oz
+english_muffins,English muffins (whole wheat),Bakery & Bread,"English muffins, whole-wheat",6,each
+pita,Pita bread (whole wheat),Bakery & Bread,"Bread, pita, whole-wheat",6,each
+potatoes,Potatoes (russet),Produce,"Potatoes, russet, flesh and skin, raw",5,lb
+sweet_potatoes,Sweet potatoes,Produce,"Sweet potato, raw, unprepared",1,lb
+onion,Yellow onion,Produce,"Onions, raw",1,each
+red_onion,Red onion,Produce,"Onions, red, raw",1,each
+garlic,Garlic,Produce,"Garlic, raw",1,each
+ginger,Fresh ginger,Produce,"Ginger root, raw",4,oz
+tomatoes,Tomatoes (roma),Produce,"Tomatoes, red, ripe, raw, year round average",1,lb
+cherry_tomatoes,Cherry tomatoes,Produce,"Tomatoes, grape, raw",10,oz
+bell_pepper,Bell pepper,Produce,"Peppers, sweet, red, raw",1,each
+jalapeno,Jalapeño,Produce,"Peppers, jalapeno, raw",1,each
+broccoli,Broccoli,Produce,"Broccoli, raw",1,lb
+cauliflower,Cauliflower,Produce,"Cauliflower, raw",1,each
+spinach,Baby spinach,Produce,"Spinach, raw",5,oz
+kale,Kale,Produce,"Kale, raw",8,oz
+romaine,Romaine lettuce,Produce,"Lettuce, cos or romaine, raw",1,each
+mixed_greens,Mixed greens / spring mix,Produce,"Lettuce, green leaf, raw",5,oz
+cucumber,Cucumber,Produce,"Cucumber, with peel, raw",1,each
+zucchini,Zucchini,Produce,"Squash, summer, zucchini, includes skin, raw",1,lb
+carrots,Carrots,Produce,"Carrots, raw",1,lb
+celery,Celery,Produce,"Celery, raw",1,each
+mushrooms,Mushrooms (white),Produce,"Mushrooms, white, raw",8,oz
+green_beans,Green beans,Produce,"Beans, snap, green, raw",12,oz
+asparagus,Asparagus,Produce,"Asparagus, raw",1,lb
+cabbage,Green cabbage,Produce,"Cabbage, raw",1,each
+corn_frozen,Corn (frozen),Frozen,"Corn, sweet, yellow, frozen, kernels cut off cob, unprepared",12,oz
+peas_frozen,Peas (frozen),Frozen,"Peas, green, frozen, unprepared",12,oz
+mixed_veg_frozen,Mixed vegetables (frozen),Frozen,"Vegetables, mixed, frozen, unprepared",12,oz
+broccoli_frozen,Broccoli florets (frozen),Frozen,"Broccoli, frozen, chopped, unprepared",12,oz
+avocado,Avocado,Produce,"Avocados, raw, all commercial varieties",1,each
+lemon,Lemon,Produce,"Lemons, raw, without peel",1,each
+lime,Lime,Produce,"Limes, raw",1,each
+banana,Bananas,Produce,"Bananas, raw",1,lb
+apple,Apples,Produce,"Apples, raw, with skin",1,lb
+berries_frozen,Mixed berries (frozen),Frozen,"Blueberries, frozen, unsweetened",12,oz
+blueberries,Blueberries,Produce,"Blueberries, raw",6,oz
+strawberries,Strawberries,Produce,"Strawberries, raw",16,oz
+orange,Oranges,Produce,"Oranges, raw, all commercial varieties",1,lb
+grapes,Grapes,Produce,"Grapes, red or green (European type, such as Thompson seedless), raw",1,lb
+olive_oil,Olive oil,Oils & Vinegars,"Oil, olive, salad or cooking",16.9,fl oz
+vegetable_oil,Vegetable/canola oil,Oils & Vinegars,"Oil, canola",48,fl oz
+sesame_oil,Sesame oil,Oils & Vinegars,"Oil, sesame, salad or cooking",5,fl oz
+peanut_butter,Peanut butter,Pantry,"Peanut butter, smooth style, without salt",16,oz
+almonds,Almonds,Pantry,"Nuts, almonds",8,oz
+walnuts,Walnuts,Pantry,"Nuts, walnuts, english",8,oz
+peanuts,Peanuts (roasted),Pantry,"Peanuts, all types, dry-roasted, without salt",16,oz
+chia_seeds,Chia seeds,Pantry,"Seeds, chia seeds, dried",12,oz
+sunflower_seeds,Sunflower seeds,Pantry,"Seeds, sunflower seed kernels, dry roasted, without salt",8,oz
+protein_powder_whey,Whey protein powder,Pantry,"Beverages, Protein powder whey based",32,oz
+honey,Honey,Pantry,"Honey",12,oz
+maple_syrup,Maple syrup,Pantry,"Syrups, maple",8,fl oz
+sugar,Sugar,Baking,"Sugars, granulated",4,lb
+brown_sugar,Brown sugar,Baking,"Sugars, brown",2,lb
+flour,All-purpose flour,Baking,"Wheat flour, white, all-purpose, enriched, bleached",5,lb
+cornstarch,Cornstarch,Baking,"Cornstarch",16,oz
+baking_powder,Baking powder,Baking,"Leavening agents, baking powder, double-acting, sodium aluminum sulfate",8,oz
+breadcrumbs,Breadcrumbs (panko),Baking,"Bread, crumbs, dry, grated, plain",8,oz
+soy_sauce,Soy sauce,International,"Soy sauce made from soy and wheat (shoyu)",10,fl oz
+hot_sauce,Hot sauce,Condiments,"Sauce, hot chile, sriracha",17,oz
+salsa,Salsa,International,"Sauce, salsa, ready-to-serve",16,oz
+ketchup,Ketchup,Condiments,"Catsup",20,oz
+mustard,Dijon mustard,Condiments,"Mustard, prepared, yellow",8,oz
+mayo,Mayonnaise,Condiments,"Salad dressing, mayonnaise, regular",15,oz
+bbq_sauce,BBQ sauce,Condiments,"Sauce, barbecue",18,oz
+pasta_sauce,Marinara / pasta sauce,Canned & Jarred,"Sauce, pasta, spaghetti/marinara, ready-to-serve",24,oz
+canned_tomatoes,Diced tomatoes (canned),Canned & Jarred,"Tomatoes, red, ripe, canned, packed in tomato juice",14.5,oz
+tomato_paste,Tomato paste,Canned & Jarred,"Tomato products, canned, paste, without salt added",6,oz
+coconut_milk,Coconut milk (canned),International,"Nuts, coconut milk, canned (liquid expressed from grated meat and water)",13.5,fl oz
+chicken_broth,Chicken broth (low sodium),Canned & Jarred,"Soup, chicken broth, low sodium, canned",32,fl oz
+vegetable_broth,Vegetable broth,Canned & Jarred,"Soup, vegetable broth, ready to serve",32,fl oz
+curry_paste,Thai curry paste,International,"Sauce, ready-to-serve, pepper or hot",4,oz
+curry_powder,Curry powder,Spices,"Spices, curry powder",2,oz
+cumin,Ground cumin,Spices,"Spices, cumin seed",2,oz
+chili_powder,Chili powder,Spices,"Spices, chili powder",2.5,oz
+paprika,Smoked paprika,Spices,"Spices, paprika",2,oz
+garlic_powder,Garlic powder,Spices,"Spices, garlic powder",3,oz
+onion_powder,Onion powder,Spices,"Spices, onion powder",3,oz
+oregano,Dried oregano,Spices,"Spices, oregano, dried",1,oz
+italian_seasoning,Italian seasoning,Spices,"Spices, basil, dried",1,oz
+cinnamon,Ground cinnamon,Spices,"Spices, cinnamon, ground",2,oz
+black_pepper,Black pepper,Spices,"Spices, pepper, black",2,oz
+salt,Salt,Spices,"Salt, table",26,oz
+red_pepper_flakes,Red pepper flakes,Spices,"Spices, pepper, red or cayenne",1.5,oz
+cilantro,Cilantro,Produce,"Coriander (cilantro) leaves, raw",1,each
+parsley,Parsley,Produce,"Parsley, fresh",1,each
+basil,Fresh basil,Produce,"Basil, fresh",0.75,oz
+green_onion,Green onions / scallions,Produce,"Onions, spring or scallions (includes tops and bulb), raw",1,each
+vinegar_rice,Rice vinegar,Oils & Vinegars,"Vinegar, distilled",12,fl oz
+vinegar_balsamic,Balsamic vinegar,Oils & Vinegars,"Vinegar, balsamic",8.5,fl oz
+hummus,Hummus,Deli,"Hummus, commercial",10,oz
+tzatziki,Tzatziki / cucumber yogurt dip,Deli,"Yogurt, Greek, plain, lowfat",8,oz
+kimchi,Kimchi,International,"Kimchi",14,oz
+string_cheese,String cheese,Dairy & Eggs,"Cheese, mozzarella, low moisture, part-skim",12,each
+cream_cheese,Cream cheese,Dairy & Eggs,"Cheese, cream",8,oz
+sour_cream,Sour cream,Dairy & Eggs,"Cream, sour, cultured",16,oz
+almond_milk,Almond milk (unsweetened),Dairy & Eggs,"Beverages, almond milk, unsweetened, shelf stable",64,fl oz
+dark_chocolate,Dark chocolate,Snacks,"Chocolate, dark, 70-85% cacao solids",3.5,oz
+rice_cakes,Rice cakes,Snacks,"Snacks, rice cakes, brown rice, plain",4.5,oz
+popcorn_kernels,Popcorn kernels,Snacks,"Snacks, popcorn, air-popped",32,oz
+granola,Granola,Breakfast & Cereal,"Cereals ready-to-eat, granola, homemade",12,oz
+dates_medjool,Medjool dates,Produce,"Dates, medjool",8,oz
+cocoa_powder,Cocoa powder (unsweetened),Baking,"Cocoa, dry powder, unsweetened",8,oz
+mango_frozen,Mango chunks (frozen),Frozen,"Mangos, raw",16,oz
+pineapple_frozen,Pineapple chunks (frozen),Frozen,"Pineapple, raw, all varieties",16,oz
+flaxseed,Ground flaxseed,Pantry,"Seeds, flaxseed",16,oz
+baby_carrots,Baby carrots,Produce,"Carrots, baby, raw",16,oz

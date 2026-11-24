@@ -1,0 +1,311 @@
+{
+  "acai_frozen": [],
+  "almond_milk": [
+    "tree_nut"
+  ],
+  "almonds": [
+    "tree_nut"
+  ],
+  "apple": [],
+  "asparagus": [],
+  "avocado": [],
+  "baby_carrots": [],
+  "baking_powder": [],
+  "banana": [],
+  "basil": [],
+  "bbq_sauce": [
+    "nightshade"
+  ],
+  "beef_sirloin": [],
+  "bell_pepper": [
+    "nightshade"
+  ],
+  "berries_frozen": [],
+  "black_beans": [
+    "legume"
+  ],
+  "black_pepper": [],
+  "blueberries": [],
+  "breadcrumbs": [
+    "wheat_gluten"
+  ],
+  "broccoli": [],
+  "broccoli_frozen": [],
+  "brown_rice": [],
+  "brown_sugar": [],
+  "butter": [
+    "dairy"
+  ],
+  "cabbage": [],
+  "canned_salmon": [
+    "fish"
+  ],
+  "canned_tomatoes": [
+    "nightshade"
+  ],
+  "canned_tuna": [
+    "fish"
+  ],
+  "carrots": [],
+  "cauliflower": [],
+  "celery": [],
+  "cheddar": [
+    "dairy"
+  ],
+  "cherry_tomatoes": [
+    "nightshade"
+  ],
+  "chia_seeds": [],
+  "chicken_breast": [],
+  "chicken_broth": [],
+  "chicken_thigh": [],
+  "chickpeas": [
+    "legume"
+  ],
+  "chili_powder": [
+    "nightshade"
+  ],
+  "cilantro": [],
+  "cinnamon": [],
+  "cocoa_powder": [],
+  "coconut_milk": [],
+  "corn_frozen": [
+    "corn"
+  ],
+  "corn_tortillas": [
+    "corn"
+  ],
+  "cornstarch": [
+    "corn"
+  ],
+  "cottage_cheese": [
+    "dairy"
+  ],
+  "cream_cheese": [
+    "dairy"
+  ],
+  "cucumber": [],
+  "cumin": [],
+  "curry_paste": [
+    "fish",
+    "shellfish"
+  ],
+  "curry_powder": [],
+  "dark_chocolate": [
+    "soy"
+  ],
+  "dates_medjool": [],
+  "deli_turkey": [],
+  "edamame": [
+    "soy",
+    "legume"
+  ],
+  "egg_whites": [
+    "egg"
+  ],
+  "eggs": [
+    "egg"
+  ],
+  "english_muffins": [
+    "wheat_gluten"
+  ],
+  "feta": [
+    "dairy"
+  ],
+  "flaxseed": [],
+  "flour": [
+    "wheat_gluten"
+  ],
+  "flour_tortillas": [
+    "wheat_gluten"
+  ],
+  "garlic": [
+    "onion_garlic"
+  ],
+  "garlic_powder": [
+    "onion_garlic"
+  ],
+  "ginger": [],
+  "granola": [
+    "wheat_gluten",
+    "tree_nut"
+  ],
+  "grapes": [],
+  "greek_yogurt": [
+    "dairy"
+  ],
+  "green_beans": [
+    "legume"
+  ],
+  "green_onion": [
+    "onion_garlic"
+  ],
+  "ground_beef": [],
+  "ground_turkey": [],
+  "honey": [],
+  "hot_sauce": [
+    "nightshade"
+  ],
+  "hummus": [
+    "sesame",
+    "legume",
+    "onion_garlic"
+  ],
+  "italian_seasoning": [],
+  "jalapeno": [
+    "nightshade"
+  ],
+  "kale": [],
+  "ketchup": [
+    "nightshade"
+  ],
+  "kidney_beans": [
+    "legume"
+  ],
+  "kimchi": [
+    "fish",
+    "shellfish"
+  ],
+  "lemon": [],
+  "lentils_dry": [
+    "legume"
+  ],
+  "lime": [],
+  "mango_frozen": [],
+  "maple_syrup": [],
+  "mayo": [
+    "egg"
+  ],
+  "milk": [
+    "dairy"
+  ],
+  "mixed_greens": [],
+  "mixed_veg_frozen": [],
+  "mozzarella": [
+    "dairy"
+  ],
+  "mushrooms": [],
+  "mustard": [],
+  "olive_oil": [],
+  "onion": [
+    "onion_garlic"
+  ],
+  "onion_powder": [
+    "onion_garlic"
+  ],
+  "orange": [],
+  "oregano": [],
+  "paprika": [
+    "nightshade"
+  ],
+  "parmesan": [
+    "dairy"
+  ],
+  "parsley": [],
+  "pasta": [
+    "wheat_gluten"
+  ],
+  "pasta_sauce": [
+    "nightshade",
+    "onion_garlic"
+  ],
+  "peanut_butter": [
+    "peanut",
+    "legume"
+  ],
+  "peanuts": [
+    "peanut",
+    "legume"
+  ],
+  "peas_frozen": [
+    "legume"
+  ],
+  "pineapple_frozen": [],
+  "pinto_beans": [
+    "legume"
+  ],
+  "pita": [
+    "wheat_gluten"
+  ],
+  "popcorn_kernels": [
+    "corn"
+  ],
+  "pork_loin": [],
+  "potatoes": [
+    "nightshade"
+  ],
+  "protein_powder_whey": [
+    "dairy"
+  ],
+  "quinoa": [],
+  "red_onion": [
+    "onion_garlic"
+  ],
+  "red_pepper_flakes": [
+    "nightshade"
+  ],
+  "rice_cakes": [],
+  "rolled_oats": [],
+  "romaine": [],
+  "salmon": [
+    "fish"
+  ],
+  "salsa": [
+    "nightshade",
+    "onion_garlic"
+  ],
+  "salt": [],
+  "sesame_oil": [
+    "sesame"
+  ],
+  "shrimp": [
+    "shellfish"
+  ],
+  "sour_cream": [
+    "dairy"
+  ],
+  "soy_sauce": [
+    "soy",
+    "wheat_gluten",
+    "legume"
+  ],
+  "spinach": [],
+  "strawberries": [],
+  "string_cheese": [
+    "dairy"
+  ],
+  "sugar": [],
+  "sunflower_seeds": [],
+  "sweet_potatoes": [],
+  "tilapia": [
+    "fish"
+  ],
+  "tofu_firm": [
+    "soy",
+    "legume"
+  ],
+  "tomato_paste": [
+    "nightshade"
+  ],
+  "tomatoes": [
+    "nightshade"
+  ],
+  "tzatziki": [
+    "dairy"
+  ],
+  "vegetable_broth": [],
+  "vegetable_oil": [],
+  "vinegar_balsamic": [],
+  "vinegar_rice": [],
+  "walnuts": [
+    "tree_nut"
+  ],
+  "white_rice": [],
+  "whole_wheat_bread": [
+    "wheat_gluten"
+  ],
+  "whole_wheat_pasta": [
+    "wheat_gluten"
+  ],
+  "zucchini": []
+}

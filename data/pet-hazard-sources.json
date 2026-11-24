@@ -1,0 +1,44 @@
+{
+  "aspca_people_foods": {
+    "title": "People Foods to Avoid Feeding Your Pets",
+    "org": "ASPCA Animal Poison Control",
+    "url": "https://www.aspca.org/pet-care/animal-poison-control/people-foods-avoid-feeding-your-pets",
+    "accessedAt": "2026-10-31",
+    "quote": "Allium species can cause gastrointestinal irritation and red blood cell damage.",
+    "covers": [
+      "allium",
+      "chocolate",
+      "macadamia"
+    ]
+  },
+  "merck_allium": {
+    "title": "Garlic and Onion (Allium spp) Toxicosis in Animals",
+    "org": "Merck Veterinary Manual",
+    "url": "https://merckvetmanual.com/toxicology/food-hazards/allium-spp-toxicosis-in-animals",
+    "accessedAt": "2026-10-31",
+    "quote": "dogs and cats have been affected after ingesting raw, cooked, dehydrated, or granulated onions and garlic.",
+    "covers": [
+      "allium"
+    ]
+  },
+  "pph_grapes": {
+    "title": "Dog Ate Raisins",
+    "org": "Pet Poison Helpline",
+    "url": "https://www.petpoisonhelpline.com/pet-safety-tips/are-grapes-and-raisins-poisonous-to-dogs/",
+    "accessedAt": "2026-10-31",
+    "quote": "Ingestion of even a small amount of grapes, raisins, or currants can result in severe, acute kidney failure.",
+    "covers": [
+      "grape"
+    ]
+  },
+  "merck_chocolate": {
+    "title": "Chocolate Toxicosis in Animals",
+    "org": "Merck Veterinary Manual",
+    "url": "https://www.merckvetmanual.com/toxicology/food-hazards/chocolate-toxicosis-in-animals",
+    "accessedAt": "2026-10-31",
+    "quote": "Chocolate poisoning occurs most commonly in dogs, although many species are susceptible.",
+    "covers": [
+      "chocolate"
+    ]
+  }
+}

@@ -1,0 +1,96 @@
+{
+ "@type": "Recipe",
+ "name": "Birria Tacos Recipe by Tasty",
+ "recipeYield": "3 servings",
+ "recipeIngredient": [
+  "¼ cup kosher salt, plus 1 tablespoon",
+  "2 lb beef chuck roast, cut into 1 in (2.54 cm) pieces",
+  "1 lb bone in beef short ribs",
+  "5 dried ancho chiles",
+  "5 dried guajillo chiles",
+  "2 dried morita chiles",
+  "warm water, for soaking",
+  "1 whole cinnamon stick",
+  "1 tablespoon whole coriander seeds",
+  "1 tablespoon whole black peppercorn",
+  "4 whole allspice berries",
+  "2 whole cloves",
+  "6 dried bay leaves",
+  "1 teaspoon mexican oregano",
+  "¼ cup canola oil, plus 1 tablespoon, plus more as needed",
+  "1 large yellow onion, chopped",
+  "4 roma tomatoes, quartered",
+  "8 cloves garlic, roughly chopped",
+  "¼ cup apple cider vinegar",
+  "8 cups water",
+  "1 package frozen banana leaves, thawed",
+  "12 corn tortillas",
+  "1 lb shredded queso oaxaca",
+  "red onion, pickled",
+  "Radish, sliced",
+  "fresh cilantro, chopped",
+  "Lime wedge"
+ ],
+ "recipeInstructions": [
+  {
+   "@type": "HowToStep",
+   "text": "Make the birria: Line a baking sheet with parchment paper"
+  },
+  {
+   "@type": "HowToStep",
+   "text": "Arrange the chuck roast and short ribs on the prepared baking sheet. Sprinkle ¼ cup salt all over the beef, making sure to coat each piece completely. Refrigerate for at least 4 hours and up to overnight."
+  },
+  {
+   "@type": "HowToStep",
+   "text": "Add the ancho, guajillo and morita chiles to a medium heatproof bowl. Cover with warm water and soak until starting to soften, about 5 minutes. Remove the seeds and stems and set chiles aside."
+  },
+  {
+   "@type": "HowToStep",
+   "text": "In a medium skillet over medium heat, toast the cinnamon stick, coriander, black pepper, allspice, and cloves until fragrant, about 2 minutes. Transfer the toasted spices, bay leaves, and oregano to a spice grinder or high-powered blender and grind into a fine powder."
+  },
+  {
+   "@type": "HowToStep",
+   "text": "Preheat the oven to 300°F (150°C)."
+  },
+  {
+   "@type": "HowToStep",
+   "text": "Remove the seasoned meat from the refrigerator and use paper towels to pat dry."
+  },
+  {
+   "@type": "HowToStep",
+   "text": "In a large Dutch oven or heavy-bottomed pot with a tight fitting lid, heat ¼ cup canola oil over medium-high heat. When the oil is shimmering, sear the seasoned meat on all sides until golden brown, working in batches if needed to avoid overcrowding the pot, about 20 minutes. Remove the meat from the pot and set aside. If the oil looks dark and burnt, discard and add ¼ cup fresh canola oil to the pot and return to medium-high heat."
+  },
+  {
+   "@type": "HowToStep",
+   "text": "Add the yellow onion, tomatoes, and remaining tablespoon of salt to the hot oil and cook until the onion begins to sweat, 5–7 minutes. Add the garlic and cook until fragrant, about 3 minutes."
+  },
+  {
+   "@type": "HowToStep",
+   "text": "Add the ground spices and continue cooking until aromatic, about 2 minutes."
+  },
+  {
+   "@type": "HowToStep",
+   "text": "Add the apple cider vinegar, water, seared meat, and chiles. Bring to a boil, then reduce the heat to medium-low and cover. Simmer until the stew begins to thicken and the chiles are completely softened, about 30 minutes."
+  },
+  {
+   "@type": "HowToStep",
+   "text": "Remove the chiles from the stew and transfer to a high-powered blender with about 2 cups of the broth. Blend until smooth, then pour back into the pot and stir to combine. Cover the stew with the banana leaves, then place the lid on top. Transfer the stew to the oven and continue cooking until the meat easily pulls away from the short ribs bones, about 90 minutes. If the meat has some resistance, cover and cook longer, until very tender."
+  },
+  {
+   "@type": "HowToStep",
+   "text": "Remove the stew from the oven and discard the banana leaves, then remove the meat from the pot and transfer to a large bowl. Use a pair of tongs and a fork to shred the meat to your desired texture. Reserve the broth (consomé)."
+  },
+  {
+   "@type": "HowToStep",
+   "text": "Make the tacos: Heat the remaining tablespoon of canola oil in a large cast iron skillet over medium heat until shimmering. Dip a tortilla in the warm consomé, then lay flat in the hot oil. Add 2 tablespoons of queso Oaxaca to one half of the tortilla and about ¼ cup of the shredded beef to the other half.  Fold the quesadilla shut and cook until the cheese begins to melt, about 1 minute. Flip the quesadilla and continue cooking until the tortilla is golden brown and crispy and the cheese is oozing from the edges, about 1 minute. Repeat with the remaining tortillas, cheese and birria."
+  },
+  {
+   "@type": "HowToStep",
+   "text": "Serve the tacos with the consomé alongside for dipping as well as pickled onions, sliced radishes, chopped fresh cilantro, and lime wedges."
+  },
+  {
+   "@type": "HowToStep",
+   "text": "Enjoy!"
+  }
+ ]
+}
